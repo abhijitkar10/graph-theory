@@ -351,7 +351,9 @@ All equivalent. → [[Assignment 1]] Q19.
 | **Forest exchange** | e(F) < e(F′) ⇒ some edge of F′ extends F | [[Assignment 1]] Q22 |
 | **Tree-order** | x ≤ y iff x is on the root–y path; a partial order | [[Assignment 1]] Q23 |
 | ★ **MIS by greedy on leaves** | take all leaves, delete their parents, recurse | [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] |
+| ★ **MIS by tree DP** | MIS(v,0) = Σ max{MIS(u,0), MIS(u,1)}; MIS(v,1) = 1 + Σ MIS(u,0). O(n) | [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] |
 | **Level-splitting fails** | max{odd levels, even levels} is *not* the MIS | [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] |
+| **Leaf's parent** | lies in **every** maximum matching of a tree | [[2026-08-10 Matchings in Bipartite Graphs]] §2 |
 | **Matching in a tree** | anywhere from 1 (star) to ⌊n/2⌋; **no formula in terms of depth** | [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] |
 
 > **Connections outward:** trees are **1-degenerate** (Bridge 3.2) and **bipartite** (Level 5, colour by level parity). The forest exchange property is the **matroid** exchange axiom, which is why Kruskal's algorithm works.
@@ -528,6 +530,12 @@ Two near-mirror questions on opposite sides of the tractability line. → [[2026
 | ★ **Hall** | a matching saturates A ⟺ \|N(S)\| ≥ \|S\| for all S ⊆ A | [[Lec 02 — König's Theorem and Hall's Theorem]] §4 |
 | **König ⟺ Hall** | each is a two-line consequence of the other | [[Lec 02 — König's Theorem and Hall's Theorem]] §5 |
 | ★ **Defect Hall** | ν = \|A\| − max deficiency | [[Lec 03 — More on Hall's Theorem and Applications]] §1 |
+| ★ **Universal vertex** | bipartite ⇒ some vertex lies in **every** maximum matching | [[2026-08-10 Matchings in Bipartite Graphs]] §3 |
+| **≥ τ universal vertices** | bipartite ⇒ at least \|MVC\| of them, by peeling one off and inducting | [[2026-08-10 Matchings in Bipartite Graphs]] §4 |
+
+> ★ **Odd cycles are the sole obstruction.** The universal-vertex proof is valid for *any* graph right up to its final step, where it produces an odd cycle. C₂ₙ₊₁ is vertex-transitive, so every vertex is missed by some maximum matching — verified: C₃, C₅, C₇, C₉ each have **zero** universal vertices, while even cycles have all n.
+
+> **Parity of the swap — the distinction to hold on to.** Swapping along an **odd** alternating path **gains** an edge (Berge, §augmenting). Swapping along an **even** one **preserves** size — which is exactly what makes the universal-vertex proof work. Same operation, opposite purposes.
 
 ## Applications of Hall
 
@@ -706,6 +714,7 @@ Every named claim, lemma and theorem across all my notes, alphabetically.
 | Latin rectangle extension | 7 | [[Lec 03 — More on Hall's Theorem and Applications]] |
 | Leaf edge in some maximum matching | 7 | [[2026-07-29 Matchings 2 — Berge and König]] §2 |
 | M ∪ N has Δ ≤ 2 | 7 | [[2026-07-29 Matchings 2 — Berge and König]] Claim 2.2 |
+| MIS in a tree by dynamic programming | 4 | [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] |
 | Moon–Moser: ≤ 3^(n/3) maximal ind. sets | 4 | [[2026-07-29 Matchings 2 — Berge and König]] §2 |
 | Lemma A: δ ≥ k ⇒ long path | 2 | [[2026-07-24 Preliminaries]] §6 |
 | Lemma B: δ ≥ 2 ⇒ cycle | 2 | [[2026-07-24 Preliminaries]] §6 |
@@ -733,6 +742,8 @@ Every named claim, lemma and theorem across all my notes, alphabetically.
 | Tree characterisations (Thm 1.5.1) | 4 | [[Assignment 1]] Q19 |
 | Tree-order is a partial order | 4 | [[Assignment 1]] Q23 |
 | Two longest paths meet | 2 | [[Tutorial 1]] Q4 |
+| Universal vertex (bipartite, every max matching) | 7 | [[2026-08-10 Matchings in Bipartite Graphs]] §3 |
+| Universal vertices ≥ \|MVC\| | 7 | [[2026-08-10 Matchings in Bipartite Graphs]] §4 |
 | Walk contains a path | 1 | 🌉 Bridge 1.1 |
 | δ ≥ 3 ⇒ even cycle | 2 | [[2026-07-24 Preliminaries]] §7 |
 | κ ≤ λ ≤ δ, values for families | 8 | [[Assignment 1]] Q13 |

@@ -8,7 +8,7 @@ class: 4
 
 # 6 · 2026-07-31 — Tutorial 1
 
-**◀ Previous:** [[2026-07-29 Matchings 2 — Berge and König]]  ·  **Hub:** [[Graph Theory]]  ·  **Next ▶** *(none yet — latest note)*
+**◀ Previous:** [[2026-07-29 Matchings 2 — Berge and König]]  ·  **Hub:** [[Graph Theory]]  ·  **Next ▶** [[2026-08-10 Matchings in Bipartite Graphs]]
 
 **Six problems.** Every proof below is broken into numbered **Claims** proved separately, then combined.
 

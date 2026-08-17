@@ -208,9 +208,46 @@ But **{b, c, d, e, f}** is independent — b, c, d are leaves hanging off r, and
 
 **The method fails.** Splitting by level is too rigid: it forces you to take *all* of one side, when the best answer mixes levels.
 
+### ✅ The repair — a dynamic program over the tree
+
+The level idea is salvageable if, instead of one global choice, you let **each vertex decide for itself**. Root the tree and define two quantities per vertex v:
+
+| | meaning |
+|---|---|
+| **MIS(v, 0)** | largest independent set in v's subtree that **excludes** v |
+| **MIS(v, 1)** | largest independent set in v's subtree that **includes** v |
+
+**The recurrences.**
+
+$$\text{MIS}(v,0) \;=\; \sum_{u \text{ child of } v} \max\big\{\text{MIS}(u,0),\ \text{MIS}(u,1)\big\}$$
+
+$$\text{MIS}(v,1) \;=\; 1 \;+\; \sum_{u \text{ child of } v} \text{MIS}(u,0)$$
+
+**Why each is right:**
+
+- If v is **excluded**, its children are unconstrained — each child independently contributes whichever of its two options is larger ✓
+- If v is **included**, then **no child may be taken** (each is adjacent to v), so every child must contribute its "excluded" value. The +1 counts v itself ✓
+
+**The answer** is `max{MIS(root, 0), MIS(root, 1)}`, computed bottom-up in **O(n)**.
+
+**Run it on the counterexample** (root r; children a, b, c, d; a has children e, f):
+
+| vertex | MIS(·,0) | MIS(·,1) |
+|---|---|---|
+| e, f (leaves) | 0 | 1 |
+| b, c, d (leaves) | 0 | 1 |
+| a | max(0,1) + max(0,1) = **2** | 1 + 0 + 0 = **1** |
+| r | max(2,1) + 1 + 1 + 1 = **5** | 1 + 2 + 0 + 0 = **3** |
+
+Answer = max{5, 3} = **5** ✓ — the correct value that level-splitting missed.
+
+> **The lesson:** level-splitting fails because it makes **one** decision for the whole tree. The DP makes **one decision per vertex**, keeping both options alive until the parent can compare them.
+
 ---
 
 ## Strategy 2 — greedy on leaves. **This works.**
+
+> ⚠️ **"Leaves" means vertices of degree ≤ 1**, not exactly 1 — in a *forest* an isolated vertex has degree 0 and should also be taken into the solution.
 
 > 1. Put **all leaves** into the solution.
 > 2. **Delete** the leaves and their parents, then **recurse** on what remains.

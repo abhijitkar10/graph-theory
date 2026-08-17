@@ -26,6 +26,7 @@ Read in this order (the numbers matter — filenames sort differently):
 | 4 | [Euler by Extremal Argument, Matchings, MIS in Trees](2026-07-29%20Euler%20by%20Extremal%20Argument%2C%20Matchings%2C%20MIS%20in%20Trees.md) | a second, shorter proof of Euler via maximal trails; maximum independent sets in trees |
 | 5 | [Matchings 2 — Berge and König](2026-07-29%20Matchings%202%20%E2%80%94%20Berge%20and%20K%C3%B6nig.md) | augmenting paths, Berge's theorem, ν ≤ τ ≤ 2ν, König's theorem |
 | 6 | [Tutorial 1](Tutorial%201.md) | hypercubes and planarity, girth bounds, induced paths, the Helly property |
+| 7 | [Matchings in Bipartite Graphs](2026-08-10%20Matchings%20in%20Bipartite%20Graphs.md) | perfect matchings, and why every bipartite graph has a vertex lying in *every* maximum matching |
 
 ## Problem sets
 
@@ -43,7 +44,7 @@ Read in this order (the numbers matter — filenames sort differently):
 
 ## Some results proved here
 
-Konig's theorem · Hall's marriage theorem and its defect version · Berge's theorem · Euler's theorem (two independent proofs) · the long-path theorem · Moore bounds from girth · the four characterisations of a tree · greedy algorithms on trees justified by exchange arguments · the Helly property for intervals · why Q₄ is not planar.
+Konig's theorem · Hall's marriage theorem and its defect version · Berge's theorem · Euler's theorem (two independent proofs) · the long-path theorem · Moore bounds from girth · the four characterisations of a tree · greedy and dynamic-programming algorithms on trees · the Helly property for intervals · why Q₄ is not planar · why odd cycles are the only obstruction to a universal matched vertex.
 
 ## Two notes on reading these
 
