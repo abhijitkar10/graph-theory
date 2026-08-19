@@ -6,6 +6,28 @@ Every theorem here is **proved in full**. Proofs are broken into numbered sub-cl
 
 ---
 
+## Get the notes
+
+```bash
+git clone https://github.com/abhijitkar10/graph-theory.git
+```
+
+Already cloned it? Grab the latest:
+
+```bash
+cd graph-theory && git pull
+```
+
+**Reading them in Obsidian** — clone straight into a vault and the `[[wiki-links]]` between notes become clickable, which is how they were written:
+
+```bash
+git clone https://github.com/abhijitkar10/graph-theory.git ~/Obsidian/MyVault/"Graph Theory"
+```
+
+Replace `~/Obsidian/MyVault` with your own vault path. No Obsidian? The files are plain Markdown — read them right here on GitHub, or in any text editor.
+
+---
+
 ## Start here
 
 **[Master Notes](Master%20Notes.md)** — everything organised by *concept dependency* rather than by the date it was taught. Ten levels, a dependency map, a complete index of every result, and bridge sections filling gaps the lectures skipped.
