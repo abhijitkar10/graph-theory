@@ -5,277 +5,157 @@ seq: 3
 class: 2
 ---
 
-# 3 · 2026-07-27 — Euler Circuits
+# 3 · 2026-07-27 — Euler circuits
 
-**◀ Previous:** [[2026-07-24 Long Path Theorem]]  ·  **Hub:** [[Graph Theory]]  ·  **Next ▶** [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]]
+Previous: [[2026-07-24 Long Path Theorem]] · Hub: [[Graph Theory]] · Next: [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]]
 
-**Covered:** walks/trails/circuits, components, Euler's Theorem and its two lemmas (both proved in full), contrapositives, the Königsberg bridge problem, a note on Hamiltonian cycles.
+## How much this matters
 
----
+Overall this note is core, and it is the best value in the whole course. A named theorem with a short proof, so the marks per hour are excellent.
 
-## 0. The vocabulary — get this exactly right
+Know cold: [[2026-07-27 Euler Circuits#What we are proving|the statement]], [[2026-07-27 Euler Circuits#Lemma 1, the easy half|Lemma 1]] in full since it is only a few lines, and [[2026-07-27 Euler Circuits#Lemma 2, the hard half|Lemma 2]] by the maximal trail argument.
 
-These four words look similar and mean different things. The whole topic collapses into confusion if they blur, so here they are side by side.
+Know the idea: [[2026-07-27 Euler Circuits#Using the theorem in practice|the contrapositive]], because that is the form you actually apply, and [[2026-07-27 Euler Circuits#Konigsberg|Konigsberg]] as the standard example.
 
-| Term | Definition | Repeats allowed? |
+Read once: [[2026-07-27 Euler Circuits#Euler against Hamilton|Euler against Hamilton]]. Worth knowing as context, not a question on its own.
+
+If you are short of time, learn this note before the long path theorem. It is cheaper and more likely.
+
+## What we are proving
+
+Theorem (Euler). A graph G has an Euler circuit if and only if G has at most one non-trivial component and every vertex of G has even degree.
+
+An if and only if is two claims, so there are two things to show.
+
+Going one way, assume G has an Euler circuit and show both conditions follow. That is the easy half, called Lemma 1.
+Going the other way, assume both conditions hold and produce an Euler circuit. That is the hard half, called Lemma 2.
+
+Neither half is optional. Proving only one direction leaves the theorem unproved.
+
+## The words, which are easy to mix up
+
+Four terms sit close together here, and getting them confused wrecks everything downstream.
+
+| Term | May repeat vertices | May repeat edges |
 |---|---|---|
-| **Walk** | any sequence of vertices where consecutive ones are joined by an edge | vertices ✓ edges ✓ |
-| **Trail** | a walk with **no repeated edges** | vertices ✓ edges ✗ |
-| **Path** | a walk with **no repeated vertices** | vertices ✗ edges ✗ |
-| **Circuit** | a **closed trail** — a trail whose start and end are the same vertex | vertices ✓ edges ✗ |
+| walk | yes | yes |
+| trail | yes | no |
+| path | no | no |
+| circuit | yes | no, and it must return to its start |
 
-So: **trail = walk without repeated edges**, and **circuit = trail with the same start and end point**. A circuit may pass through the *same vertex* several times; it just must never reuse an *edge*.
+So a trail is a walk that never reuses an edge, and a circuit is a trail that ends where it began. A circuit is free to pass through the same vertex many times. It just may not travel the same edge twice.
 
-```
-    a ——— b
-    |  ╱  |          a → b → c → a → d → c is a TRAIL
-    | ╱   |          (vertex a and c repeat, but no edge repeats)
-    d ——— c
-```
+An Euler circuit is a circuit that uses every edge of the graph. In plain terms, draw the whole graph in one pen stroke without lifting the pen or retracing, and finish at your starting point.
 
-### Component
+Two more definitions. A component is a maximal connected piece of the graph. A component is trivial if it has no edges at all, meaning it is a lone vertex, and non-trivial otherwise.
 
-> A **component** is a **maximal connected subgraph**.
+The condition says at most one non-trivial component rather than connected, and the reason matters. Isolated vertices carry no edges, so an Euler circuit owes them no visit. They are allowed to float around freely. Only the part of the graph that actually holds edges has to be in one piece.
 
-*Maximal* in the sense from [[2026-07-24 Preliminaries]] §5: you cannot add any more vertices to it and keep it connected.
+## One graph for the whole proof
 
-> A component is **trivial** if it has **no edges** — i.e. it is a single isolated vertex.
-> Otherwise it is **non-trivial**.
+![](figures/euler-1-graph.svg)
 
-```
- ┌────────────┐   ┌──────┐
- │  a——b——c   │   │ d——e │      ●  f
- └────────────┘   └──────┘
-  non-trivial     non-trivial   trivial
-```
+Two triangles joined at c. Vertices a, b, d and e have degree 2, and c has degree 4, so every degree is even. The numbers on the edges give one Euler circuit: a b c d e c a. It uses each of the six edges exactly once and returns to a.
 
-This graph has **2 non-trivial components** and 1 trivial one.
+Look at what happens at c. The circuit passes through it twice. That is fine, because a circuit may revisit vertices. It is edges it may not repeat.
 
-### Euler circuit
+## Lemma 1, the easy half
 
-> An **Euler circuit** is a circuit that contains **all the edges** of G.
+Claim. If G has an Euler circuit, then G has at most one non-trivial component and every vertex has even degree.
 
-In plain terms: **draw the whole graph in one continuous pen stroke, never lifting the pen, never retracing an edge, and finish where you started.**
+Take an Euler circuit C.
 
-> ⚠️ Why "at most one non-trivial component" and not simply "connected": isolated vertices have **no edges**, so an Euler circuit doesn't need to visit them. They're allowed to float around freely. Only the *edge-carrying* part has to be in one piece.
+For the component part, notice that a circuit is one continuous journey. Every step crosses an edge, so it can never jump between disconnected pieces. It stays inside whichever component it starts in. But an Euler circuit must contain every edge of G. If there were two non-trivial components, each would hold at least one edge, and C would have to contain edges from both. It cannot reach across. So there is at most one non-trivial component.
 
----
+For the degrees, the picture is this.
 
-## ★ Euler's Theorem
+![](figures/euler-2-pairing.svg)
 
-> **There exists an Euler circuit in G if and only if G has at most one non-trivial component and every vertex in G has even degree.**
+Every time the circuit visits a vertex it uses exactly two edges there, one to arrive and one to leave. So the edges at a vertex pair up, one pair per visit. If the circuit passes through a vertex t times it consumes 2t edges there, and since the circuit uses every edge of G, that is all of them. So the degree is 2t, which is even.
 
-*(My notes wrote "every vertex in the graph G has at most one non-trivial component" — that's a slip; it's **G** that has at most one non-trivial component.)*
+The starting vertex needs one extra remark. The journey leaves it at the very beginning and returns to it at the very end, and those two edges look unpaired. But the circuit is closed, so pair the first edge with the last. If it also passes through the start t times in the middle, the degree is 2t + 2, still even.
 
-"If and only if" means we owe **two** proofs, one in each direction. Those are Lemma 1 and Lemma 2.
+An isolated vertex has degree 0, which is even too.
 
-| | Direction | Name |
-|---|---|---|
-| ⇒ | Euler circuit **exists** ⇒ conditions hold | **Lemma 1** (the easy half) |
-| ⇐ | conditions hold ⇒ Euler circuit **exists** | **Lemma 2** (the hard half) |
+## Lemma 2, the hard half
 
----
+Claim. If G has at most one non-trivial component and every vertex has even degree, then G has an Euler circuit.
 
-## Lemma 1 — the necessary direction
+There are two proofs of this. The class did induction on the number of edges first, then a shorter argument two days later. The shorter one is [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]], and it is the one I would learn, so here it is.
 
-> **If G has an Euler circuit, then G has at most one non-trivial component and every vertex in G has even degree.**
+Take a maximal trail Q, meaning a trail that cannot be extended at either end. Such a thing exists because trails cannot go on forever in a finite graph. We show two things about it: that it must be closed, and that it must already contain every edge. Together those make it an Euler circuit.
 
-### Proof
+### A maximal trail must be closed
 
-Let **C** be an Euler circuit of G.
+Suppose instead that Q is open, running from u to some different vertex v.
 
-> **Structure:** three claims — (a) the components, (b) non-start vertices, (c) the start vertex — then combine.
+![](figures/euler-3-open.svg)
 
-#### Claim (a): at most one non-trivial component
+Count the edges of Q that touch v. Every time the trail passes through v it uses two edges, one in and one out. But the trail also finishes at v, and that final arrival uses one more. So the total is even plus one, which is odd.
 
-A circuit is a single continuous journey. It never teleports — every step crosses an edge. So **C stays entirely inside the connected component where it starts.**
+The degree of v is even by hypothesis. An odd number cannot equal an even one, so Q has not used all the edges at v. At least one is left over. Take it and extend the trail, which contradicts Q being maximal.
 
-Now, C must contain **every** edge of G (that's what "Euler" means). If G had **two** non-trivial components, each would contain at least one edge, and C would have to contain edges from **both**. But C can't reach across from one component to the other. **Contradiction.**
+This is what the note in class meant by calling the endpoint an odd vertex. An open trail makes its own endpoint behave as though it had odd degree.
 
-Therefore G has **at most one** non-trivial component. ✓
+So Q is closed, which makes it a circuit.
 
-#### Claim (b) and (c): every vertex has even degree
+### A maximal trail must use every edge
 
-Here's the key observation:
+Suppose some edge of G is missing from Q.
 
-> **Every time the circuit visits a vertex, it uses exactly 2 edges — one to come *in*, one to go *out*.**
+![](figures/euler-4-extend.svg)
 
-So we can **pair up** the edges at each vertex: each visit consumes one in-edge and one out-edge, one pair.
+First find a missing edge that touches Q. If some missing edge already has an endpoint on Q, take it. Otherwise take any missing edge and follow a shortest path from it back to Q. The last edge of that path is missing from Q as well, because every vertex before the landing point lies off Q.
 
-**Case 1 — a vertex v that isn't the start.** Suppose the circuit passes through v exactly **ℓ** times. Each visit uses 2 edges, so the circuit uses **2ℓ** edges at v. Because the circuit is an *Euler* circuit it contains **all** edges of G, so *every* edge touching v is among these. Hence
+Either way we have an unused edge e with an endpoint z sitting on Q.
 
-$$\deg(v) = 2\ell \quad \text{— even} \;✓$$
+Now use the fact that Q is closed. A closed trail can be started at any of its vertices, so start at z, go all the way round Q and come back to z, then step out along e. No edge repeats, since e was not in Q. That is a longer trail, which again contradicts maximality.
 
-**Case 2 — the starting vertex v₀.** This is the case my notes trailed off on. The journey **leaves** v₀ at the very beginning and **returns** to it at the very end. Those two edges — the **starting edge** and the **ending edge** — are unmatched at first glance, but since the circuit is *closed* (it ends where it began), we simply **pair the starting edge with the ending edge**. That's one more pair.
+So Q contains every edge.
 
-If the circuit additionally passes *through* v₀ in the middle **ℓ** times, those contribute 2ℓ edges, plus the start/end pair contributes 2:
+Being closed is exactly what makes this work. An open trail could not be restarted at whichever vertex happened to be convenient.
 
-$$\deg(v_0) = 2\ell + 2 = 2(\ell+1) \quad \text{— even} \;✓$$
+### Putting the two together
 
-**Case 3 — an isolated vertex.** Degree 0, which is even ✓
+Q is closed, so it is a circuit, and it contains every edge, so it is an Euler circuit. Lemma 2 is proved, and with Lemma 1 the theorem follows.
 
-Every vertex has even degree. ∎
+## Using the theorem in practice
 
-> **Intuition to keep:** an Euler circuit "consumes" edges at a vertex strictly two at a time. Anything left over would strand you. An odd-degree vertex always leaves you stuck with an unused edge and no way out.
+The useful form is the contrapositive. Lemma 1 says
 
----
+if there is an Euler circuit, then (one non-trivial component) and (all degrees even).
 
-## Lemma 2 — the sufficient direction
+Negating a statement of the form P implies Q and R gives
 
-> **If G has at most one non-trivial component and every vertex in G has even degree, then G has an Euler circuit.**
+if not Q or not R, then not P,
 
-This is the harder half. Proof is by **induction on the number of edges** (as flagged in class: *"induction on no. of edges"*).
+because the negation of Q and R is not Q or not R. That is De Morgan's law, and the and has turned into an or. In words:
 
-> ⚠️ **There is a second, shorter proof of this lemma** — the **maximal trail / extremal argument** given in the 29 July class. See [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] Part A. It avoids the fiddly component-splicing in Step 4 below. Worth knowing both.
+if G has more than one non-trivial component, or even one vertex of odd degree, then G has no Euler circuit.
 
-### Stepping stone we already have
+The or is what makes it practical. To rule out an Euler circuit you only need to catch a single offending vertex.
 
-From [[2026-07-24 Preliminaries]] §6, **Lemma B**:
+## Konigsberg
 
-> **δ(G) ≥ 2 ⇒ G contains a cycle C.**
+![](figures/euler-5-konigsberg.svg)
 
-*(This is exactly the "δ ≥ 2 ⇒ ∃ a cycle C in G" line at the top of my page.)*
+This is the problem Euler solved in 1736, usually taken as the start of graph theory. Four land masses joined by seven bridges, and the question was whether you could walk a route crossing every bridge exactly once and return home. That is asking for an Euler circuit.
 
-### Proof
+Every one of the four degrees is odd. One odd vertex is already fatal, and here there are four. So the walk is impossible.
 
-**Induction on m, the number of edges.**
+## Euler against Hamilton
 
-#### Base case: m = 0
+Worth holding onto, because the two questions sound almost identical and are not.
 
-There are no edges. The "empty circuit" — stand at a vertex and don't move — trivially contains all 0 edges. ✓
+An Euler circuit must cover every edge. A Hamiltonian cycle must cover every vertex. Euler's theorem settles the first completely, and you can check it by reading off degrees. The second is NP-complete, with no efficient characterisation known.
 
-#### Inductive hypothesis
+Two near mirror images, sitting on opposite sides of what is computationally reasonable.
 
-Assume the lemma holds for every graph with **fewer than m** edges.
+## What to remember
 
-#### Inductive step
+Trail means no repeated edges, path means no repeated vertices, circuit means a closed trail. A visit to a vertex burns exactly two edges, which is the whole of Lemma 1. A maximal trail cannot be open, because an open trail leaves its endpoint with an odd count. A closed trail can be restarted anywhere, which is what lets you splice on a leftover edge. Isolated vertices do not matter, since an Euler circuit owes a visit only to edges.
 
-Let G have **m ≥ 1** edges, all degrees even, at most one non-trivial component. Call that non-trivial component **H** (it exists since m ≥ 1).
+## Still unclear
 
-**Step 1 — find a cycle.** Every vertex of H has degree ≥ 1 (it's in a connected component with edges) and **even**, so degree ≥ **2**. Thus δ(H) ≥ 2, and by the stepping stone **H contains a cycle C**.
-
-**Step 2 — rip the cycle out.** Let **G′ = G − E(C)** (delete the cycle's *edges*, keep all vertices).
-
-> **Degrees stay even.** A cycle touches each of its vertices exactly **twice** (one edge in, one edge out). So every vertex loses **either 0 or 2** from its degree. Even − 0 = even, even − 2 = even ✓
-
-And G′ has **fewer edges** than G, so the inductive hypothesis is available.
-
-**Step 3 — the "2 cases" from class.** After deleting C, is G′ still in one piece?
-
-- **Case (i): G′ is connected** (at most one non-trivial component). The hypothesis applies directly.
-- **Case (ii): G′ is not connected** — deleting the cycle may have shattered H into **several** non-trivial components D₁, D₂, …, Dₜ.
-
-Case (ii) is the reason we can't apply induction naively to G′ as a whole. **The fix:** apply the inductive hypothesis to **each component separately**. Each Dₛ is connected and has all even degrees, and has fewer than m edges, so **each Dₛ has its own Euler circuit**.
-
-**Step 4 — every piece touches the cycle.** *(The crucial gluing fact.)*
-
-> **Claim:** every non-trivial component D of G′ shares at least one vertex with C.
-
-*Why:* pick any vertex **u** in D. Since H was **connected**, there is a path in H from u to some vertex of C. Walk along it and let **x** be the **first** vertex on this path that lies on C. Every edge before reaching x joins two vertices that are **not on C** — so none of those edges belong to C, meaning they all survive into G′. Hence u and x are connected **within G′**, so **x ∈ D**. And x ∈ V(C). ✓
-
-**Step 5 — splice everything into one circuit.** Now traverse **C**. Whenever you arrive at a vertex that belongs to some component Dₛ you haven't handled yet, **take a detour**: run Dₛ's entire Euler circuit (it starts and ends at that very vertex, so you come back to where you left off), then carry on along C.
-
-```
-        ┌──── detour through D₁'s Euler circuit ────┐
-        │                                            │
-   C:  ─●──────────●─────────────●──────────────────●─ …
-                   │             │
-                   └── detour ───┘  through D₂'s Euler circuit
-```
-
-The result is a **single closed trail** that uses:
-- every edge of **C** (walking the cycle once), and
-- every edge of every **Dₛ** (each detour is an Euler circuit of that piece),
-
-which together are **all the edges of G** — each exactly once. That is an **Euler circuit** of G. ∎
-
----
-
-## Putting it together
-
-**Lemma 1 + Lemma 2 = Euler's Theorem.** Lemma 1 proves ⇒, Lemma 2 proves ⇐, so the "if and only if" is established. ∎
-
----
-
-## The contrapositive — how to actually *use* the theorem
-
-Lemma 1 has the logical shape
-
-$$P \implies (Q \wedge R)$$
-
-where **P** = "G has an Euler circuit", **Q** = "at most one non-trivial component", **R** = "every vertex has even degree".
-
-Its contrapositive is
-
-$$\neg(Q \wedge R) \implies \neg P$$
-
-and by **De Morgan's law**, ¬(Q ∧ R) = ¬Q ∨ ¬R, giving
-
-$$\neg Q \;\vee\; \neg R \implies \neg P$$
-
-*(My notes wrote this as `(Q∧R)′ ⇒ P′`, then `Q′ ∨ R′ ⇒ P′` — same thing.)*
-
-**Read out in words:**
-
-> **If G has more than one non-trivial component, OR at least one vertex of G has odd degree, then G does NOT have an Euler circuit.**
-
-Note how the **AND flipped into an OR**. That's De Morgan, and it's the whole practical value: to rule out an Euler circuit you only need to catch **one** offending vertex.
-
-### Königsberg — "Bridge tour is not possible"
-
-The classic application. Four land masses (A, B, C, D) joined by seven bridges; the question was whether you could walk a route crossing every bridge exactly once and return home — i.e. an **Euler circuit**.
-
-```
-        A
-       /|\
-      / | \        C ══════ D      (multiple bridges
-     /  |  \        \      /        between the same
-    B---+---+        \    /         land masses)
-                       ...
-```
-
-Degrees in the Königsberg graph: **3, 3, 3, 5** — every single one is **odd**.
-
-By the contrapositive, one odd-degree vertex is already fatal. Here there are four. So **no Euler circuit exists — the bridge tour is impossible.** ∎
-
-> This is the problem Euler solved in 1736, generally taken as the birth of graph theory.
-
----
-
-## Aside — Hamiltonian cycles and TSP
-
-Class contrasted Euler circuits with Hamiltonian ones. The distinction is worth pinning down:
-
-| | **Euler circuit** | **Hamiltonian cycle** |
-|---|---|---|
-| Must cover | every **edge** exactly once | every **vertex** exactly once |
-| Test | easy — just check degrees | **NP-complete** |
-| Verdict | solved (Euler's Theorem) | no known efficient characterisation |
-
-**"Best way to check if Hamiltonian cycle?"** — my notes list guesses (`ⁿC_m`, `n!`, …). The honest answer:
-
-- **Brute force:** try every ordering of vertices → about **n!** checks. Hopeless beyond n ≈ 15.
-- **Best known exact algorithm:** Held–Karp dynamic programming, **O(2ⁿ · n²)** — still exponential, but far better than n!.
-- **The travelling salesman problem (TSP)** is the optimisation cousin (cheapest Hamiltonian cycle) and is **NP-complete** in its decision form.
-
-The striking lesson: **"cover every edge" is easy; "cover every vertex" is hard.** Two questions that sound like near-mirror images sit on opposite sides of the tractability line.
-
----
-
-## Takeaways
-
-1. **Trail** = no repeated *edges*. **Path** = no repeated *vertices*. **Circuit** = closed trail. Keep them separate.
-2. **Euler circuit ⟺ ≤1 non-trivial component AND all degrees even.**
-3. The engine of Lemma 1: **a visit to a vertex burns exactly 2 edges** — so degrees pair up and must be even.
-4. The engine of Lemma 2: **pull out a cycle, recurse on what's left, then splice the pieces back in as detours.**
-5. Deleting a cycle's edges **preserves even-ness** (each vertex loses 0 or 2) — that's what keeps the induction alive.
-6. **De Morgan matters:** the useful form of the theorem flips AND into OR, so a *single* odd vertex kills the whole thing.
-7. Isolated vertices are harmless — an Euler circuit only owes a visit to **edges**, not vertices.
-
----
-
-## Doubts / to revisit
-
-- [ ] Statement typo in my notes: "every vertex in the graph G has at most one non-trivial component" → should be "**G** has at most one non-trivial component".
-- [ ] The Case (ii) gluing step (Step 4) is the subtle one — re-read if Lemma 2 feels shaky.
-- [ ] Hamiltonian cycle proof techniques — flagged in class for later.
+- My page states the theorem as every vertex in G has at most one non-trivial component. That is a slip. It is G that has at most one non-trivial component.
+- The induction proof of Lemma 2 needs care when removing a cycle splits the graph. The maximal trail argument avoids that entirely, which is why I prefer it.

@@ -1,8 +1,8 @@
-# Graph Theory — Course Notes
+# Graph Theory. Course Notes
 
-Worked notes for an advanced graph theory course, following **Diestel, *Graph Theory* (2nd ed.)**, with supplementary material from West and the NPTEL video course by Dr. L. Sunil Chandran (IISc Bangalore).
+Worked notes for an advanced graph theory course, following Diestel, *Graph Theory* (2nd ed.), with supplementary material from West and the NPTEL video course by Dr. L. Sunil Chandran (IISc Bangalore).
 
-Every theorem here is **proved in full**. Proofs are broken into numbered sub-claims, each established separately and then combined — the aim is that nothing requires a leap.
+Every theorem here is proved in full. Proofs are broken into numbered sub-claims, each established separately and then combined, the aim is that nothing requires a leap.
 
 ---
 
@@ -18,19 +18,19 @@ Already cloned it? Grab the latest:
 cd graph-theory && git pull
 ```
 
-**Reading them in Obsidian** — clone straight into a vault and the `[[wiki-links]]` between notes become clickable, which is how they were written:
+Reading them in Obsidian, clone straight into a vault and the `[[wiki-links]]` between notes become clickable, which is how they were written:
 
 ```bash
 git clone https://github.com/abhijitkar10/graph-theory.git ~/Obsidian/MyVault/"Graph Theory"
 ```
 
-Replace `~/Obsidian/MyVault` with your own vault path. No Obsidian? The files are plain Markdown — read them right here on GitHub, or in any text editor.
+Replace `~/Obsidian/MyVault` with your own vault path. No Obsidian? The files are plain Markdown, read them right here on GitHub, or in any text editor.
 
 ---
 
 ## Start here
 
-**[Master Notes](Master%20Notes.md)** — everything organised by *concept dependency* rather than by the date it was taught. Ten levels, a dependency map, a complete index of every result, and bridge sections filling gaps the lectures skipped.
+[Master Notes](Master%20Notes.md), everything organised by *concept dependency* rather than by the date it was taught. Ten levels, a dependency map, a complete index of every result, and bridge sections filling gaps the lectures skipped.
 
 If you want a specific proof, the master file tells you which note holds it.
 
@@ -38,7 +38,7 @@ If you want a specific proof, the master file tells you which note holds it.
 
 ## Class notes
 
-Read in this order (the numbers matter — filenames sort differently):
+Read in this order (the numbers matter, filenames sort differently):
 
 | # | Note | Covers |
 |---|---|---|
@@ -46,18 +46,21 @@ Read in this order (the numbers matter — filenames sort differently):
 | 2 | [Long Path Theorem](2026-07-24%20Long%20Path%20Theorem.md) | every connected graph has a path of length ≥ min{2δ, n−1}, proved in six claims |
 | 3 | [Euler Circuits](2026-07-27%20Euler%20Circuits.md) | trails, circuits, components, Euler's theorem with both lemmas, Königsberg |
 | 4 | [Euler by Extremal Argument, Matchings, MIS in Trees](2026-07-29%20Euler%20by%20Extremal%20Argument%2C%20Matchings%2C%20MIS%20in%20Trees.md) | a second, shorter proof of Euler via maximal trails; maximum independent sets in trees |
-| 5 | [Matchings 2 — Berge and König](2026-07-29%20Matchings%202%20%E2%80%94%20Berge%20and%20K%C3%B6nig.md) | augmenting paths, Berge's theorem, ν ≤ τ ≤ 2ν, König's theorem |
+| 5 | [Matchings 2 — Berge and König](2026-07-29%20Matchings%202%20%E2%80%94%20Berge%20and%20K%C3%B6nig.md) | augmenting paths, Berge's theorem, α′ ≤ β ≤ 2α′, König's theorem |
 | 6 | [Tutorial 1](Tutorial%201.md) | hypercubes and planarity, girth bounds, induced paths, the Helly property |
 | 7 | [Matchings in Bipartite Graphs](2026-08-10%20Matchings%20in%20Bipartite%20Graphs.md) | perfect matchings, and why every bipartite graph has a vertex lying in *every* maximum matching |
+| 8 | [König by Induction, Hall, and Factors](2026-08-10%20K%C3%B6nig%20by%20Induction%2C%20Hall%2C%20and%20Factors.md) | a third proof of König, Hall's theorem, k-factors, and why every 2k-regular graph has a 2-factor |
+| 9 | [Tutte's 1-Factor Theorem](2026-08-19%20Tutte%27s%201-Factor%20Theorem.md) | odd components, bad sets, and the full proof of Tutte's theorem |
 
 ## Problem sets
 
-- **[Assignment 1](Assignment%201.md)** — all 23 exercises from Diestel Chapter 1, worked in full
+- [Assignment 1](Assignment%201.md), all 23 exercises from Diestel Chapter 1, worked in full
 
 ## NPTEL video-course notes
 
-- [Index](nptel/NPTEL%20Index.md) — all 40 lectures mapped to syllabus topics
-- [Course Resources](nptel/Course%20Resources.md) — what written material exists online
+- [Watch Guide](nptel/Watch%20Guide.md), which lectures to watch for each topic, and the three kinds of coverage gap
+- [Index](nptel/NPTEL%20Index.md), all 40 lectures mapped to syllabus topics
+- [Course Resources](nptel/Course%20Resources.md), what written material exists online
 - [Lecture 01 — Vertex Cover and Independent Set](nptel/Lec%2001%20%E2%80%94%20Vertex%20Cover%20and%20Independent%20Set.md)
 - [Lecture 02 — König's Theorem and Hall's Theorem](nptel/Lec%2002%20%E2%80%94%20K%C3%B6nig%27s%20Theorem%20and%20Hall%27s%20Theorem.md)
 - [Lecture 03 — Hall's Theorem and Applications](nptel/Lec%2003%20%E2%80%94%20More%20on%20Hall%27s%20Theorem%20and%20Applications.md)
@@ -70,10 +73,10 @@ Konig's theorem · Hall's marriage theorem and its defect version · Berge's the
 
 ## Two notes on reading these
 
-**Written in Obsidian.** Cross-references use `[[wiki-link]]` syntax, which GitHub renders as plain text rather than as a link. Everything is still readable, but if you clone the folder into an Obsidian vault the cross-links become navigable.
+Written in Obsidian. Cross-references use `[[wiki-link]]` syntax, which GitHub renders as plain text rather than as a link. Everything is still readable, but if you clone the folder into an Obsidian vault the cross-links become navigable.
 
-**Equations use LaTeX** (`$...$` and `$$...$$`). GitHub renders these natively; some other markdown viewers do not.
+Equations use LaTeX, with `$...$` inline and `$$...$$` on their own line. GitHub renders these natively; some other markdown viewers do not.
 
 ---
 
-*Notes prepared with the help of Claude. Errors are mine — corrections welcome via an issue.*
+*Notes prepared with the help of Claude. Errors are mine, corrections welcome via an issue.*

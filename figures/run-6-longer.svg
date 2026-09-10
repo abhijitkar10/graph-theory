@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">w sits off the cycle. Cutting the cycle open at v2 and hanging w on gives a longer path.</text>
+<path d="M 60 150 Q 272 -90 485 150" fill="none" stroke="#C0392B" stroke-width="2.5"/>
+<path d="M 570 150 Q 485 220 400 150" fill="none" stroke="#185FA5" stroke-width="2.5"/>
+<line x1="60" y1="150" x2="230" y2="150" stroke="#333333" stroke-width="2"/>
+<line x1="315" y1="150" x2="570" y2="150" stroke="#333333" stroke-width="2"/>
+<line x1="230" y1="150" x2="315" y2="150" stroke="#dddddd" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="272" y="138" text-anchor="middle" font-size="12" fill="#999999">cut here</text>
+<circle cx="60" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="145" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="230" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="315" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="400" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="485" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<circle cx="570" cy="150" r="7" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="60" y="180" text-anchor="middle" font-size="13" fill="#888888">v0</text>
+<text x="145" y="180" text-anchor="middle" font-size="13" fill="#888888">v1</text>
+<text x="230" y="180" text-anchor="middle" font-size="13" fill="#888888">v2</text>
+<text x="315" y="180" text-anchor="middle" font-size="13" fill="#888888">v3</text>
+<text x="400" y="180" text-anchor="middle" font-size="13" fill="#888888">v4</text>
+<text x="485" y="180" text-anchor="middle" font-size="13" fill="#888888">v5</text>
+<text x="570" y="180" text-anchor="middle" font-size="13" fill="#888888">v6</text>
+<line x1="230" y1="150" x2="145" y2="292" stroke="#3B6D11" stroke-width="2"/>
+<circle cx="145" cy="292" r="9" fill="#3B6D11"/>
+<text x="123" y="297" text-anchor="end" font-size="13" fill="#3B6D11">w</text>
+<text x="20" y="336" font-size="13" fill="#3B6D11">New path: w, v2, v1, v0, v5, v6, v4, v3. Eight vertices, so length 7, beating the original length 6.</text>
+</svg>

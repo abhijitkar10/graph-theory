@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">The obstruction for general graphs is parity, not neighbourhood size.</text>
+<line x1="120" y1="110" x2="86" y2="166" stroke="#333333" stroke-width="2"/>
+<line x1="86" y1="166" x2="154" y2="166" stroke="#333333" stroke-width="2"/>
+<line x1="154" y1="166" x2="120" y2="110" stroke="#333333" stroke-width="2"/>
+<line x1="86" y1="166" x2="330" y2="250" stroke="#bbbbbb" stroke-width="1.6"/>
+<circle cx="120" cy="110" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="120" y="114" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="86" cy="166" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="86" y="170" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="154" cy="166" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="154" y="170" text-anchor="middle" font-size="12" fill="#222222"></text>
+<line x1="250" y1="90" x2="216" y2="146" stroke="#333333" stroke-width="2"/>
+<line x1="216" y1="146" x2="284" y2="146" stroke="#333333" stroke-width="2"/>
+<line x1="284" y1="146" x2="250" y2="90" stroke="#333333" stroke-width="2"/>
+<line x1="216" y1="146" x2="330" y2="250" stroke="#bbbbbb" stroke-width="1.6"/>
+<circle cx="250" cy="90" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="250" y="94" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="216" cy="146" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="216" y="150" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="284" cy="146" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="284" y="150" text-anchor="middle" font-size="12" fill="#222222"></text>
+<line x1="400" y1="90" x2="366" y2="146" stroke="#333333" stroke-width="2"/>
+<line x1="366" y1="146" x2="434" y2="146" stroke="#333333" stroke-width="2"/>
+<line x1="434" y1="146" x2="400" y2="90" stroke="#333333" stroke-width="2"/>
+<line x1="366" y1="146" x2="330" y2="250" stroke="#bbbbbb" stroke-width="1.6"/>
+<circle cx="400" cy="90" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="400" y="94" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="366" cy="146" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="366" y="150" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="434" cy="146" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="434" y="150" text-anchor="middle" font-size="12" fill="#222222"></text>
+<line x1="540" y1="110" x2="506" y2="166" stroke="#333333" stroke-width="2"/>
+<line x1="506" y1="166" x2="574" y2="166" stroke="#333333" stroke-width="2"/>
+<line x1="574" y1="166" x2="540" y2="110" stroke="#333333" stroke-width="2"/>
+<line x1="506" y1="166" x2="330" y2="250" stroke="#bbbbbb" stroke-width="1.6"/>
+<circle cx="540" cy="110" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="540" y="114" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="506" cy="166" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="506" y="170" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="574" cy="166" r="9" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="574" y="170" text-anchor="middle" font-size="12" fill="#222222"></text>
+<ellipse cx="330" cy="250" rx="52" ry="26" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="330" y="255" text-anchor="middle" font-size="14" fill="#3B6D11">S</text>
+<text x="20" y="314" text-anchor="start" font-size="13" fill="#666666">Each triangle has three vertices, an odd number, so a matching inside it always leaves one vertex over.</text>
+<text x="20" y="338" text-anchor="start" font-size="13" fill="#C0392B">That leftover must pair with something in S. With four triangles and a smaller S, somebody is stranded.</text>
+<text x="20" y="358" text-anchor="start" font-size="13" fill="#3B6D11">Hall counts neighbours and sees nothing wrong here. What matters is the parity of the leftover pieces.</text>
+</svg>

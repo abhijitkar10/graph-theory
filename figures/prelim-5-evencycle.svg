@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Three neighbours of an endpoint give three cycles, and they cannot all be odd.</text>
+<line x1="70" y1="150" x2="200" y2="150" stroke="#333333" stroke-width="2"/>
+<line x1="200" y1="150" x2="330" y2="150" stroke="#333333" stroke-width="2"/>
+<line x1="330" y1="150" x2="460" y2="150" stroke="#333333" stroke-width="2"/>
+<line x1="460" y1="150" x2="590" y2="150" stroke="#333333" stroke-width="2"/>
+<path d="M 70 150 Q 135 110 200 150" fill="none" stroke="#C0392B" stroke-width="2.5"/>
+<path d="M 70 150 Q 200 80 330 150" fill="none" stroke="#185FA5" stroke-width="2.5"/>
+<path d="M 70 150 Q 265 50 460 150" fill="none" stroke="#3B6D11" stroke-width="2.5"/>
+<circle cx="70" cy="150" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="70" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<circle cx="200" cy="150" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="200" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<circle cx="330" cy="150" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="330" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<circle cx="460" cy="150" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="460" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<circle cx="590" cy="150" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="590" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<circle cx="70" cy="150" r="11" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="70" y="155" text-anchor="middle" font-size="13" fill="#222222"></text>
+<text x="70" y="182" text-anchor="middle" font-size="12" fill="#C0392B">v0</text>
+<text x="200" y="182" text-anchor="middle" font-size="12" fill="#666666">vi</text>
+<text x="330" y="182" text-anchor="middle" font-size="12" fill="#666666">vj</text>
+<text x="460" y="182" text-anchor="middle" font-size="12" fill="#666666">vl</text>
+<text x="20" y="238" text-anchor="start" font-size="13" fill="#666666">Write a for the gap from vi to vj, and b for the gap from vj to vl.</text>
+<text x="20" y="266" text-anchor="start" font-size="13" fill="#C0392B">Cycle through vi and vj has length a + 2.</text>
+<text x="20" y="290" text-anchor="start" font-size="13" fill="#185FA5">Cycle through vj and vl has length b + 2.</text>
+<text x="20" y="314" text-anchor="start" font-size="13" fill="#3B6D11">Cycle through vi and vl has length a + b + 2.</text>
+<text x="20" y="344" text-anchor="start" font-size="13" fill="#666666">For all three to be odd you would need a, b and a+b all odd. But odd plus odd is even, so one of them is even.</text>
+</svg>

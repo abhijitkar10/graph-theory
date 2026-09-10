@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Both sets live in positions 1 to 6. With 3 and 3 members in 6 slots they need not overlap, but here they do.</text>
+<text x="20" y="42" font-size="13" fill="#C0392B">A = {1, 3, 5}</text>
+<rect x="123" y="60" width="44" height="32" rx="4" fill="#FCEBEB" stroke="#C0392B" stroke-width="2.5"/>
+<text x="145" y="82" text-anchor="middle" font-size="14" fill="#222222">1</text>
+<rect x="208" y="60" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="230" y="82" text-anchor="middle" font-size="14" fill="#aaaaaa">2</text>
+<rect x="293" y="60" width="44" height="32" rx="4" fill="#FCEBEB" stroke="#C0392B" stroke-width="2.5"/>
+<text x="315" y="82" text-anchor="middle" font-size="14" fill="#222222">3</text>
+<rect x="378" y="60" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="400" y="82" text-anchor="middle" font-size="14" fill="#aaaaaa">4</text>
+<rect x="463" y="60" width="44" height="32" rx="4" fill="#FCEBEB" stroke="#C0392B" stroke-width="2.5"/>
+<text x="485" y="82" text-anchor="middle" font-size="14" fill="#222222">5</text>
+<rect x="548" y="60" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="570" y="82" text-anchor="middle" font-size="14" fill="#aaaaaa">6</text>
+<text x="20" y="132" font-size="13" fill="#185FA5">B = {3, 5, 6}</text>
+<rect x="123" y="150" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="145" y="172" text-anchor="middle" font-size="14" fill="#aaaaaa">1</text>
+<rect x="208" y="150" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="230" y="172" text-anchor="middle" font-size="14" fill="#aaaaaa">2</text>
+<rect x="293" y="150" width="44" height="32" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="2.5"/>
+<text x="315" y="172" text-anchor="middle" font-size="14" fill="#222222">3</text>
+<rect x="378" y="150" width="44" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+<text x="400" y="172" text-anchor="middle" font-size="14" fill="#aaaaaa">4</text>
+<rect x="463" y="150" width="44" height="32" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="2.5"/>
+<text x="485" y="172" text-anchor="middle" font-size="14" fill="#222222">5</text>
+<rect x="548" y="150" width="44" height="32" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="2.5"/>
+<text x="570" y="172" text-anchor="middle" font-size="14" fill="#222222">6</text>
+<rect x="288" y="52" width="54" height="130" rx="6" fill="none" stroke="#3B6D11" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="458" y="52" width="54" height="130" rx="6" fill="none" stroke="#3B6D11" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="20" y="222" font-size="13" fill="#3B6D11">Positions 3 and 5 are marked in both rows. Take i = 5.</text>
+<text x="20" y="248" font-size="13" fill="#3B6D11">5 in A means v0 joins v5.   5 in B means v6 joins v4, the vertex one step before v5.</text>
+<text x="20" y="274" font-size="13" fill="#3B6D11">Those two edges cross. That is exactly what we needed.</text>
+</svg>

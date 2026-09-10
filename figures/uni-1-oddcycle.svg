@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="340" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">In an odd cycle, no vertex sits in every maximum matching.</text>
+<line x1="130.0" y1="202.0" x2="71.03449598970047" y2="159.15905365124675" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="71.03449598970047" y1="159.15905365124675" x2="93.55731435786666" y2="89.84094634875326" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="93.55731435786666" y1="89.84094634875326" x2="166.4426856421333" y2="89.84094634875325" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="166.4426856421333" y1="89.84094634875325" x2="188.96550401029953" y2="159.15905365124672" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="188.96550401029953" y1="159.15905365124672" x2="130.0" y2="202.0" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="130.0" y1="202.0" x2="71.03449598970047" y2="159.15905365124675" stroke="#3B6D11" stroke-width="4"/>
+<line x1="93.55731435786666" y1="89.84094634875326" x2="166.4426856421333" y2="89.84094634875325" stroke="#3B6D11" stroke-width="4"/>
+<circle cx="130.0" cy="202.0" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="130.0" y="206.0" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="71.03449598970047" cy="159.15905365124675" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="71.03449598970047" y="163.15905365124675" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="93.55731435786666" cy="89.84094634875326" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="93.55731435786666" y="93.84094634875326" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="166.4426856421333" cy="89.84094634875325" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="166.4426856421333" y="93.84094634875325" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="188.96550401029953" cy="159.15905365124672" r="10" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="188.96550401029953" y="163.15905365124672" text-anchor="middle" font-size="12" fill="#222222"></text>
+<text x="130" y="232" text-anchor="middle" font-size="12" fill="#C0392B">misses one vertex</text>
+<line x1="330.0" y1="202.0" x2="271.0344959897005" y2="159.15905365124675" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="271.0344959897005" y1="159.15905365124675" x2="293.55731435786663" y2="89.84094634875326" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="293.55731435786663" y1="89.84094634875326" x2="366.4426856421333" y2="89.84094634875325" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="366.4426856421333" y1="89.84094634875325" x2="388.9655040102995" y2="159.15905365124672" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="388.9655040102995" y1="159.15905365124672" x2="330.0" y2="202.0" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="271.0344959897005" y1="159.15905365124675" x2="293.55731435786663" y2="89.84094634875326" stroke="#3B6D11" stroke-width="4"/>
+<line x1="366.4426856421333" y1="89.84094634875325" x2="388.9655040102995" y2="159.15905365124672" stroke="#3B6D11" stroke-width="4"/>
+<circle cx="330.0" cy="202.0" r="10" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="330.0" y="206.0" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="271.0344959897005" cy="159.15905365124675" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="271.0344959897005" y="163.15905365124675" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="293.55731435786663" cy="89.84094634875326" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="293.55731435786663" y="93.84094634875326" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="366.4426856421333" cy="89.84094634875325" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="366.4426856421333" y="93.84094634875325" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="388.9655040102995" cy="159.15905365124672" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="388.9655040102995" y="163.15905365124672" text-anchor="middle" font-size="12" fill="#222222"></text>
+<text x="330" y="232" text-anchor="middle" font-size="12" fill="#C0392B">misses one vertex</text>
+<line x1="530.0" y1="202.0" x2="471.0344959897005" y2="159.15905365124675" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="471.0344959897005" y1="159.15905365124675" x2="493.55731435786663" y2="89.84094634875326" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="493.55731435786663" y1="89.84094634875326" x2="566.4426856421334" y2="89.84094634875325" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="566.4426856421334" y1="89.84094634875325" x2="588.9655040102996" y2="159.15905365124672" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="588.9655040102996" y1="159.15905365124672" x2="530.0" y2="202.0" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="566.4426856421334" y1="89.84094634875325" x2="588.9655040102996" y2="159.15905365124672" stroke="#3B6D11" stroke-width="4"/>
+<line x1="530.0" y1="202.0" x2="471.0344959897005" y2="159.15905365124675" stroke="#3B6D11" stroke-width="4"/>
+<circle cx="530.0" cy="202.0" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="530.0" y="206.0" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="471.0344959897005" cy="159.15905365124675" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="471.0344959897005" y="163.15905365124675" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="493.55731435786663" cy="89.84094634875326" r="10" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="493.55731435786663" y="93.84094634875326" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="566.4426856421334" cy="89.84094634875325" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="566.4426856421334" y="93.84094634875325" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="588.9655040102996" cy="159.15905365124672" r="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="588.9655040102996" y="163.15905365124672" text-anchor="middle" font-size="12" fill="#222222"></text>
+<text x="530" y="232" text-anchor="middle" font-size="12" fill="#C0392B">misses one vertex</text>
+<text x="20" y="286" text-anchor="start" font-size="13" fill="#666666">Every maximum matching in C5 has two edges and leaves exactly one vertex out.</text>
+<text x="20" y="310" text-anchor="start" font-size="13" fill="#C0392B">The cycle looks the same from every vertex, so each one is the leftover in some matching.</text>
+<text x="20" y="334" text-anchor="start" font-size="13" fill="#666666">So there is no vertex common to all of them. Odd cycles are the obstruction the theorem has to rule out.</text>
+</svg>

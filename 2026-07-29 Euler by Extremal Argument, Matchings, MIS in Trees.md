@@ -5,310 +5,129 @@ seq: 4
 class: 3
 ---
 
-# 4 · 2026-07-29 — Euler by Extremal Argument, Matchings, MIS in Trees
+# 4 · 2026-07-29 — Euler again, matchings, and independent sets in trees
 
-**◀ Previous:** [[2026-07-27 Euler Circuits]]  ·  **Hub:** [[Graph Theory]]  ·  **Next ▶** [[2026-07-29 Matchings 2 — Berge and König]]
+Previous: [[2026-07-27 Euler Circuits]] · Hub: [[Graph Theory]] · Next: [[2026-07-29 Matchings 2 — Berge and König]]
 
-**Covered:** a second proof of Euler's Lemma 2 using a maximal trail, the definition of matchings with bounds for standard families, and finding a maximum independent set in a tree.
+Three separate things this class. A second and better proof of the hard half of Euler's theorem, the definition of a matching with some basic bounds, and how to find a largest independent set in a tree.
 
----
+## How much this matters
 
-## 0. Symbols used today
+Overall this note is useful. Three loosely related things, of uneven weight.
 
-| Symbol | Meaning |
+Know cold: [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees#Part C, largest independent set in a tree|the exchange argument for leaves]]. It is short, and the same move justifies the matching version in the next note.
+
+Know the statement and the numbers: [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees#Part B, matchings|the matching bound]] and the values for the standard families. Cheap marks.
+
+Know the idea: the maximal trail proof in part A, though the full version lives in [[2026-07-27 Euler Circuits]] and that is where to learn it.
+
+Read once: the dynamic program for independent sets. Worth understanding, but an algorithm is less likely to be asked than a theorem.
+
+## Part A, Euler's hard half by a different route
+
+The claim is the same one from [[2026-07-27 Euler Circuits]].
+
+Claim. If G has at most one non trivial component and every vertex has even degree, then G has an Euler circuit.
+
+The earlier proof went by induction on the number of edges. This one takes a maximal trail and shows it is already everything you wanted. It is shorter, and it avoids the awkward step where deleting a cycle shatters the graph.
+
+The full argument, with figures, now lives in [[2026-07-27 Euler Circuits]] since that is where the theorem is stated. Two things to keep in mind.
+
+A maximal trail must be closed. If it ended somewhere other than where it started, it would have used an odd number of edges at that endpoint, two for each pass through plus one for the final arrival. Every degree is even, so an edge would be left over and the trail could be extended.
+
+A maximal trail must use every edge. Being closed, it can be restarted at any of its vertices, so any leftover edge touching it can be spliced on.
+
+Two clarifications from my page. Not every cycle is a maximal trail, because a cycle can still have unused edges hanging off its vertices. And a trail in general need not be closed, it is only maximal trails that are forced to be, and only under the even degree hypothesis.
+
+## Part B, matchings
+
+A matching is a set of edges in which no two edges share a vertex.
+
+From the example in class, on the graph with vertices a to g: the set containing ab, cd and ef is a matching, since all six endpoints are different. The set containing ab and ag is not, because a appears in both. The set containing gf, ad and bc is a matching.
+
+### How large can a matching be
+
+![](figures/match-1-bounds.svg)
+
+A matching of size v uses 2v distinct vertices, distinct precisely because no two of its edges share one. Those vertices all live in the graph, so 2v is at most n, which means the matching number is at most n over 2, rounded down.
+
+Values for the usual families:
+
+| Graph | maximum matching |
 |---|---|
-| **Q** | a trail (walk with no repeated **edges**) |
-| **E(Q), V(Q)** | the edge set / vertex set of Q |
-| **maximal trail** | a trail that **cannot be extended** at either end |
-| **ν(G)** | maximum matching size |
-| **MIS** | maximum independent set |
-| **leaf** | a vertex of degree 1 |
-| **n** | number of vertices |
+| path on n vertices | n over 2, rounded down |
+| cycle on n vertices | n over 2, rounded down |
+| star with m leaves | 1 |
+| complete graph on n vertices | n over 2, rounded down |
+| tree | anywhere from 1 up to n over 2 |
 
----
+The star is the interesting one. Every edge of a star contains the centre, so any two edges share it and a matching can hold at most one edge. However large the star grows, its matching number stays at 1. That is the extreme case where the general ceiling is as loose as it can be.
 
-# Part A — Euler's Lemma 2 again, by extremal argument
+My page writes this bound as the number of matchings being at most n over 2. That is not what is meant. It is the size of a largest matching, usually written α′(G) in the notation the course uses.
 
-In [[2026-07-27 Euler Circuits]] I proved Lemma 2 by **induction on the number of edges** (pull out a cycle, recurse, splice). Today's class gave a **different and shorter proof**: grab a *maximal* trail and show it must already be everything.
+There is also a guess on my page that the maximum matching in a tree is related to its number of levels. That does not hold. A star has one level below the root and matching number 1, while a long path has matching number about n over 2. Depth does not determine it, and there is no formula of that kind. You need an actual algorithm, and the greedy idea in part C works here too.
 
-> **Lemma 2.** If G has at most one non-trivial component and every vertex has even degree, then G has an **Euler circuit**.
+## Part C, largest independent set in a tree
 
-**The whole idea:** take a trail you cannot extend. Show (a) it must be closed, and (b) it must already contain every edge. Then it *is* an Euler circuit.
+The problem. Given a tree or forest, find a largest set of vertices with no edge between any two of them.
 
----
+This is NP hard in general graphs, as noted in [[Lec 01 — Vertex Cover and Independent Set]]. On trees it turns out to be easy, but the obvious first idea does not work.
 
-## ⚠️ First, clear up two confusions from my notes
+### The idea that fails
 
-**"Is every cycle maximal?"** — **No.** In my notes I wrote `abefa = befab`, which just says a closed trail can be written starting from any of its vertices. That's not the issue. The real point:
+Root the tree, put all vertices at odd levels in one pile and all vertices at even levels in the other, and take the bigger pile. Both piles are independent, since every edge joins consecutive levels and so never has both ends in the same pile.
 
-> **A cycle can fail to be maximal.** In the graph below, `a–b–e–f–a` is a closed trail, but the edge `bc` at vertex b is unused, so the trail extends.
+![](figures/mis-1-levels.svg)
 
-```
-   a ——— b ——— c
-   |     |
-   f ——— e ——— d
-```
+Here the odd levels give 4 vertices and the even levels give 3, so the method answers 4.
 
-Here `abefa` is a cycle but **not a maximal trail** — from b you can continue along bc. Maximal means *no unused edge at either endpoint*, which is stronger than *closed*.
+![](figures/mis-2-answer.svg)
 
-**"A trail does not have to be closed"** — correct. `a–b–c` is a perfectly good trail and it's open. What we're about to prove is that a **maximal** trail *cannot* be open, under our even-degree hypothesis.
+But b, c, d, e and f together form an independent set of size 5. The method missed it because the best answer mixes levels, and splitting by level forces you to take all of one side or all of the other.
 
----
+### The repair, as a dynamic program
 
-## Claim 1 — a maximal trail is closed
+The level idea works once each vertex decides for itself rather than the whole tree deciding at once. Root the tree and compute two numbers at every vertex v.
 
-> **Claim 1.** If every vertex of G has even degree, then any **maximal** trail Q is **closed** (starts and ends at the same vertex).
+Write MIS(v, 0) for the largest independent set in v's subtree that excludes v, and MIS(v, 1) for the largest one that includes v.
 
-**Proof of Claim 1.** Suppose Q is open, running from u to a different endpoint v.
+MIS(v, 0) is the sum over all children u of the larger of MIS(u, 0) and MIS(u, 1).
+MIS(v, 1) is 1 plus the sum over all children u of MIS(u, 0).
 
-Count the edges of Q at the vertex **v**. Every time the trail *passes through* v it consumes **2** edges (one in, one out). But the trail *ends* at v, so the final arrival consumes **1** more. Total edges of Q at v:
+The reasoning is direct. If v is excluded, its children are unconstrained, so each contributes whichever of its two options is larger. If v is included, then no child may be taken, since each is adjacent to v, so every child must contribute its excluded value. The 1 counts v itself.
 
-$$\underbrace{2 \times (\text{number of passes through } v)}_{\text{even}} \;+\; \underbrace{1}_{\text{the final arrival}} \;=\; \textbf{odd}.$$
+The answer is the larger of the two values at the root, computed from the leaves upward in time proportional to the number of vertices.
 
-But **deg(v) is even** by hypothesis. An even number cannot equal an odd number, so **not all** of v's edges are used by Q — at least one is left over.
+Running it on the tree above: each leaf has values 0 and 1. Vertex a has MIS(a,0) equal to 1+1 which is 2, and MIS(a,1) equal to 1+0+0 which is 1. The root has MIS(r,0) equal to 2+1+1+1 which is 5, and MIS(r,1) equal to 1+2+0+0 which is 3. The answer is 5, matching the picture.
 
-*(This is the "odd vertex" remark in my notes: an open trail makes its endpoint behave like an odd-degree vertex.)*
+### The greedy way, and why it is correct
 
-Take an unused edge at v and append it. That's a longer trail, so **Q was not maximal** ✗
+Take all the leaves into the solution, delete them and their parents, and repeat on what remains.
 
-Contradiction. Hence Q is closed ✓ ∎
+Here leaves means vertices of degree at most 1, not exactly 1, so that isolated vertices in a forest are picked up too.
 
-> Since Q is a **closed trail**, it is a **circuit** — matching the definition from [[2026-07-27 Euler Circuits]] §0.
+The whole correctness rests on one claim.
 
----
+Claim. If u is a leaf of a tree, then some maximum independent set contains u.
 
-## Claim 2 — a maximal trail uses every edge
+![](figures/mis-3-exchange.svg)
 
-> **Claim 2.** Under the hypotheses of Lemma 2, a maximal trail Q satisfies **E(Q) = E(G)**.
+Let S be any maximum independent set and let p be the unique neighbour of u. If u is already in S there is nothing to prove. Otherwise p must be in S, because if p were absent too then adding u to S would keep it independent, since u's only neighbour is p, and would make it larger, contradicting that S is maximum.
 
-**Proof of Claim 2.** Suppose not, so some edge of G is missing from Q. We find a contradiction by building a longer trail.
+So p is in S. Now swap: drop p and add u. The result is still independent, since the only vertex adjacent to u was p and we just removed it. It has the same size, so it is still maximum, and it contains u.
 
-**Step 2.1 — find a missing edge that touches Q.**
+That is what makes the greedy safe. Taking a leaf never costs you anything, because whatever optimal solution exists can be adjusted to agree with your choice at no loss. Once u is committed, its parent cannot also be chosen, so deleting the parent loses nothing either, and the remaining forest is smaller so the argument repeats.
 
-There are two cases, and both hand us a missing edge with an endpoint **on** Q.
+Running it on the same tree: the leaves are b, c, d, e and f, so take all five. Their parents are r and a, so delete those too. Nothing remains, and the answer is the set of size 5.
 
-- **Case (i): some missing edge (x, y) already touches Q**, i.e. x ∈ V(Q) or y ∈ V(Q). Take **e := (x, y)** and let **z** be whichever endpoint lies on Q.
-- **Case (ii): no missing edge touches Q.** Take any missing edge (x, y). Since G's edges all live in one non-trivial component, there's a path from x to Q. Take a **shortest** such path and let **e** be its **last** edge, say e = (w, z) with **z ∈ V(Q)**.
+This kind of reasoning has a name worth remembering. An exchange argument proves a greedy choice is safe by taking any optimal solution and modifying it to agree with the choice, without making it worse.
 
-  Why is e itself missing from Q? Because we chose a *shortest* path to Q: every vertex before z is off Q, so e is not one of Q's edges ✓
+## What to remember
 
-*(This case split is exactly the side-note in my page: "if x ∈ V(Q) let z = x, else if y ∈ V(Q) let z = y".)*
+A maximal trail is closed and uses every edge, which is the whole of Euler's hard half. An open trail makes its own endpoint behave as if it had odd degree. A matching of size v uses 2v distinct vertices, so it cannot exceed n over 2, and the star shows how loose that can be. Splitting a tree by level does not find the largest independent set, because the optimum mixes levels. Both the dynamic program and the greedy do find it, and the greedy is justified by an exchange argument.
 
-**Step 2.2 — build the longer trail.**
+## Still unclear
 
-By **Claim 1**, Q is a **closed** trail, so it can be started at **any** of its vertices — in particular at **z**.
-
-```
-        ┌──────── traverse all of Q ────────┐
-        │                                    │
-        z ────────────────────────────────► z ────e────► (other end of e)
-                (closed, so we return)         unused edge
-```
-
-Walk the whole of Q starting and ending at z, then step along **e**. Since e ∉ E(Q), no edge repeats — this is a genuine trail, and it has **one more edge** than Q.
-
-So Q was not maximal ✗ **Contradiction.**
-
-Hence our assumption was wrong and **E(Q) = E(G)** ✓ ∎
-
----
-
-## Combining the claims
-
-- **Claim 1** ⇒ Q is a closed trail, i.e. a **circuit**.
-- **Claim 2** ⇒ Q contains **every edge** of G.
-
-A circuit containing every edge is exactly an **Euler circuit**. So G has one ✓ ∎
-
-> **Why this proof is nicer than the induction.** The induction version had a genuinely fiddly step — after deleting a cycle the graph can shatter, so you must recurse on each piece and splice them back ([[2026-07-27 Euler Circuits]], Lemma 2 Step 4). The maximal-trail argument never splits the graph at all. It's the same **extremal method** used for the long-path theorem: *take an object you can't extend, and let un-extendability do the work.*
-
----
-
-# Part B — Matchings
-
-> A **matching** is a set of edges in which **no two edges share a vertex**.
-
-*(Equivalently: no two edges of the set are incident on a common vertex.)*
-
-**From the example in class** — the graph on a, b, c, d, e, f, g:
-
-| Set | Verdict |
-|---|---|
-| {ab, cd, ef} | ✅ a matching — all six endpoints distinct |
-| {ab, ag} | ❌ **a is common** to both edges |
-| {gf, ad, bc} | ✅ a matching |
-
----
-
-## Claim 3 — the universal ceiling ν(G) ≤ ⌊n/2⌋
-
-**Proof of Claim 3.** A matching with ν edges uses **2ν distinct vertices** — distinct precisely because no two edges share one. Those vertices all live in G, so
-
-$$2\nu \le n \quad\Longrightarrow\quad \nu \le \frac{n}{2}.$$
-
-And ν is a whole number, so **ν ≤ ⌊n/2⌋** ✓ ∎
-
-> ⚠️ **Notation fix from my notes:** I wrote `|matchings(G)| ≤ n/2`. That reads as "the *number of* matchings", which isn't what's meant. The correct statement is about the **size of a maximum matching**, written **ν(G)**.
-
----
-
-## Values for the standard families
-
-| Graph | ν | Why |
-|---|---|---|
-| **Path Pₙ** (n vertices) | ⌊n/2⌋ | take every other edge |
-| **Cycle Cₙ** | ⌊n/2⌋ | same, walking round |
-| **Star K₁,ₘ** | **1** | every edge hits the centre |
-| **Complete Kₙ** | ⌊n/2⌋ | pair the vertices off |
-| **Tree** | anywhere from **1 to ⌊n/2⌋** | a star gives 1; a perfect-matchable tree gives n/2 |
-
-**Star — the interesting case.** Every edge of K₁,ₘ contains the centre c. So any two edges share c, and a matching can hold **at most one** edge. Hence ν = 1 ✓ This is the extreme where the ceiling ⌊n/2⌋ is as loose as possible.
-
-**Path P₄ = a–b–c–d.** Take {ab, cd}: ν = 2 = ⌊4/2⌋ ✓
-**Path P₅ = a–b–c–d–e.** Take {ab, cd}: ν = 2 = ⌊5/2⌋ ✓ (e is left over — with 5 vertices somebody must be.)
-
-> **Open question in my notes:** *"maximum matching in a tree — number of levels + 1/2?"* That guess doesn't hold: a star has many vertices but only **1** level below the root and ν = 1, while a long path has ν ≈ n/2. The level count doesn't determine ν. **There's no formula in terms of depth** — you need an actual algorithm (greedy on leaves works, same idea as Part C).
-
----
-
-# Part C — Maximum Independent Set in a tree
-
-> **Problem.** Given a tree or forest, find a **maximum independent set** — a largest subset of vertices with **no edge between any two of them**.
-
-*(Recall from [[Lec 01 — Vertex Cover and Independent Set]]: this is NP-hard in general. On trees it turns out to be easy.)*
-
----
-
-## Strategy 1 — split by level. **This fails.**
-
-Root the tree and set
-
-- **O** = all vertices at **odd** levels
-- **E** = all vertices at **even** levels
-
-Both are independent (every edge joins consecutive levels, so it never has both ends in O or both in E). The proposal is **MIS = max{|O|, |E|}**.
-
-### Counterexample
-
-Root **r** with four children a, b, c, d; and a additionally has two children e, f.
-
-```
-            r                level 0   →  E
-         ╱ ╱ ╲ ╲
-        a  b  c  d           level 1   →  O
-       ╱ ╲
-      e   f                  level 2   →  E
-```
-
-- **E** = {r, e, f} → size **3**
-- **O** = {a, b, c, d} → size **4**
-- so the method returns **4**
-
-But **{b, c, d, e, f}** is independent — b, c, d are leaves hanging off r, and e, f hang off a; none of the five is adjacent to another. That's size **5 > 4** ✗
-
-**The method fails.** Splitting by level is too rigid: it forces you to take *all* of one side, when the best answer mixes levels.
-
-### ✅ The repair — a dynamic program over the tree
-
-The level idea is salvageable if, instead of one global choice, you let **each vertex decide for itself**. Root the tree and define two quantities per vertex v:
-
-| | meaning |
-|---|---|
-| **MIS(v, 0)** | largest independent set in v's subtree that **excludes** v |
-| **MIS(v, 1)** | largest independent set in v's subtree that **includes** v |
-
-**The recurrences.**
-
-$$\text{MIS}(v,0) \;=\; \sum_{u \text{ child of } v} \max\big\{\text{MIS}(u,0),\ \text{MIS}(u,1)\big\}$$
-
-$$\text{MIS}(v,1) \;=\; 1 \;+\; \sum_{u \text{ child of } v} \text{MIS}(u,0)$$
-
-**Why each is right:**
-
-- If v is **excluded**, its children are unconstrained — each child independently contributes whichever of its two options is larger ✓
-- If v is **included**, then **no child may be taken** (each is adjacent to v), so every child must contribute its "excluded" value. The +1 counts v itself ✓
-
-**The answer** is `max{MIS(root, 0), MIS(root, 1)}`, computed bottom-up in **O(n)**.
-
-**Run it on the counterexample** (root r; children a, b, c, d; a has children e, f):
-
-| vertex | MIS(·,0) | MIS(·,1) |
-|---|---|---|
-| e, f (leaves) | 0 | 1 |
-| b, c, d (leaves) | 0 | 1 |
-| a | max(0,1) + max(0,1) = **2** | 1 + 0 + 0 = **1** |
-| r | max(2,1) + 1 + 1 + 1 = **5** | 1 + 2 + 0 + 0 = **3** |
-
-Answer = max{5, 3} = **5** ✓ — the correct value that level-splitting missed.
-
-> **The lesson:** level-splitting fails because it makes **one** decision for the whole tree. The DP makes **one decision per vertex**, keeping both options alive until the parent can compare them.
-
----
-
-## Strategy 2 — greedy on leaves. **This works.**
-
-> ⚠️ **"Leaves" means vertices of degree ≤ 1**, not exactly 1 — in a *forest* an isolated vertex has degree 0 and should also be taken into the solution.
-
-> 1. Put **all leaves** into the solution.
-> 2. **Delete** the leaves and their parents, then **recurse** on what remains.
-
-The whole correctness rests on one exchange argument.
-
-### Claim 4 — some maximum independent set contains any given leaf
-
-> **Claim 4.** Let u be a leaf of a tree T. Then **there exists** a maximum independent set of T containing u.
-
-**Proof of Claim 4.** Let S be *any* maximum independent set, and let **p** be the unique neighbour (parent) of u.
-
-**Case (i): u ∈ S.** Nothing to do ✓
-
-**Case (ii): u ∉ S.** First, note **p must be in S**:
-
-> if p ∉ S, then S ∪ {u} would still be independent — u's *only* neighbour is p, and p ∉ S — and it is strictly bigger than S, contradicting that S is **maximum** ✗
-
-So p ∈ S. Now **swap**:
-
-$$S' := \big(S \setminus \{p\}\big) \cup \{u\}.$$
-
-- **S′ is independent.** The only vertex adjacent to u is p, and we just removed it. Nothing else changed ✓
-- **|S′| = |S|.** We removed one vertex and added one ✓ so S′ is still **maximum**.
-- **u ∈ S′** ✓
-
-Either way, a maximum independent set containing u exists ∎
-
-### Why Claim 4 makes the greedy correct
-
-Claim 4 says **taking a leaf never costs you anything** — there's always an optimal solution that agrees with that choice. Having committed to leaf u:
-
-- **p cannot** also be chosen (it's adjacent to u), so deleting p loses nothing.
-- Deleting u and p leaves a smaller forest, and the same argument applies again.
-
-So the greedy is safe at every step, and it terminates because the forest shrinks each round ✓
-
-**Run it on the counterexample above.**
-
-- **Round 1:** leaves are b, c, d, e, f. Take all five. Their parents are r (for b, c, d) and a (for e, f) — delete r and a too.
-- Nothing remains.
-- **Answer: {b, c, d, e, f}, size 5** ✓ — the correct MIS, which Strategy 1 missed.
-
-> **The transferable idea — an exchange argument.** To prove a greedy choice is safe, take *any* optimal solution and show you can **modify it** into one that agrees with your choice, **without making it worse**. Here the modification was a one-for-one swap: drop the parent, add the leaf.
-
----
-
-## Takeaways
-
-1. **Maximal trail ⇒ Euler circuit**, in two claims: it must be *closed* (Claim 1), and it must be *everything* (Claim 2).
-2. **An open trail makes its endpoint look odd-degree** — that parity clash is the whole content of Claim 1.
-3. A **closed** trail can be restarted at any of its vertices. That's exactly what lets Claim 2 splice on an extra edge.
-4. **Maximal ≠ cycle.** A cycle can still have unused edges hanging off it.
-5. **ν(G) ≤ ⌊n/2⌋** always, because a matching's edges are vertex-disjoint. Stars are the extreme case, with ν = 1 however large they get.
-6. **Level-splitting fails** for MIS on trees — the optimum mixes levels.
-7. **Greedy on leaves works**, justified by an **exchange argument**: any optimal solution can be swapped into one containing the leaf.
-
----
-
-## Doubts / to revisit
-
-- [ ] My notes asked whether maximum matching in a tree is "number of levels + 1/2" — **no**, disproved by the star above. Worth asking what the intended formula was.
-- [ ] Notation: I wrote `|matchings(G)| ≤ n/2`; should be **ν(G) ≤ ⌊n/2⌋** (size of a maximum matching, not the number of matchings).
-- [ ] The greedy-on-leaves argument gives an O(n) algorithm — worth writing out as pseudocode if it's examinable.
+- My page writes the matching bound as the number of matchings. It should be the size of a maximum matching.
+- The guess that a tree's matching number comes from its depth is false, disproved by the star.
+- Whether the O(n) greedy needs writing out as pseudocode for the exam.

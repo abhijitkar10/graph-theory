@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Girth at least 5 forces room. Count outward from any vertex.</text>
+<line x1="120" y1="180" x2="280" y2="90" stroke="#333333" stroke-width="2"/>
+<line x1="120" y1="180" x2="280" y2="180" stroke="#333333" stroke-width="2"/>
+<line x1="120" y1="180" x2="280" y2="270" stroke="#333333" stroke-width="2"/>
+<line x1="280" y1="90" x2="450" y2="50" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="280" y1="90" x2="450" y2="110" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="280" y1="180" x2="450" y2="150" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="280" y1="180" x2="450" y2="210" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="280" y1="270" x2="450" y2="250" stroke="#bbbbbb" stroke-width="1.8"/>
+<line x1="280" y1="270" x2="450" y2="310" stroke="#bbbbbb" stroke-width="1.8"/>
+<circle cx="120" cy="180" r="17" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
+<text x="120" y="184" text-anchor="middle" font-size="12" fill="#222222">v</text>
+<circle cx="280" cy="90" r="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="280" y="94" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="280" cy="180" r="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="280" y="184" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="280" cy="270" r="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="280" y="274" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="50" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="54" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="110" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="114" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="150" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="154" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="210" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="214" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="250" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="254" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="450" cy="310" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="314" text-anchor="middle" font-size="12" fill="#222222"></text>
+<text x="280" y="310" text-anchor="middle" font-size="12" fill="#185FA5">k neighbours</text>
+<text x="500" y="180" text-anchor="start" font-size="12" fill="#666666">k-1 each</text>
+<text x="20" y="344" text-anchor="start" font-size="13" fill="#666666">No triangle means the neighbours are not joined to each other. No four cycle means they share no outer neighbour.</text>
+</svg>

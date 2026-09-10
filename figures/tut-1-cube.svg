@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="340" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">The 3 dimensional cube. Vertices are 0-1 strings, joined when they differ in exactly one place.</text>
+<line x1="150" y1="110" x2="330" y2="110" stroke="#333333" stroke-width="2"/>
+<line x1="230" y1="70" x2="410" y2="70" stroke="#333333" stroke-width="2"/>
+<line x1="330" y1="110" x2="330" y2="230" stroke="#333333" stroke-width="2"/>
+<line x1="410" y1="70" x2="410" y2="190" stroke="#333333" stroke-width="2"/>
+<line x1="330" y1="230" x2="150" y2="230" stroke="#333333" stroke-width="2"/>
+<line x1="410" y1="190" x2="230" y2="190" stroke="#333333" stroke-width="2"/>
+<line x1="150" y1="230" x2="150" y2="110" stroke="#333333" stroke-width="2"/>
+<line x1="230" y1="190" x2="230" y2="70" stroke="#333333" stroke-width="2"/>
+<line x1="150" y1="110" x2="230" y2="70" stroke="#bbbbbb" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="330" y1="110" x2="410" y2="70" stroke="#bbbbbb" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="330" y1="230" x2="410" y2="190" stroke="#bbbbbb" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="150" y1="230" x2="230" y2="190" stroke="#bbbbbb" stroke-width="1.5" stroke-dasharray="4 3"/>
+<circle cx="150" cy="110" r="21" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="150" y="114" text-anchor="middle" font-size="11" fill="#222222">000</text>
+<circle cx="230" cy="70" r="21" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="230" y="74" text-anchor="middle" font-size="11" fill="#222222">001</text>
+<circle cx="330" cy="110" r="21" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="330" y="114" text-anchor="middle" font-size="11" fill="#222222">100</text>
+<circle cx="410" cy="70" r="21" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="410" y="74" text-anchor="middle" font-size="11" fill="#222222">101</text>
+<circle cx="330" cy="230" r="21" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="330" y="234" text-anchor="middle" font-size="11" fill="#222222">110</text>
+<circle cx="410" cy="190" r="21" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="410" y="194" text-anchor="middle" font-size="11" fill="#222222">111</text>
+<circle cx="150" cy="230" r="21" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="150" y="234" text-anchor="middle" font-size="11" fill="#222222">010</text>
+<circle cx="230" cy="190" r="21" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="230" y="194" text-anchor="middle" font-size="11" fill="#222222">011</text>
+<text x="20" y="286" text-anchor="start" font-size="13" fill="#666666">Blue strings have an even number of ones, red an odd number. Flipping one bit always changes that parity,</text>
+<text x="20" y="310" text-anchor="start" font-size="13" fill="#185FA5">so every edge joins blue to red. That is exactly what bipartite means, and it rules out odd cycles.</text>
+<text x="20" y="334" text-anchor="start" font-size="13" fill="#666666">Eight vertices, each of degree 3, giving twelve edges.</text>
+</svg>

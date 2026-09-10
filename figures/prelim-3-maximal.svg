@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Maximal and longest are different things.</text>
+<line x1="90" y1="120" x2="190" y2="120" stroke="#333333" stroke-width="2"/>
+<line x1="190" y1="120" x2="290" y2="120" stroke="#333333" stroke-width="2"/>
+<line x1="290" y1="120" x2="390" y2="120" stroke="#333333" stroke-width="2"/>
+<line x1="390" y1="120" x2="490" y2="120" stroke="#333333" stroke-width="2"/>
+<line x1="190" y1="120" x2="190" y2="230" stroke="#C0392B" stroke-width="3"/>
+<line x1="90" y1="120" x2="190" y2="120" stroke="#C0392B" stroke-width="3"/>
+<circle cx="90" cy="120" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="90" y="125" text-anchor="middle" font-size="13" fill="#222222">a</text>
+<circle cx="190" cy="120" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="190" y="125" text-anchor="middle" font-size="13" fill="#222222">b</text>
+<circle cx="290" cy="120" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="290" y="125" text-anchor="middle" font-size="13" fill="#222222">c</text>
+<circle cx="390" cy="120" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="390" y="125" text-anchor="middle" font-size="13" fill="#222222">d</text>
+<circle cx="490" cy="120" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="490" y="125" text-anchor="middle" font-size="13" fill="#222222">e</text>
+<circle cx="190" cy="230" r="16" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="190" y="235" text-anchor="middle" font-size="13" fill="#222222">f</text>
+<text x="20" y="272" text-anchor="start" font-size="13" fill="#C0392B">The red path f b a cannot be extended. f has no other neighbour and neither does a, so it is maximal. Its length is 2.</text>
+<text x="20" y="296" text-anchor="start" font-size="13" fill="#666666">But a b c d e has length 4. Maximal only means stuck, not biggest.</text>
+</svg>

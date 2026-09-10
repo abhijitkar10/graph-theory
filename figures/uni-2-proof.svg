@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">The proof in outline. Suppose no vertex sits in every maximum matching.</text>
+<circle cx="110" cy="120" r="18" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
+<text x="110" y="124" text-anchor="middle" font-size="12" fill="#222222">u</text>
+<circle cx="300" cy="120" r="18" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="300" y="124" text-anchor="middle" font-size="12" fill="#222222">x</text>
+<line x1="110" y1="120" x2="300" y2="120" stroke="#333333" stroke-width="2"/>
+<text x="205" y="100" text-anchor="middle" font-size="12" fill="#666666">an edge</text>
+<text x="110" y="158" text-anchor="middle" font-size="12" fill="#C0392B">missed by M</text>
+<text x="300" y="158" text-anchor="middle" font-size="12" fill="#185FA5">missed by N</text>
+<line x1="400" y1="240" x2="470" y2="240" stroke="#3B6D11" stroke-width="4"/>
+<line x1="470" y1="240" x2="540" y2="240" stroke="#333333" stroke-width="2"/>
+<line x1="540" y1="240" x2="610" y2="240" stroke="#3B6D11" stroke-width="4"/>
+<circle cx="400" cy="240" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="400" y="244" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="470" cy="240" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="470" y="244" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="540" cy="240" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="540" y="244" text-anchor="middle" font-size="12" fill="#222222"></text>
+<circle cx="610" cy="240" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="610" y="244" text-anchor="middle" font-size="12" fill="#222222"></text>
+<text x="505" y="278" text-anchor="middle" font-size="12" fill="#666666">the component of u in M union N</text>
+<text x="20" y="214" text-anchor="start" font-size="13" fill="#666666">Pick u, and a maximum matching M missing it. Pick a neighbour x, and a maximum matching N missing x.</text>
+<text x="20" y="312" text-anchor="start" font-size="13" fill="#666666">In M union N both u and x have degree 1, so each is the end of a path, and that path has even length.</text>
+<text x="20" y="336" text-anchor="start" font-size="13" fill="#666666">Swapping along it keeps both matchings maximum but frees u. Then either the edge ux augments, or the path</text>
+<text x="20" y="356" text-anchor="start" font-size="13" fill="#C0392B">runs from u to x and adding ux closes an odd cycle. Bipartite graphs have neither, so the assumption fails.</text>
+</svg>

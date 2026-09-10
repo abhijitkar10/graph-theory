@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">A shortest path can have no chord, because a chord would be a shortcut.</text>
+<line x1="90" y1="140" x2="210" y2="140" stroke="#333333" stroke-width="2"/>
+<line x1="210" y1="140" x2="330" y2="140" stroke="#333333" stroke-width="2"/>
+<line x1="330" y1="140" x2="450" y2="140" stroke="#333333" stroke-width="2"/>
+<line x1="450" y1="140" x2="570" y2="140" stroke="#333333" stroke-width="2"/>
+<path d="M 90 132 Q 270 50 450 132" fill="none" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="90" cy="140" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="90" y="144" text-anchor="middle" font-size="12" fill="#222222">a</text>
+<circle cx="210" cy="140" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="210" y="144" text-anchor="middle" font-size="12" fill="#222222">b</text>
+<circle cx="330" cy="140" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="330" y="144" text-anchor="middle" font-size="12" fill="#222222">c</text>
+<circle cx="450" cy="140" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="450" y="144" text-anchor="middle" font-size="12" fill="#222222">d</text>
+<circle cx="570" cy="140" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="570" y="144" text-anchor="middle" font-size="12" fill="#222222">e</text>
+<text x="270" y="66" text-anchor="middle" font-size="12" fill="#C0392B">a chord, if it existed</text>
+<text x="20" y="214" text-anchor="start" font-size="13" fill="#666666">Walking a, b, c, d takes three edges. The dashed chord would get from a to d in one.</text>
+<text x="20" y="238" text-anchor="start" font-size="13" fill="#C0392B">So a path carrying a chord was never shortest. Shortest paths are automatically induced.</text>
+<text x="20" y="268" text-anchor="start" font-size="13" fill="#3B6D11">Taking just the first three vertices of any shortest path between two non adjacent vertices gives an induced path of length two.</text>
+</svg>

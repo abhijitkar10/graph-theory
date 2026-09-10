@@ -2,91 +2,71 @@
 tags: [academics, graph-theory, nptel, lecture]
 lecture: 3
 unit: Covering Problems
-source: NPTEL Graph Theory (Dr. L. Sunil Chandran, IISc) — Lecture 03
+source: NPTEL Graph Theory (Dr. L. Sunil Chandran, IISc), Lecture 03
 ---
 
-# Lec 03 — More on Hall's Theorem and Some Applications
+# Lec 03 — More on Hall's theorem, and some applications
 
-**◀ Previous:** [[Lec 02 — König's Theorem and Hall's Theorem]] · **Index:** [[NPTEL Index]] · **Next ▶** *(Lec 04 — Tutte's Theorem, not yet written)*
+Previous: [[Lec 02 — König's Theorem and Hall's Theorem]] · Index: [[NPTEL Index]] · Next: Lec 04 on Tutte's theorem, not yet written
 
-**Covered:** the defect version of Hall's theorem, regular bipartite graphs, decomposition into perfect matchings, systems of distinct representatives, Latin square extension, and Birkhoff–von Neumann.
+Covered here: the defect version of Hall's theorem, regular bipartite graphs, decomposition into perfect matchings, systems of distinct representatives, Latin rectangle extension, and Birkhoff and von Neumann.
 
-> These are my own worked-out write-ups of the mathematics, not a transcript. Where a proof can go several ways I give the cleanest standard route and flag alternatives.
+These are my own written up versions of the mathematics rather than a transcript. Where a proof can go several ways I give the cleanest standard route and mention the alternatives.
 
----
+## How much this matters
 
-## 0. Symbols used
+Overall this note is useful, and one section of it is core.
 
-| Symbol | Meaning |
-|---|---|
-| **G = (A ∪ B, E)** | bipartite graph with sides A and B |
-| **N(S)** | set of all neighbours of vertices in S |
-| **ν(G)** | maximum matching size |
-| **def(S)** | the **deficiency** \|S\| − \|N(S)\| of a set S ⊆ A |
-| **k-regular** | every vertex has degree exactly k |
-| **e(X, Y)** | number of edges between vertex sets X and Y |
+Know cold: [[Lec 03 — More on Hall's Theorem and Applications#Every k regular bipartite graph has a perfect matching|the regularity argument]]. Counting the edges out of a set in two directions is the single most reused argument in the whole matchings unit, and the proof is four lines.
 
----
+Know the trick: [[Lec 03 — More on Hall's Theorem and Applications#The defect version of Hall's theorem|defect Hall]], specifically the padding with dummy vertices and then subtracting them off.
 
-## 1. ★ The Defect Version of Hall's Theorem
+Know the statement: [[Lec 03 — More on Hall's Theorem and Applications#k regular bipartite graphs split into k perfect matchings|the decomposition into k perfect matchings]] and its consequence for edge colouring.
 
-Hall's theorem answers *yes or no*. The defect version answers **"if not, how close did we get?"**
+Read once: [[Lec 03 — More on Hall's Theorem and Applications#Systems of distinct representatives|SDRs]], [[Lec 03 — More on Hall's Theorem and Applications#Extending a Latin rectangle to a Latin square|Latin rectangles]] and [[Lec 03 — More on Hall's Theorem and Applications#Birkhoff and von Neumann|Birkhoff and von Neumann]]. Good illustrations of one template, but none of them is on the class syllabus.
 
-> **Theorem (Defect Hall / Ore).** For bipartite G with sides A and B,
-> $$\nu(G) \;=\; |A| \;-\; \max_{S \subseteq A}\big(|S| - |N(S)|\big).$$
+## Notation
 
-Write **def(S) := |S| − |N(S)|**. Since S = ∅ gives def(∅) = 0, the maximum is always ≥ 0. So the theorem says: **the number of A-vertices you must leave unmatched equals the worst deficiency of any set.**
+G = (A ∪ B, E) is a bipartite graph with sides A and B. N(S) is the set of all vertices adjacent to something in S, and α′(G) is the matching number. The deficiency of a set S inside A is the size of S minus the size of N(S). A graph is k regular when every degree is exactly k, and e(X, Y) counts the edges between two vertex sets.
 
-> Ordinary Hall is the special case: max deficiency = 0 ⟺ ν = |A| ⟺ all of A is matched ✓
+## The defect version of Hall's theorem
 
-### Proof — by adding dummy vertices
+Hall's theorem answers yes or no. The defect version answers the follow up question, which is how close you got when the answer was no.
 
-**The trick.** Let **d := max over S of def(S)**. Hall fails only because some sets are starved of neighbours. So **feed them**: add d brand-new vertices to side B, each joined to **every** vertex of A. Call the enlarged graph G⁺.
+Theorem (defect Hall, Ore). For a bipartite graph G with sides A and B, the matching number α′(G) equals the size of A minus the largest deficiency over all subsets of A.
 
-**Step 1: Hall's condition now holds in G⁺.** For any S ⊆ A, if S is non-empty then all d new vertices are neighbours of S, so
+Since the empty set has deficiency zero, that largest deficiency is always at least zero. So the theorem says the number of A vertices you are forced to leave unmatched is exactly the worst deficiency of any set. Ordinary Hall is the special case where the largest deficiency is zero, which happens exactly when all of A can be matched.
 
-$$|N_{G^+}(S)| = |N_G(S)| + d \;\ge\; |N_G(S)| + \big(|S| - |N_G(S)|\big) = |S| \;✓$$
+### The proof, by adding dummy vertices
 
-(using d ≥ def(S) by definition of d).
+Let d be the largest deficiency. Hall fails only because some sets are starved of neighbours, so feed them. Add d brand new vertices to side B, each joined to every vertex of A, and call the enlarged graph G⁺.
 
-**Step 2:** By **Hall's theorem** applied to G⁺, there's a matching M⁺ saturating all of A, so |M⁺| = |A|.
+First, Hall's condition holds in G⁺. For any non empty subset S of A, all d new vertices are neighbours of S, so its neighbourhood grows by exactly d. Since d is at least the deficiency of S by definition, the enlarged neighbourhood has at least the size of S.
 
-**Step 3: delete the dummies.** At most **d** edges of M⁺ use a new vertex (there are only d of them, and a matching uses each at most once). Removing those leaves a genuine matching in G of size
+Second, Hall's theorem applied to G⁺ gives a matching saturating all of A, so that matching has as many edges as A has vertices.
 
-$$\ge |A| - d \quad\Longrightarrow\quad \nu(G) \ge |A| - d.$$
+Third, delete the dummies. At most d edges of that matching use a new vertex, since there are only d new vertices and a matching uses each at most once. Removing those leaves a genuine matching in the original G of size at least the size of A minus d, so α′(G) ≥ |A| − d.
 
-**Step 4: the reverse inequality.** Take S achieving the maximum, so |N(S)| = |S| − d. Any matching can match the vertices of S only into N(S), so at most |N(S)| = |S| − d of them get matched, leaving **at least d** vertices of S unmatched. Hence
+Fourth, the reverse inequality. Take a set S achieving the largest deficiency, so its neighbourhood has size exactly |S| − d. Any matching can match the vertices of S only into N(S), so at most |S| − d of them get matched, leaving at least d vertices of S unmatched. Hence α′(G) ≤ |A| − d.
 
-$$\nu(G) \le |A| - d.$$
+Both directions together give equality.
 
-Both directions give **ν(G) = |A| − d** ✓ ∎
+A worked example. Let A have four vertices a₁, a₂, a₃, a₄ and B have two vertices b₁, b₂, with a₁, a₂ and a₃ all joined to both of them and a₄ joined only to b₂. Taking S to be {a₁, a₂, a₃} gives a neighbourhood of size 2 and a deficiency of 1. Taking S to be all of A gives a deficiency of 2, which is the largest. So α′ = 4 − 2 = 2, and indeed only two edges can be disjoint, since B has just two vertices.
 
-**Worked example.** A = {a₁, a₂, a₃, a₄}, B = {b₁, b₂}, with a₁, a₂, a₃ all joined only to b₁ and b₂, and a₄ joined to b₂.
+## Every k regular bipartite graph has a perfect matching
 
-Take S = {a₁, a₂, a₃}: N(S) = {b₁, b₂}, so def(S) = 3 − 2 = **1**. Taking S = A gives def = 4 − 2 = **2**, which is the max. So ν = 4 − 2 = **2** ✓ (Indeed only two edges can be disjoint — B has just two vertices.)
+Theorem. If G is bipartite and k regular with k at least 1, then G has a perfect matching.
 
----
+Given: G is bipartite and k regular.
+To show: some matching covers every vertex.
 
-## 2. ★ Every k-regular bipartite graph has a perfect matching
+First, the two sides have equal size. Count the edges twice, once from each side. Every edge has exactly one end in A and one in B, and every vertex has degree k, so the edge count is both k times the size of A and k times the size of B. Dividing by k gives equal sides, and therefore a matching saturating A is automatically perfect.
 
-> **Theorem.** If G is bipartite and **k-regular** with k ≥ 1, then G has a **perfect matching**.
+Now verify Hall's condition. Take any subset S of A and count the edges leaving S in two directions.
 
-### First: the two sides are equal
+From the S side the count is exact. Every vertex of S has degree exactly k and all of its edges leave S, since S sits inside A and edges only go to B, so exactly k times the size of S edges leave.
 
-Count the edges **twice**, once from each side. Every edge has exactly one end in A and one in B, and every vertex has degree k:
-
-$$|E| = k|A| \quad\text{and}\quad |E| = k|B| \quad\Longrightarrow\quad k|A| = k|B| \quad\Longrightarrow\quad |A| = |B|$$
-
-(dividing by k ≥ 1) ✓ So a matching saturating A is automatically **perfect**.
-
-### Now verify Hall's condition
-
-Take any S ⊆ A and count the edges leaving S, again two ways.
-
-- **From the S side:** every vertex of S has degree exactly k, so $e(S, N(S)) = k|S|$.
-- **From the N(S) side:** every edge out of S lands in N(S). Each vertex of N(S) has degree k in total — some of those edges may go to A ∖ S — so N(S) can absorb **at most** k|N(S)| edges:
-
-$$e(S, N(S)) \;\le\; k\,|N(S)|.$$
+From the N(S) side the count is an inequality. Every edge out of S lands in N(S), and each vertex of N(S) has degree k in total, some of which may go to vertices of A outside S, so N(S) can absorb at most k times its own size.
 
 ```
      S            N(S)
@@ -95,87 +75,54 @@ $$e(S, N(S)) \;\le\; k\,|N(S)|.$$
      ●━━━━━━━━━━━━●   ◀━━━●  from outside S
 ```
 
-Putting them together:
+Comparing the two, k times the size of S is at most k times the size of N(S), so N(S) is at least as large as S, which is Hall's condition. Hall then gives a matching saturating A, and since the sides are equal that matching is perfect.
 
-$$k|S| \;=\; e(S, N(S)) \;\le\; k|N(S)| \quad\Longrightarrow\quad |N(S)| \ge |S| \;✓$$
+The pattern to remember is to count one quantity two ways and then compare. Regularity makes the count from S exact and the count into N(S) an inequality, and the gap between exact and at most is precisely Hall's condition.
 
-Hall's condition holds, so a matching saturating A exists — and since |A| = |B|, it is **perfect** ✓ ∎
+## k regular bipartite graphs split into k perfect matchings
 
-> **The pattern to remember:** *count one quantity two ways, then compare.* Regularity makes the count from S exact and the count into N(S) an inequality — and the gap between "exact" and "at most" is precisely Hall's condition.
+Theorem (König's edge colouring theorem, regular case). The edge set of a k regular bipartite graph decomposes into exactly k disjoint perfect matchings.
 
----
+Induct on k. For the base case, a 1 regular graph is itself a perfect matching. For the step, let G be k regular bipartite with k at least 2. By the previous section it has a perfect matching M. Remove the edges of M, and every vertex loses exactly one edge since M is perfect and touches each vertex once, leaving a (k−1) regular bipartite graph. By induction that decomposes into k−1 perfect matchings, and together with M that makes k.
 
-## 3. ★ k-regular bipartite graphs split into k perfect matchings
+The consequence is that the edge chromatic number of a k regular bipartite graph is exactly k, by colouring each perfect matching with its own colour. This is the bipartite corner of Vizing's theorem, covered in Lectures 15 and 16, where a general graph may need Δ+1 colours. Bipartite graphs never need that extra colour.
 
-> **Theorem (König's edge-colouring theorem, regular case).** The edge set of a k-regular bipartite graph decomposes into exactly **k disjoint perfect matchings**.
-
-**Proof by induction on k.**
-
-- **Base k = 1.** A 1-regular graph *is* a perfect matching ✓
-- **Step.** Let G be k-regular bipartite with k ≥ 2. By §2 it has a perfect matching M. Remove M's edges. Every vertex loses exactly one edge (M is perfect, so it touches each vertex once), leaving a **(k−1)-regular** bipartite graph. By induction that decomposes into k−1 perfect matchings; together with M that's **k** ✓ ∎
-
-**Consequence:** the **edge chromatic number** of a k-regular bipartite graph is exactly k — colour each perfect matching with its own colour. This is the bipartite case of Vizing's theorem territory (Lectures 15–16), where in general you may need Δ+1 colours. **Bipartite graphs never need the extra colour.**
-
-**Example — K₃,₃** is 3-regular bipartite, so it splits into 3 perfect matchings:
+For an example, K₃,₃ is 3 regular bipartite, so it splits into three perfect matchings.
 
 ```
  a₁ a₂ a₃      matching 1:  a₁b₁  a₂b₂  a₃b₃
   |╲ |╱ |      matching 2:  a₁b₂  a₂b₃  a₃b₁
   | ╳  ╲|      matching 3:  a₁b₃  a₂b₁  a₃b₂
- b₁ b₂ b₃      → all 9 edges used exactly once ✓
+ b₁ b₂ b₃      all nine edges used exactly once
 ```
 
----
+## Systems of distinct representatives
 
-## 4. Systems of Distinct Representatives (SDRs)
+Given finite sets S₁, S₂, …, Sₙ, a system of distinct representatives is a choice of one element from each set, with all the chosen elements distinct.
 
-> Given finite sets **S₁, S₂, …, Sₙ**, a **system of distinct representatives** is a choice of one element xᵢ ∈ Sᵢ for each i, with all the xᵢ **distinct**.
+Theorem. Such a system exists exactly when, for every collection of indices, the union of the corresponding sets is at least as large as the number of indices.
 
-> **Theorem.** An SDR exists ⟺ for every index set I ⊆ {1,…,n},
-> $$\Big|\bigcup_{i \in I} S_i\Big| \;\ge\; |I|.$$
+This is Hall's theorem in different clothing. Build a bipartite graph whose left side is the indices, whose right side is all the elements appearing in any of the sets, and where index i is joined to element x whenever x lies in Sᵢ. Then the neighbourhood of a single index is its set, and the neighbourhood of a collection of indices is the union of their sets. A system of distinct representatives is exactly a matching saturating the left side, and Hall's condition translates verbatim into the union condition.
 
-**Proof — it's Hall's theorem in different clothing.** Build a bipartite graph:
+Two examples. With S₁ = S₂ = S₃ = {1, 2}, taking all three indices gives a union of size 2 against 3 indices, so no system exists, since three sets are fighting over two elements. With S₁ = {1,2}, S₂ = {2,3} and S₃ = {1,3}, every union of k sets has at least k elements, and a system exists by picking 1, 2 and 3.
 
-- side **A** = the indices {1, …, n}
-- side **B** = all elements appearing in any Sᵢ
-- join index i to element x whenever **x ∈ Sᵢ**
+## Extending a Latin rectangle to a Latin square
 
-Then N({i}) = Sᵢ, and more generally **N(I) = ⋃_{i∈I} Sᵢ**. An SDR is exactly a matching saturating A. Hall's condition |N(I)| ≥ |I| translates verbatim into the union condition ✓ ∎
+An r by n Latin rectangle is an array with r rows and n columns filled with the symbols 1 to n so that no symbol repeats in any row or any column. A Latin square is the case where r equals n.
 
-**Example.** S₁ = {1,2}, S₂ = {1,2}, S₃ = {1,2}. Taking I = {1,2,3}: the union is {1,2}, size 2 < 3 ✗ **No SDR** — three sets fighting over two elements.
+Theorem. Every r by n Latin rectangle with r below n can be extended by one more row, and hence, repeating, to a full n by n Latin square.
 
-**Example.** S₁ = {1,2}, S₂ = {2,3}, S₃ = {1,3}. Every union of k sets has ≥ k elements ✓ SDR exists: pick 1, 2, 3 ✓
+We must fill row r+1. Build a bipartite graph whose left side is the n columns, whose right side is the n symbols, and where column c is joined to symbol s when s does not yet appear in column c. A valid new row is exactly a perfect matching, since each column gets one symbol, no symbol is used twice, and no clash arises within a column.
 
----
+The claim is that this graph is (n−r) regular, which by the earlier section gives it a perfect matching.
 
-## 5. Extending a Latin rectangle to a Latin square
+For the degree of a column, that column currently holds r entries, all distinct since a column has no repeats, so exactly n − r symbols are still available to it.
 
-> An **r × n Latin rectangle** is an r-row, n-column array filled with symbols 1…n so that **no symbol repeats in any row or any column**.
-> A **Latin square** is the case r = n.
+For the degree of a symbol, that symbol appears exactly once in each of the r rows, since every row is a permutation of all n symbols, and those r occurrences lie in r different columns, because two occurrences in the same column would repeat within it. So the symbol is missing from exactly n − r columns.
 
-> **Theorem.** Every r × n Latin rectangle with **r < n** can be extended by one more row — and hence, repeating, to a full **n × n Latin square**.
+Both sides are therefore (n−r) regular, which gives a perfect matching and so a legal new row. Repeat until r reaches n.
 
-**Proof.** We must fill row r+1. Build a bipartite graph:
-
-- side **A** = the n **columns**
-- side **B** = the n **symbols**
-- join column c to symbol s if **s does not yet appear in column c**
-
-A valid new row is exactly a **perfect matching**: each column gets one symbol, no symbol used twice, and no clash within a column.
-
-**Claim: this graph is (n − r)-regular**, hence has a perfect matching by §2.
-
-- **Degree of a column c.** Column c currently holds r entries, all distinct (no repeats in a column), so exactly **n − r** symbols are still available → degree n − r ✓
-- **Degree of a symbol s.** Symbol s appears exactly **once in each of the r rows** (each row is a permutation of all n symbols), and those r occurrences lie in **r different columns** — two occurrences in the same column would repeat within that column ✗ So s is missing from exactly **n − r** columns → degree n − r ✓
-
-Both sides are (n−r)-regular, so §2 gives a perfect matching, which is a legal new row ✓
-
-Repeat until r = n ✓ ∎
-
-**Worked example.** n = 3, and the 1 × 3 rectangle `1 2 3`.
-
-Available symbols per column: col 1 → {2,3}, col 2 → {1,3}, col 3 → {1,2} — each of degree 2 = n − r ✓
-A perfect matching: col 1 → 2, col 2 → 3, col 3 → 1, giving row 2 = `2 3 1` ✓ Then row 3 = `3 1 2` ✓
+A worked example with n = 3, starting from the single row 1 2 3. The available symbols are {2,3} for column 1, {1,3} for column 2 and {1,2} for column 3, each of degree 2, which is n − r. One perfect matching sends column 1 to symbol 2, column 2 to 3 and column 3 to 1, giving the second row 2 3 1, and then the third row is 3 1 2.
 
 ```
  1 2 3
@@ -183,36 +130,24 @@ A perfect matching: col 1 → 2, col 2 → 3, col 3 → 1, giving row 2 = `2 3 1
  3 1 2
 ```
 
----
+## Birkhoff and von Neumann
 
-## 6. Birkhoff–von Neumann (a flagged application)
+A doubly stochastic matrix is a square matrix of non negative reals in which every row and every column sums to 1.
 
-> A **doubly stochastic matrix** is a square matrix of non-negative reals whose every row and every column sums to **1**.
+Theorem (Birkhoff and von Neumann). Every doubly stochastic matrix is a convex combination of permutation matrices.
 
-> **Theorem (Birkhoff–von Neumann).** Every doubly stochastic matrix is a **convex combination of permutation matrices**.
+Here is why Hall gives this. Given a doubly stochastic matrix P, build a bipartite graph joining row i to column j whenever the entry at (i,j) is positive. Hall's condition holds, because a set S of rows carries a total mass equal to its size, since each row sums to 1, and all of that mass lands in the columns of N(S), which can hold at most the size of N(S) in total. So N(S) is at least as large as S.
 
-**Sketch of why Hall gives this.** Given a doubly stochastic matrix P, build a bipartite graph joining row i to column j whenever **Pᵢⱼ > 0**. Hall's condition holds — a set S of rows carries total mass |S| (each row sums to 1), and all of it lands in the columns of N(S), which can hold at most |N(S)| in total, so |N(S)| ≥ |S| ✓
+That gives a perfect matching, which is a permutation with every corresponding entry positive. Subtract the largest possible multiple of that permutation matrix, which zeroes out at least one entry while keeping the matrix doubly stochastic after rescaling, and induct on the number of non zero entries.
 
-So there's a perfect matching, i.e. a **permutation** σ with every P(i, σ(i)) > 0. Subtract the largest possible multiple of that permutation matrix; this zeroes out at least one entry while keeping the matrix doubly stochastic (after rescaling). Induct on the number of non-zero entries ✓
+This is a sketch rather than a full proof. The induction bookkeeping is fiddly, and the result is usually stated as an application rather than proved in detail at this point in a course.
 
-> Flagged as a sketch rather than a full proof — the induction bookkeeping is fiddly and it's usually stated as an application rather than proved in detail at this point in a course.
+## What to remember
 
----
+Defect Hall converts a yes or no criterion into a formula, since the number of unmatched vertices equals the worst deficiency, and the proof trick is to add dummy vertices to repair Hall's condition and then delete them and count the damage. Regularity gives Hall's condition by counting the edges out of a set two ways, which is the single most reused argument in the lecture. A k regular bipartite graph splits into k disjoint perfect matchings, by peeling one off and recursing on what stays regular, and the consequence is that bipartite graphs are edge colourable in exactly Δ colours with no extra colour needed. Systems of distinct representatives are Hall relabelled, with indices on one side and elements on the other. Latin rectangles extend because the still free symbols form an (n−r) regular bipartite graph, and the regularity does all the work. The recurring shape of the whole lecture is to set up a bipartite graph in which the thing you want is a perfect matching, then verify Hall, usually via regularity.
 
-## Takeaways
+## Still unclear
 
-1. **Defect Hall** converts a yes/no criterion into a formula: the number of unmatched vertices equals the **worst deficiency**. The proof trick is to **add dummy vertices** to repair Hall's condition, then delete them and count the damage.
-2. **Regularity ⇒ Hall's condition**, by counting edges out of S two ways. This is the single most reused argument in the lecture.
-3. **k-regular bipartite ⇒ k disjoint perfect matchings.** Peel one off, the rest stays regular, recurse.
-4. Bipartite graphs are **edge-colourable in exactly Δ colours** — no extra colour needed, unlike the general case.
-5. **SDRs are Hall's theorem relabelled** — indices on one side, elements on the other.
-6. **Latin rectangles extend** because "which symbols are still free" forms an (n−r)-regular bipartite graph — the regularity does all the work.
-7. The recurring shape: *set up a bipartite graph where the thing you want is a perfect matching, then verify Hall (usually via regularity).* Almost every application in this lecture follows that template.
-
----
-
-## Doubts / to revisit
-
-- [ ] Chandran may prove defect Hall directly by induction rather than by the dummy-vertex trick — worth comparing.
-- [ ] Birkhoff–von Neumann is only sketched here; ask whether the full proof is examinable.
-- [ ] Is the Latin square extension result examinable, or just an illustration?
+- Chandran may prove defect Hall directly by induction rather than by the dummy vertex trick. Worth comparing.
+- Birkhoff and von Neumann is only sketched here. Worth asking whether the full proof is examinable.
+- Whether the Latin square extension result is examinable or just an illustration.

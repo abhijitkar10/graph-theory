@@ -5,408 +5,148 @@ seq: 5
 class: 3
 ---
 
-# 5 · 2026-07-29 — Matchings 2: Berge and König
+# 5 · 2026-07-29 — Matchings 2, Berge and König
 
-**◀ Previous:** [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]]  ·  **Hub:** [[Graph Theory]]  ·  **Next ▶** [[Tutorial 1]]
+Previous: [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] · Hub: [[Graph Theory]] · Next: [[Tutorial 1]]
 
-**Covered:** matching bounds for standard families, matchings in trees (the leaf claim), alternating and augmenting paths, **Berge's theorem** in both directions, vertex covers, the sandwich |MM| ≤ |MVC| ≤ 2|MM|, and **König's theorem** with its explicit A₀/B₁/A₁/B₂/A₂ construction.
+Same afternoon as the morning class, going much further into matchings.
 
-> Same afternoon as the morning class ([[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]]), going much deeper into matchings.
+## How much this matters
 
----
+Overall this note is core, and it is the heaviest in the course. If one question carries a lot of marks, it will most likely come from here.
 
-## 0. Symbols used today
+Know cold: [[2026-07-29 Matchings 2 — Berge and König#The four parameters and how they pair up|the four parameters and both Gallai identities]], [[2026-07-29 Matchings 2 — Berge and König#Matching number never exceeds cover number|why matching is at most cover]], [[2026-07-29 Matchings 2 — Berge and König#Vertex covers, and the sandwich|the sandwich]], and [[2026-07-29 Matchings 2 — Berge and König#Berge's theorem|Berge]]. All four are short.
 
-| Symbol | Meaning |
-|---|---|
-| **M** | a matching — a set of edges, no two sharing a vertex |
-| **\|MM(G)\|** | size of a **maximum matching** *(the standard symbol is ν(G))* |
-| **\|MVC(G)\|** | size of a **minimum vertex cover** *(standard: τ(G))* |
-| **\|MIS(G)\|** | size of a **maximum independent set** *(standard: α(G))* |
-| **V(M)** | the set of vertices **covered** (matched) by M |
-| **M-alternating path** | a path whose edges alternate in M / not in M |
-| **M-augmenting path** | an M-alternating path whose **two endpoints are both unmatched** |
-| **M △ P** | symmetric difference — written in class as **M∖P + P∖M** |
+Know one proof properly: [[2026-07-29 Matchings 2 — Berge and König#König's theorem|König]]. Any of the three routes will do, so pick whichever sticks and ignore the others.
 
-> **Notation bridge.** My class writes |MM|, |MVC|, |MIS|; textbooks (and my NPTEL notes) write **ν, τ, α**. Same objects. → [[Lec 01 — Vertex Cover and Independent Set]]
+Know the statement: [[2026-07-29 Matchings 2 — Berge and König#Alternating and augmenting paths|alternating versus augmenting]], and which parity of swap gains an edge and which preserves size.
 
----
+Read once: [[2026-07-29 Matchings 2 — Berge and König#Questions raised in class|the questions raised in class]] and [[2026-07-29 Matchings 2 — Berge and König#Other things from the page|Moon and Moser]]. Useful context, unlikely on their own.
 
-## 1. Matchings — definition and first bounds
+## Notation
 
-> A **matching** is a set of edges where **no two edges of the set are incident on a common vertex**.
+The course writes α(G) for the largest independent set, β(G) for the smallest vertex cover, α′(G) for the largest matching, and β′(G) for the smallest edge cover. The pattern is that α means packing and you maximise, β means covering and you minimise, unprimed refers to vertices and primed to edges.
 
-**From the class example** on a, b, c, d, e, f, g:
+My handwritten page uses MM, MVC and MIS for the same three things. Some textbooks write ν for α′ and τ for β. All the same objects.
 
-| Set | Verdict |
-|---|---|
-| {ab, cd, ef} | ✅ matching |
-| {ab, ag} | ❌ **a is common** |
-| {gf, ad, bc} | ✅ matching |
+V(M) means the set of vertices matched by M. A vertex is called matched, or covered, if some edge of M touches it, and free otherwise.
 
-### The universal ceiling
+## The four parameters and how they pair up
 
-$$|MM(G)| \;\le\; \frac{n}{2}$$
+A set S is independent exactly when everything outside it is a vertex cover. The reason is that both statements say the same thing about edges: no edge has both ends inside S is the same as every edge has at least one end outside S.
 
-because a matching of size ν uses 2ν **distinct** vertices. → proved in [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]] Claim 3.
+That single observation gives the first Gallai identity, α(G) + β(G) = n. Take a largest independent set, its complement is a cover, so β is at most n − α. Take a smallest cover, its complement is independent, so α is at least n − β. Both together force equality.
 
-### Values for the standard families
+The second identity is α′(G) + β′(G) = n, valid when there are no isolated vertices. Going one way, take a maximum matching, which covers 2α′ vertices and leaves n − 2α′ uncovered; give each of those one edge of its own and you have an edge cover of size n − α′. Going the other way, take a minimum edge cover and note that each of its components must be a star, since a component containing a path on four vertices would have a droppable middle edge. Counting vertices across the stars gives n − β′ components, and picking one edge from each star gives a matching of that size.
 
-| Graph | \|MM\| | \|MIS\| | \|MVC\| = n − \|MIS\| | MM vs MVC |
-|---|---|---|---|---|
-| **Path Pₙ** | ⌊n/2⌋ | ⌈n/2⌉ | ⌊n/2⌋ | **=** |
-| **Cycle Cₙ** | ⌊n/2⌋ | ⌊n/2⌋ | ⌈n/2⌉ | **=** if n even, **<** if n odd |
-| **Star Sₙ** | 1 | n−1 | 1 | **=** |
-| **Complete Kₙ** | ⌊n/2⌋ | 1 | n−1 | **<** (for n ≥ 3) |
-| **Tree T** | k | n−k | k | **=** |
+This explains the third column of the table in my notes. It computes n minus the independent set size, which by the first identity is exactly the vertex cover number.
 
-> ★ **The third column is Gallai's identity in disguise:** α + τ = n, so **|MVC| = n − |MIS|**. That's why the table computes n − |MIS| rather than τ directly. → [[Lec 01 — Vertex Cover and Independent Set]] §2
+## Matching number never exceeds cover number
 
-> **Read the last column.** Equality holds for paths, stars, trees and *even* cycles — all **bipartite**. It fails for Kₙ and *odd* cycles — the non-bipartite ones. That pattern is exactly König's theorem, coming in §6.
+Take a maximum matching M and any vertex cover C. The cover must meet every edge of M, so it contains at least one endpoint of each. The edges of M are pairwise disjoint, so those chosen endpoints are α′ distinct vertices, all sitting inside C. Hence C has at least α′ vertices, and taking C smallest gives α′(G) at most β(G).
 
----
+This holds in every graph. The triangle shows it can be strict: its matching number is 1 and its cover number is 2.
 
-## 2. Matchings in trees and forests
+Worth noticing that the triangle is the smallest odd cycle. That is not a coincidence, and it is exactly why König needs bipartiteness.
 
-### ⚠️ Correction — Moon & Moser (1965)
+## Alternating and augmenting paths
 
-My page says *"No. of maximum ind. set = 3^(n/3)"* with the picture of disjoint triangles. Two fixes:
+Fix a matching M.
 
-- It counts **maximal** independent sets (can't be extended), **not maximum** ones.
-- It's an **upper bound on how many there are**, not the size of one.
+An M alternating path is a path whose edges alternate between being in M and not being in M. That is the only requirement, and the endpoints can be anything.
 
-> **Moon–Moser (1965).** A graph on n vertices has at most **3^(n/3)** maximal independent sets, and this is attained by **n/3 disjoint triangles** (pick one vertex from each triangle — 3 choices, independently).
+An M augmenting path is an alternating path whose two endpoints are both free.
 
-```
-   △   △   △   ...   △        n/3 triangles
-   T₁  T₂  T₃         T_{n/3}    → 3 × 3 × … × 3 = 3^(n/3) maximal ind. sets
-```
+![](figures/berge-1-paths.svg)
 
-### ★ Claim — a leaf's edge lies in some maximum matching
+The difference matters because of what you can do with each. An augmenting path starts and ends with non matching edges, so it carries one more of those than matching edges, which means it has odd length.
 
-> **Claim.** Let **u** be a leaf and **v** its unique neighbour. Then the edge **uv** belongs to *some* maximum matching.
+![](figures/berge-2-swap.svg)
 
-*(This is the matching twin of the MIS leaf claim from the morning class — same exchange-argument shape.)*
+Swap along it, taking the non matching edges in and throwing the matching edges out, and the result is still a matching. Interior vertices simply change partner, and the two endpoints were free so nothing clashes. The size goes up by exactly one.
 
-**Structure:** two cases on whether v is matched.
+Swapping along an alternating path of even length does something different. Such a path carries equal numbers of each type, so the swap leaves the size unchanged. Both behaviours get used later, so it is worth knowing which parity does which.
 
-Let M be any maximum matching.
+## Berge's theorem
 
-**Case 1 — no edge of M touches u.**
+Theorem. A matching M is not maximum if and only if G contains an M augmenting path.
 
-Then u ∉ V(M). Sub-split on v:
+Given an augmenting path, the swap above produces a strictly larger matching, so M was not maximum. That is the easy direction.
 
-- If **v ∉ V(M)** too, then **M + uv** is still a matching (neither endpoint was used) and is **strictly bigger** ✗ contradicting maximality. So this can't happen.
-- Hence **v ∈ V(M)** — v is matched, say by the edge **vx ∈ M**.
+The other direction is the work. Suppose M is not maximum, so some matching N has more edges. Look at the graph formed by taking all edges of M together with all edges of N.
 
-Now **swap**: set
+![](figures/berge-3-union.svg)
 
-$$N := M - vx + uv .$$
+Every vertex meets at most one edge of M and at most one of N, since both are matchings, so every degree in this combined graph is at most 2. A graph with all degrees at most 2 is a disjoint union of paths and cycles.
 
-- **N is a matching:** we freed v by dropping vx, and u was unmatched, so uv clashes with nothing ✓
-- **|N| = |M|** — one edge out, one in ✓ so N is still **maximum** ✓
-- **uv ∈ N** ✓
+Along any of those, the edges must alternate between M and N, because two consecutive edges from the same matching would share a vertex, which matchings forbid. So every cycle here is even.
 
-**Case 2 — some edge of M touches u.**
+Now count component by component. An isolated vertex contributes nothing to either side. An even cycle alternates, so it holds equally many of each. A path of even length starts and ends with different types, so again equal. Only a path of odd length can hold a surplus, and it holds one extra of whichever type sits at both of its ends.
 
-u is a leaf, so its only edge is uv. Hence **uv ∈ M** already, and M itself is the maximum matching we wanted ✓
+Since N has more edges than M overall, at least one component must carry the surplus, and by the count above it can only be an odd length path whose two end edges belong to N. Both of its endpoints are then free with respect to M, because the end edge is not in M and any M edge at the endpoint would have continued the path. So that component is an M augmenting path.
 
-**Combining:** in both cases a maximum matching containing uv exists ∎
+One correction to my page. It says N is assumed to be maximum. The argument only needs N to be larger than M, and maximality is never used.
 
-> **The transferable idea — exchange argument again.** Take *any* optimum, and show you can **modify** it to agree with your greedy choice **without shrinking it**. Same move as the MIS leaf claim. This is what makes "grab a leaf edge and recurse" a correct algorithm on trees.
+The algorithm falls straight out. Start with the empty matching, and while an augmenting path can be found, swap along it. Each pass adds exactly one edge, so it halts, and Berge guarantees that when no augmenting path exists the matching is maximum. That last point is the whole reason the algorithm is correct.
 
----
+## Vertex covers, and the sandwich
 
-## 3. Alternating and augmenting paths
+A set of vertices is a vertex cover when every edge has at least one endpoint in it.
 
-> An **M-alternating path** is a path whose edges alternate between **being in M** and **not being in M**.
+We already have α′ at most β. The other side is this.
 
-> An **M-augmenting path** is an M-alternating path that **starts and ends at unmatched vertices**.
+![](figures/berge-4-sandwich.svg)
 
-```
- unmatched                                   unmatched
-    ●━━━━━━━●═══════●━━━━━━━●═══════●━━━━━━━●
-      ∉M      ∈M      ∉M      ∈M      ∉M
-```
+Take a maximum matching M and let the candidate cover be all of its endpoints, which is 2α′ vertices. Is it a cover? Take any edge. If neither of its ends were among those endpoints, then adding that edge to M would give a larger matching, contradicting maximality. So at least one end is in the set.
 
-An augmenting path has an **odd** number of edges: it begins and ends with non-M edges, so it carries **one more** non-M edge than M edges.
+That gives β at most 2α′, and together
 
-> **Also noted in class:** if there is an edge uv with **u ∉ V(M) and v ∉ V(M)**, then M is not maximum — in fact **not even maximal**, since you could simply add uv. That single edge is the shortest possible augmenting path.
+α′(G) ≤ β(G) ≤ 2 α′(G).
 
----
+Both ends are tight. The lower end is equality for any bipartite graph, by König below. The upper end is equality for the triangle, where α′ is 1 and β is 2.
 
-## 4. ★ Berge's Theorem
+The upper half is also the standard two approximation for the vertex cover problem, which is NP hard. Taking both endpoints of a maximum matching gives a cover at most twice the optimum.
 
-> **Theorem (Berge / Petersen).** A matching M is **not maximum** ⟺ there exists an **M-augmenting path** in G.
+## König's theorem
 
-Two lemmas, one per direction.
+Theorem. If G is bipartite then α′(G) = β(G).
 
----
+The easy direction is already done. For the other, it is enough to exhibit a single vertex cover of size α′, since β is a minimum and so is at most any particular cover.
 
-### Lemma 1 (⇐) — an augmenting path means M isn't maximum
+Take a maximum matching M and build the following sets from it. Let A0 be the vertices of A left unmatched. Let B1 be the vertices of B reachable from A0 by alternating paths, let A1 be their matching partners, and let A2 be everything else in A. Let B0 be the unmatched vertices of B, and B2 the neighbours of A1 not already in B1.
 
-> **Lemma 1.** If there exists an M-augmenting path P in G, then M is not a maximum matching.
+The claim is that B1 together with A2 is a vertex cover of size exactly the matching number.
 
-**Proof.** Form
+To see it covers, the only edges that could escape run from A0 or A1 into B0 or B2, and all three possibilities fail. An edge from A1 to B0 would extend an alternating path from A0 out to an unmatched vertex, giving an augmenting path and contradicting that M is maximum. An edge from A0 to B2 would put its target within one alternating step of A0, so by the definition of B1 the target would be in B1, not B2. An edge from A1 to B2 does the same thing one step later, since the path reaching A1 can be extended through the matching edge and out, again forcing the target into B1.
 
-$$M' \;:=\; (M \setminus P) \;+\; (P \setminus M)$$
+To see the size, every vertex of B1 is matched, because an unmatched one would have completed an augmenting path, and its partner lies in A1. Every vertex of A2 is matched too, since the unmatched vertices of A are exactly A0 which A2 excludes. No matching edge is counted twice, because the partner of a B1 vertex lands in A1 rather than A2. So each vertex of the cover sits on its own matching edge, and the cover has exactly as many vertices as M has edges.
 
-— throw out the M-edges lying on P, and take in the non-M edges of P instead. *(This is the symmetric difference M △ P.)*
+Putting the two directions together, α′ = β.
 
-**Claim 1.1 — M′ is a matching.**
-Along P the swap gives each interior vertex a new partner in place of its old one, so no interior vertex ends up in two edges. The **two endpoints were unmatched**, so the new edges there clash with nothing. Off P, nothing changed ✓
+A fuller walkthrough of this construction, with the same sets, is in [[Lec 02 — König's Theorem and Hall's Theorem]].
 
-**Claim 1.2 — |M′| = |M| + 1.**
-P is augmenting, so it holds **one more** non-M edge than M edges. We removed the M-edges of P and added the non-M edges, so the count goes up by exactly 1 ✓
+My page dates this 1936, and also 1736 in one place. 1936 is right. 1736 is Euler and the Konigsberg bridges.
 
-**Combining:** M′ is a **bigger** matching, so M was not maximum ∎
+## Questions raised in class
 
-```
- before:  ●━━━●═══●━━━●        1 M-edge
- after:   ●═══●━━━●═══●        2 M-edges  ← gained one
-```
+Is the cover number equal to the size of the smaller side for a bipartite graph? Only when the graph is complete bipartite. In general the smaller side is just an upper bound. Take five vertices on each side with edges from only two of the left hand vertices: those two form a cover of size 2, while the smaller side has size 5.
 
----
+Is the smaller side always a minimum cover? No, same example. Both sides have five vertices and the minimum cover has two, and it is not a side at all.
 
-### Lemma 2 (⇒) — if M isn't maximum, an augmenting path exists
+Is the bipartition unique in a connected bipartite graph? Yes, up to swapping which side is called which. Fix a vertex r. In a bipartite graph every path from r to a given vertex v has the same parity of length, since walking a path alternates sides and v sits on only one side. Connectedness guarantees such a path exists. So once you decide where r goes, every other vertex is forced. Connectedness is needed: with two disjoint edges each component can be flipped independently, giving four different bipartitions.
 
-> **Lemma 2.** If M is not a maximum matching, then G contains an M-augmenting path.
+## Other things from the page
 
-**Proof.** Since M is not maximum, take a matching **N** with **|N| > |M|**. Build the graph
+Moon and Moser proved in 1965 that a graph on n vertices has at most 3 to the power n over 3 maximal independent sets, attained by n over 3 disjoint triangles where you pick one vertex from each. My page calls these maximum independent sets, but the result is about maximal ones, and it bounds how many there are rather than how large one is.
 
-$$H \;:=\; M \cup N, \qquad V(H) = V(G), \qquad E(H) = E(M) \cup E(N).$$
+The claim that a leaf's edge belongs to some maximum matching is proved by the same exchange argument as the independent set version in [[2026-07-29 Euler by Extremal Argument, Matchings, MIS in Trees]]. If no matching edge touches the leaf, its neighbour must be matched to something else, and swapping that edge out for the leaf edge keeps the size.
 
-**Claim 2.1 — Δ(H) ≤ 2.**
-At any vertex there is **at most one** edge from M and **at most one** from N, since both are matchings. So degree ≤ 2 in H ✓
+## What to remember
 
-*(My page notes |E(M)| ≤ ⌊n/2⌋ and |E(N)| ≤ ⌊n/2⌋, so |E(H)| < n — consistent with max degree 2.)*
+The vertex cover number is n minus the independence number, so the two problems are one problem. Matching edges are disjoint, which is why a cover needs one vertex per matching edge, and taking both endpoints gives a cover of twice the size. An augmenting path is a certificate that a matching is not maximum, and Berge says it is the only obstruction. Superimposing two matchings gives degrees at most 2, so paths and even cycles, and only odd paths can carry a surplus. König turns the lower bound into equality for bipartite graphs, by constructing the cover from alternating reachability out of the unmatched side.
 
-**Claim 2.2 — H is a disjoint union of paths and cycles, and every cycle is even.**
-Max degree ≤ 2 forces every component to be a **path** or a **cycle** ✓ Along either, edges must **alternate** between M and N — two consecutive edges from the same matching would share a vertex ✗ An alternating cycle must therefore have **even** length.
+## Still unclear
 
-> *This is the "does there exist odd cycles in H?" question on my page. Answer: **no** — an odd cycle would force two adjacent edges from the same matching, violating the matching property.*
-
-So each component of H is: an **isolated vertex**, a **path**, or an **even cycle**.
-
-**Claim 2.3 — some component has more N-edges than M-edges.**
-Count component by component:
-
-| component type | M vs N edges |
-|---|---|
-| isolated vertex | 0 = 0 — contributes equally |
-| **even cycle** | alternates ⇒ **equal** |
-| **even-length path** | starts and ends with different types ⇒ **equal** |
-| **odd-length path** | one more of whichever type it starts *and* ends with |
-
-Since |N| > |M| overall, at least one component must carry the surplus. By the table it can only be an **odd-length path whose end edges both belong to N** ✓
-
-**Claim 2.4 — that component is an M-augmenting path.**
-Its two end edges are in N, hence **not** in M. If an endpoint had an M-edge, that edge would lie in H and continue the path — so both endpoints are **unmatched by M** ✓ And its edges alternate M/N, i.e. alternate in/out of M ✓
-
-**Combining Claims 2.1–2.4:** that component is an M-augmenting path ∎
-
-> ⚠️ **A note in my page says** the surplus component "cannot form an N-augmenting path since N is assumed to be maximum" — careful, N was only assumed **bigger** than M, not maximum. The argument doesn't need N to be maximum; it only needs |N| > |M|. *(If you do take N maximum, the remark is a valid extra sanity check.)*
-
----
-
-### Combining the lemmas
-
-**Lemma 1 + Lemma 2** give the equivalence:
-
-> ★ **A matching M is not maximum ⟺ there exists an M-augmenting path in G.**
-
-## The algorithm that falls out
-
-```
-M ← ∅
-while ∃ an M-augmenting path P:
-        M ← (M ∖ P) + (P ∖ M)        # augment along P
-return M
-```
-
-Each pass adds exactly one edge, so it halts after at most ⌊n/2⌋ rounds. Berge guarantees that when no augmenting path can be found, **M is maximum** — that is the whole reason the algorithm is correct.
-
----
-
-## 5. Vertex covers, and the sandwich
-
-> A subset **S ⊆ V(G)** is a **vertex cover** if for every edge e = {u,v} ∈ E(G), **S ∩ {u,v} ≠ ∅** — every edge has at least one endpoint in S.
-
-### Values
-
-| Graph | \|MVC\| |
-|---|---|
-| Pₙ | ⌊n/2⌋ |
-| Cₙ | ⌈n/2⌉ |
-| Star Sₙ | 1 |
-| Kₙ | n−1 |
-| Tree T | k |
-| **K_{k,l}** | **min{k, l}** |
-
-### ★ The sandwich: |MM| ≤ |MVC| ≤ 2·|MM|
-
-**Claim 5.1 — |MM| ≤ |MVC| (lower half).**
-Take a maximum matching M. Any vertex cover must cover **every edge of M**, so it contains at least one endpoint of each. The edges of M are **pairwise disjoint**, so those endpoints are |M| **distinct** vertices ✓ → also [[Lec 01 — Vertex Cover and Independent Set]] §3
-
-**Claim 5.2 — |MVC| ≤ 2·|MM| (upper half).**
-Take a **maximum** matching M and let **VC := V(M)** — *all* endpoints of M, so |V(M)| = 2|M|.
-
-Is V(M) a vertex cover? Take any edge e = uv. If **neither** u nor v were in V(M), then M + e would be a bigger matching ✗ contradicting maximality. So at least one endpoint is in V(M) ✓
-
-Hence V(M) is a vertex cover of size 2|MM|, giving |MVC| ≤ 2|MM| ✓
-
-**Combining:**
-
-$$|MM| \;\le\; |MVC| \;\le\; 2\,|MM|$$
-
-### Both ends are tight
-
-- **Lower tight:** any bipartite graph — by König (§6). E.g. Pₙ.
-- **Upper tight:** **K₃**. |MM| = 1, |MVC| = 2 = 2·1 ✓ More generally a disjoint union of triangles.
-
-> **Why this matters practically:** taking both endpoints of a maximum matching is the classic **2-approximation** for the NP-hard minimum vertex cover problem. Claim 5.2 *is* that algorithm's guarantee.
-
-**Worked check on C₂ₙ:** |MM| = n and |MVC| = n ✓ equal (even cycle is bipartite).
-
----
-
-## 6. ★ König's Theorem (1936)
-
-> **Theorem (König).** If G is **bipartite**, then **|MM(G)| = |MVC(G)|**.
-
-*(My page has "1936" and also "1736" — 1936 is König's; 1736 is Euler and Königsberg, an easy slip since the names look alike.)*
-
-### The construction
-
-Let (A, B) be the bipartition and let **M be a maximum matching**. Define, in this order:
-
-| Set | Definition |
-|---|---|
-| **A₀** | vertices of **A** that are **unmatched** |
-| **B₀** | vertices of **B** that are **unmatched** |
-| **B₁ ⊆ B** | vertices reachable from **A₀** by **M-alternating paths** |
-| **A₁** | the **matching partners** of B₁ |
-| **B₂** | N(A₁) ∖ B₁ |
-| **A₂** | the rest — A ∖ (A₀ ∪ A₁) |
-
-```
-        A                        B
-   ┌──────────┐            ┌──────────┐
-   │   A₀     │  unmatched │   B₀     │  unmatched
-   │──────────│            │──────────│
-   │   A₁     │◄── matched │   B₁     │  reachable from A₀
-   │──────────│            │──────────│
-   │   A₂     │            │   B₂     │  = N(A₁) ∖ B₁
-   └──────────┘            └──────────┘
-```
-
-> ★ **Claim: B₁ ∪ A₂ is a vertex cover.**
-
-### Proof of the Claim — three forbidden edge types
-
-We must show no edge escapes B₁ ∪ A₂. The only edges that could escape run from **A₀ ∪ A₁** to **B₀ ∪ B₂**. Three cases, each ruled out.
-
-**Claim 6.1 — no edge from A₁ to B₀.**
-Suppose a₁ ∈ A₁ had an edge to some unmatched b₀ ∈ B₀. By definition a₁ is the matching partner of some vertex of B₁, which is reachable from A₀ by an M-alternating path. Extend that path through a₁ and out along the edge to b₀. Both ends — the A₀ start and the B₀ finish — are **unmatched**, so this is an **M-augmenting path** ✗ contradicting that M is maximum (Berge, §4) ✓
-
-**Claim 6.2 — no edge from A₀ to B₂.**
-Suppose a₀ ∈ A₀ had an edge to x ∈ B₂. Then x is reachable from A₀ by a one-edge M-alternating path, so by **the definition of B₁**, x should be in B₁ ✗ But x ∈ B₂ = N(A₁) ∖ B₁ ✓
-
-**Claim 6.3 — no edge from A₁ to B₂.**
-Suppose w ∈ A₁ had an edge to y ∈ B₂. Since w ∈ A₁, w is matched to some **z ∈ B₁**, and there is an M-alternating path **P** from A₀ to z. Now extend:
-
-$$P \;+\; zw \;+\; wy$$
-
-The edge **zw is in M**, and **wy is not**, so the alternation is preserved — this is an M-alternating path from A₀ reaching **y**. By the definition of B₁, that forces **y ∈ B₁** ✗ contradicting y ∈ B₂ ✓
-
-**Combining 6.1–6.3:** every edge has an endpoint in **B₁ ∪ A₂**, so it is a vertex cover ∎
-
-### Finishing the theorem
-
-**Claim 6.4 — |A₂ ∪ B₁| = |M|.**
-
-- Every vertex of **B₁** is matched — an unmatched B-vertex reachable from A₀ would be an augmenting path (Claim 6.1's argument) — and its partner lies in A₁.
-- Every vertex of **A₂** is matched, since the unmatched A-vertices are exactly A₀, and A₂ excludes A₀.
-- These use **different** M-edges: A₂-vertices are matched into B ∖ B₁ (a partner in B₁ would put them in A₁), while B₁-vertices are matched into A₁ ✓
-
-So the cover uses one M-edge per vertex, no two sharing: **|B₁ ∪ A₂| = |M|** ✓
-
-**Combining with the sandwich:**
-
-$$|MVC| \;\le\; |B_1 \cup A_2| \;=\; |M| \;=\; |MM| \qquad\text{and}\qquad |MM| \le |MVC| \ \ \text{(Claim 5.1)}$$
-
-Therefore **|MM| = |MVC|** in bipartite graphs ∎
-
-> **Where bipartiteness was used:** the whole A/B layering. In K₃ the argument collapses — there are no "sides" to alternate between — and indeed |MM| = 1 < 2 = |MVC| there.
-
----
-
-## 7. The open questions from class
-
-### (a) Complete bipartite graphs
-
-**Question:** for complete bipartite K_{|A|,|B|}, is |MM| = |MVC|?
-
-**Yes**, and you can see it directly. Say |A| ≤ |B|. Every vertex of A can be matched to a private partner, so |MM| = |A|. And A itself covers every edge, so |MVC| ≤ |A|. With Claim 5.1:
-
-$$|A| = |MM| \le |MVC| \le |A| \quad\Longrightarrow\quad |MM| = |MVC| = \min\{|A|,|B|\} \;✓$$
-
-### (b) Is |MVC| = min{|A|, |B|} for *every* bipartite graph?
-
-**No.** My page has a counterexample sketched; here it is precisely.
-
-Take **A = {a, b, c, d, e}** and **B = {p, q, r, s, t}**, but put edges only from **a** and **b** into B:
-
-```
- A:  a  b  c  d  e         only a and b have edges
-     │╲ │╲                 c, d, e are isolated
- B:  p q r s t
-```
-
-Then **{a, b}** covers every edge, so |MVC| = 2 — but min{|A|,|B|} = 5 ✗
-
-**The lesson:** min{|A|,|B|} is only an *upper bound*. Equality needs the graph to be **complete** bipartite (part (a)).
-
-### (c) Is the smaller side always a minimum vertex cover?
-
-**No** — the same counterexample. Both sides have size 5, but the minimum cover {a, b} has size 2 and is not a side at all.
-
-### (d) ★ Is the bipartition unique in a **connected** bipartite graph?
-
-**Yes** — unique up to swapping the two sides. *(This was left open on my page; here's the proof.)*
-
-**Proof.** Fix any vertex **r**, and let (X, Y) be any bipartition with r ∈ X.
-
-**Claim (d).1 — in a bipartite graph, all r–v paths have the **same parity** of length.**
-Walking any path alternates sides. So a path of **even** length ends on r's side, and a path of **odd** length ends on the other side. Since a vertex sits on exactly one side, every r–v path has the same parity ✓
-
-**Claim (d).2 — the side of v is forced.**
-By Claim (d).1, v ∈ X exactly when some (equivalently every) r–v path has even length. **Connectedness** guarantees at least one such path exists ✓
-
-So once you decide which side r goes on, **every other vertex's side is determined** — the bipartition is unique up to swapping the names X and Y ∎
-
-> ⚠️ **Connectedness is essential.** For a disconnected graph, each component can be flipped independently. Two disjoint edges have **four** different bipartitions.
-
----
-
-## Takeaways
-
-1. **|MVC| = n − |MIS|** — the table's third column is Gallai's identity in disguise.
-2. **A leaf's edge lies in some maximum matching** — proved by an **exchange argument**, the same shape as the MIS leaf claim.
-3. **Augment along an augmenting path** with M △ P: the swap gains exactly one edge.
-4. **Berge** is the whole theory of matching algorithms: no augmenting path ⟺ maximum.
-5. **M ∪ N has max degree 2**, so it splits into alternating paths and even cycles. This decomposition is the engine of Lemma 2 — and it reappears throughout matching theory.
-6. **|MM| ≤ |MVC| ≤ 2|MM|**: the lower half is disjointness, the upper half is "take both endpoints" — which is the standard 2-approximation for vertex cover.
-7. **König** = the lower half becomes equality when bipartite. The proof **constructs** the cover as B₁ ∪ A₂ from alternating reachability out of the unmatched vertices A₀.
-8. **min{|A|,|B|} is only an upper bound** on |MVC| — equality needs complete bipartite.
-9. **Connected + bipartite ⇒ unique bipartition** (up to swapping).
-
----
-
-## Doubts / to revisit
-
-- [ ] "No. of maximum ind. set = 3^(n/3)" → Moon–Moser counts **maximal** independent sets, and it's an upper **bound on the count**, not a size.
-- [ ] In Lemma 2 my page says N is "assumed to be maximum" — only **|N| > |M|** is needed.
-- [ ] My page has both "1936" and "1736" for König — **1936** is right; 1736 is Euler/Königsberg.
-- [ ] The König construction here uses A₀/B₁/A₁/B₂/A₂; my NPTEL note [[Lec 02 — König's Theorem and Hall's Theorem]] uses S/T reachability. **Same proof, different labels** — worth reading both once.
-- [ ] Class asked what graphs with Δ ≤ 2 look like — answer: disjoint unions of paths and cycles. Used in Claim 2.2.
+- My page says N is assumed maximum in Berge's hard direction. Only larger than M is needed.
+- Both 1936 and 1736 appear for König. It is 1936.
+- Moon and Moser counts maximal independent sets, not maximum, and bounds the number of them.
