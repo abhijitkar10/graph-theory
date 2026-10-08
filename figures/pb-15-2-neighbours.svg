@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 444" width="660" height="444" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="444" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 15.2. Each neighbour of v brings k−1 further vertices, none of them adjacent to v.</text>
+<line x1="150" y1="220" x2="310" y2="120" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="150" y1="220" x2="310" y2="220" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="150" y1="220" x2="310" y2="320" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="310" y1="120" x2="470" y2="90" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310" y1="120" x2="470" y2="150" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310" y1="220" x2="470" y2="190" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310" y1="220" x2="470" y2="250" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310" y1="320" x2="470" y2="290" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310" y1="320" x2="470" y2="350" stroke="#3B6D11" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="310" cy="120" r="7" fill="#185FA5"/>
+<circle cx="310" cy="220" r="7" fill="#185FA5"/>
+<circle cx="310" cy="320" r="7" fill="#185FA5"/>
+<circle cx="470" cy="90" r="5" fill="#3B6D11"/>
+<circle cx="470" cy="150" r="5" fill="#3B6D11"/>
+<circle cx="470" cy="190" r="5" fill="#3B6D11"/>
+<circle cx="470" cy="250" r="5" fill="#3B6D11"/>
+<circle cx="470" cy="290" r="5" fill="#3B6D11"/>
+<circle cx="470" cy="350" r="5" fill="#3B6D11"/>
+<circle cx="150" cy="220" r="8" fill="#333333"/>
+<text x="128" y="225" font-size="15" fill="#333333" text-anchor="middle">v</text>
+<text x="310" y="72" font-size="12" fill="#185FA5" text-anchor="middle">the k neighbours of v</text>
+<text x="508" y="72" font-size="12" fill="#3B6D11" text-anchor="middle">k−1 further ones each</text>
+<path d="M 310 120 Q 344.0 170.0 310 220" fill="none" stroke="#C0392B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="196" y="140.0" font-size="11" fill="#C0392B" text-anchor="middle">forbidden, it would</text>
+<text x="196" y="170.0" font-size="11" fill="#C0392B" text-anchor="middle">make a triangle</text>
+<text x="330" y="390.0" font-size="12" fill="#666666" text-anchor="middle">If two neighbours of v were joined, v and those two would form a triangle, which girth 5</text>
+<text x="330" y="410.0" font-size="12" fill="#666666" text-anchor="middle">forbids. So each neighbour u keeps k−1 edges other than uv, and none of them goes back to</text>
+<text x="330" y="430.0" font-size="12" fill="#666666" text-anchor="middle">another neighbour of v.</text>
+</svg>

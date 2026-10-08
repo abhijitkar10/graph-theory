@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 307" width="660" height="307" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="307" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 15.3. If two neighbours shared an outer vertex you would get a four cycle.</text>
+<line x1="150" y1="200" x2="310" y2="130" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+<line x1="150" y1="200" x2="310" y2="270" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+<line x1="310" y1="130" x2="470" y2="200" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+<line x1="310" y1="270" x2="470" y2="200" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+<circle cx="310" cy="130" r="7" fill="#185FA5"/>
+<circle cx="310" cy="270" r="7" fill="#185FA5"/>
+<circle cx="150" cy="200" r="8" fill="#333333"/>
+<circle cx="470" cy="200" r="7" fill="#3B6D11"/>
+<text x="128" y="205" font-size="15" fill="#333333" text-anchor="middle">v</text>
+<text x="310" y="110.0" font-size="14" fill="#185FA5" text-anchor="middle">u₁</text>
+<text x="310" y="180.0" font-size="14" fill="#185FA5" text-anchor="middle">u₂</text>
+<text x="492" y="275.0" font-size="14" fill="#3B6D11" text-anchor="middle">w</text>
+<text x="310" y="270.0" font-size="14" fill="#C0392B" text-anchor="middle">v, u₁, w, u₂, v</text>
+<text x="310" y="296.0" font-size="12" fill="#C0392B" text-anchor="middle">a cycle of length 4</text>
+<text x="330" y="200.0" font-size="12" fill="#666666" text-anchor="middle">Girth at least 5 rules out cycles of length 3 and of length 4, so this cannot happen. Hence</text>
+<text x="330" y="220.0" font-size="12" fill="#666666" text-anchor="middle">the outer groups belonging to different neighbours are disjoint, and the three groups add</text>
+<text x="330" y="240.0" font-size="12" fill="#666666" text-anchor="middle">without overlap: 1 + k + k(k−1) = k² + 1.</text>
+</svg>

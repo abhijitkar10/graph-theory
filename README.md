@@ -51,6 +51,10 @@ Read in this order (the numbers matter, filenames sort differently):
 | 7 | [Matchings in Bipartite Graphs](2026-08-10%20Matchings%20in%20Bipartite%20Graphs.md) | perfect matchings, and why every bipartite graph has a vertex lying in *every* maximum matching |
 | 8 | [König by Induction, Hall, and Factors](2026-08-10%20K%C3%B6nig%20by%20Induction%2C%20Hall%2C%20and%20Factors.md) | a third proof of König, Hall's theorem, k-factors, and why every 2k-regular graph has a 2-factor |
 | 9 | [Tutte's 1-Factor Theorem](2026-08-19%20Tutte%27s%201-Factor%20Theorem.md) | odd components, bad sets, and the full proof of Tutte's theorem |
+| 10 | [Connectivity 1, minimum degree and Whitney's theorem](2026-08-31%20Connectivity%201%20%E2%80%94%20Minimum%20Degree%20and%20Whitney%27s%20Theorem.md) | what k-connected means, minimum degree forcing connectedness, Dirac, and Whitney in both directions |
+| 11 | [Blocks, ear decomposition, and k-connectivity](2026-08-31%20Blocks%2C%20Ear%20Decomposition%2C%20and%20k-Connectivity.md) | the four consequences of 2-connectedness, blocks and the block tree, subdivision, and ear decomposition |
+| 12 | [Menger's theorem, Dirac's fan lemma, and cycles through k vertices](2026-08-31%20Menger%27s%20Theorem%20and%20Dirac%27s%20Fan%20Lemma.md) | Menger by induction, global Menger, fans, Dirac's fan lemma both ways, a cycle through any k vertices |
+| 13 | [Coloring 1, greedy colouring, degeneracy, and lower bounds](2026-10-05%20Coloring%201%20%E2%80%94%20Greedy%20Colouring%2C%20Degeneracy%2C%20and%20Lower%20Bounds.md) | proper colourings, chromatic numbers of standard families, χ ≤ Δ + 1 twice, degeneracy, χ ≥ ω and n over α |
 
 ## Problem sets
 
@@ -69,7 +73,7 @@ Read in this order (the numbers matter, filenames sort differently):
 
 ## Some results proved here
 
-Konig's theorem · Hall's marriage theorem and its defect version · Berge's theorem · Euler's theorem (two independent proofs) · the long-path theorem · Moore bounds from girth · the four characterisations of a tree · greedy and dynamic-programming algorithms on trees · the Helly property for intervals · why Q₄ is not planar · why odd cycles are the only obstruction to a universal matched vertex.
+Konig's theorem · Hall's marriage theorem and its defect version · Berge's theorem · Euler's theorem (two independent proofs) · the long-path theorem · Moore bounds from girth · the four characterisations of a tree · greedy and dynamic-programming algorithms on trees · the Helly property for intervals · why Q₄ is not planar · why odd cycles are the only obstruction to a universal matched vertex · Menger's theorem and the fan lemma · the greedy and degeneracy bounds on the chromatic number.
 
 ## Two notes on reading these
 

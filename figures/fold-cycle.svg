@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 585" width="660" height="585" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="585" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666" text-anchor="start">Folding the path into a cycle. Here k = 6, and the overlap sits at i = 3.</text>
+<text x="330" y="58" font-size="12" fill="#666666" text-anchor="middle">The longest path, plus the two crossing edges the overlap hands you</text>
+<line x1="80" y1="168" x2="160" y2="168" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="160" y1="168" x2="240" y2="168" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="240" y1="168" x2="320" y2="168" stroke="#C0392B" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="320" y1="168" x2="400" y2="168" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="400" y1="168" x2="480" y2="168" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="480" y1="168" x2="560" y2="168" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<circle cx="80" cy="168" r="6" fill="#333333"/>
+<circle cx="160" cy="168" r="6" fill="#333333"/>
+<circle cx="240" cy="168" r="6" fill="#333333"/>
+<circle cx="320" cy="168" r="6" fill="#333333"/>
+<circle cx="400" cy="168" r="6" fill="#333333"/>
+<circle cx="480" cy="168" r="6" fill="#333333"/>
+<circle cx="560" cy="168" r="6" fill="#333333"/>
+<text x="80" y="194" font-size="14" fill="#333333" text-anchor="middle">v₀</text>
+<text x="160" y="194" font-size="14" fill="#333333" text-anchor="middle">v₁</text>
+<text x="240" y="194" font-size="14" fill="#333333" text-anchor="middle">v₂</text>
+<text x="320" y="194" font-size="14" fill="#333333" text-anchor="middle">v₃</text>
+<text x="400" y="194" font-size="14" fill="#333333" text-anchor="middle">v₄</text>
+<text x="480" y="194" font-size="14" fill="#333333" text-anchor="middle">v₅</text>
+<text x="560" y="194" font-size="14" fill="#333333" text-anchor="middle">v₆</text>
+<path d="M 80 168 Q 200.0 232.0 320 168" fill="none" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<text x="205" y="254" font-size="12" fill="#3B6D11" text-anchor="middle">v₀vᵢ, the edge A gave you</text>
+<path d="M 240 168 Q 400.0 102.0 560 168" fill="none" stroke="#185FA5" stroke-width="2.8" stroke-linecap="round"/>
+<text x="470" y="86" font-size="12" fill="#185FA5" text-anchor="middle">vₖvᵢ₋₁, the edge B gave you</text>
+<text x="280" y="140" font-size="11" fill="#C0392B" text-anchor="middle">drop this one</text>
+<text x="330" y="284" font-size="12" fill="#666666" text-anchor="middle">The two new edges land either side of the gap between vᵢ₋₁ and vᵢ.</text>
+<text x="330" y="302" font-size="12" fill="#666666" text-anchor="middle">That gap is the whole reason B is defined with a −1.</text>
+<text x="330" y="336" font-size="12" fill="#666666" text-anchor="middle">The same seven vertices, redrawn in the order you walk them</text>
+<line x1="330.0" y1="370.0" x2="401.9284963870588" y2="404.6389382289965" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="401.9284963870588" y1="404.6389382289965" x2="419.6933679207278" y2="482.4719259239809" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="419.6933679207278" y1="482.4719259239809" x2="369.9173039988153" y2="544.8891358470225" stroke="#185FA5" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="369.9173039988153" y1="544.8891358470225" x2="290.0826960011847" y2="544.8891358470225" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="290.0826960011847" y1="544.8891358470225" x2="240.30663207927222" y2="482.47192592398096" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="240.30663207927222" y1="482.47192592398096" x2="258.0715036129412" y2="404.63893822899655" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="258.0715036129412" y1="404.63893822899655" x2="330.0" y2="370.0" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="330.0" cy="370.0" r="6" fill="#333333"/>
+<text x="330.0" y="348.0" font-size="14" fill="#333333" text-anchor="middle">v₀</text>
+<circle cx="401.9284963870588" cy="404.6389382289965" r="6" fill="#333333"/>
+<text x="423.0379464136955" y="392.8047135788107" font-size="14" fill="#333333" text-anchor="middle">v₁</text>
+<circle cx="419.6933679207278" cy="482.4719259239809" r="6" fill="#333333"/>
+<text x="446.016421549637" y="493.4799911408014" font-size="14" fill="#333333" text-anchor="middle">v₂</text>
+<circle cx="369.9173039988153" cy="544.8891358470225" r="6" fill="#333333"/>
+<text x="381.63216495498943" y="574.2152952803879" font-size="14" fill="#333333" text-anchor="middle">v₆</text>
+<circle cx="290.0826960011847" cy="544.8891358470225" r="6" fill="#333333"/>
+<text x="278.36783504501057" y="574.2152952803879" font-size="14" fill="#333333" text-anchor="middle">v₅</text>
+<circle cx="240.30663207927222" cy="482.47192592398096" r="6" fill="#333333"/>
+<text x="213.98357845036298" y="493.4799911408014" font-size="14" fill="#333333" text-anchor="middle">v₄</text>
+<circle cx="258.0715036129412" cy="404.63893822899655" r="6" fill="#333333"/>
+<text x="236.96205358630442" y="392.8047135788107" font-size="14" fill="#333333" text-anchor="middle">v₃</text>
+<text x="330" y="458" font-size="12" fill="#666666" text-anchor="middle">7 vertices,</text>
+<text x="330" y="476.0" font-size="12" fill="#666666" text-anchor="middle">7 edges</text>
+<text x="330" y="498.0" font-size="12" fill="#666666" text-anchor="middle">v₀ v₁ v₂, across to v₆, back down v₅ v₄ v₃, then across to v₀. Every vertex exactly once.</text>
+<text x="330" y="518.0" font-size="12" fill="#666666" text-anchor="middle">The front run goes forwards and the back run goes in reverse. That reversal is the fold.</text>
+</svg>

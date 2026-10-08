@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 24.1. König first, so the k in the question becomes a statement about matchings.</text>
+<text x="330" y="86" font-size="14" fill="#185FA5" text-anchor="middle">β(G) = k, the minimum vertex cover</text>
+<text x="330" y="124" font-size="12" fill="#666666" text-anchor="middle">König, because G is bipartite</text>
+<line x1="240" y1="140" x2="420" y2="140" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+<text x="330" y="176" font-size="14" fill="#3B6D11" text-anchor="middle">α′(G) = k, so every maximum matching has exactly k edges</text>
+<text x="330" y="232" font-size="13" fill="#333333" text-anchor="middle">now induct on k</text>
+<text x="330" y="266.0" font-size="12" fill="#666666" text-anchor="middle">Without König you are stuck, because the hypothesis is about covers and the conclusion is about</text>
+<text x="330" y="286.0" font-size="12" fill="#666666" text-anchor="middle">matchings. This one line is what connects them, and it is the only place bipartiteness</text>
+<text x="330" y="306" font-size="12" fill="#666666" text-anchor="middle">enters before the induction.</text>
+</svg>

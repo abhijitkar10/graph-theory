@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 373" width="660" height="373" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="373" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 23.2. In a tree a leaf's parent is in every maximum matching, and it is two lines.</text>
+<line x1="330" y1="90" x2="330" y2="190" stroke="#c4c4c4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="190" x2="200" y2="290" stroke="#c4c4c4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="190" x2="460" y2="290" stroke="#c4c4c4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="190" x2="330" y2="290" stroke="#c4c4c4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="190" x2="200" y2="290" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="330" cy="90" r="6" fill="#333333"/>
+<circle cx="460" cy="290" r="6" fill="#333333"/>
+<circle cx="330" cy="290" r="6" fill="#333333"/>
+<circle cx="200" cy="290" r="8" fill="#3B6D11"/>
+<circle cx="330" cy="190" r="8" fill="#185FA5"/>
+<text x="178" y="296" font-size="14" fill="#3B6D11" text-anchor="middle">u</text>
+<text x="352" y="196" font-size="14" fill="#185FA5" text-anchor="middle">p</text>
+<text x="200" y="322" font-size="12" fill="#3B6D11" text-anchor="middle">a leaf</text>
+<text x="392" y="190" font-size="12" fill="#185FA5" text-anchor="start">its only neighbour</text>
+<text x="330" y="342.0" font-size="12" fill="#666666" text-anchor="middle">If a maximum matching missed p, then u would be unmatched too, since p is its only possible partner,</text>
+<text x="330" y="362.0" font-size="12" fill="#666666" text-anchor="middle">and adding the edge up would give a larger matching. So p is in every one.</text>
+</svg>

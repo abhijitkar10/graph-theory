@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" width="660" height="470" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="470" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 1.1. Count the vertex and edge incidences twice: once per vertex, once per edge.</text>
+<line x1="210" y1="110" x2="210" y2="300" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="210" y1="110" x2="390" y2="205" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="210" y1="300" x2="390" y2="205" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="390" y1="205" x2="570" y2="205" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="210" cy="140" r="5" fill="#B8860B"/>
+<circle cx="210" cy="270" r="5" fill="#B8860B"/>
+<circle cx="239" cy="125" r="5" fill="#B8860B"/>
+<circle cx="361" cy="190" r="5" fill="#B8860B"/>
+<circle cx="239" cy="285" r="5" fill="#B8860B"/>
+<circle cx="361" cy="220" r="5" fill="#B8860B"/>
+<circle cx="419" cy="205" r="5" fill="#B8860B"/>
+<circle cx="541" cy="205" r="5" fill="#B8860B"/>
+<circle cx="210" cy="110" r="7" fill="#333333"/>
+<circle cx="210" cy="300" r="7" fill="#333333"/>
+<circle cx="390" cy="205" r="7" fill="#333333"/>
+<circle cx="570" cy="205" r="7" fill="#333333"/>
+<text x="192" y="115" font-size="15" fill="#333333" text-anchor="end">a</text>
+<text x="192" y="305" font-size="15" fill="#333333" text-anchor="end">b</text>
+<text x="384" y="235" font-size="15" fill="#333333" text-anchor="middle">c</text>
+<text x="588" y="210" font-size="15" fill="#333333" text-anchor="start">d</text>
+<text x="330" y="358" font-size="12" fill="#B8860B" text-anchor="middle">Each orange mark is one incidence: a vertex together with an edge touching it.</text>
+<text x="330" y="394" font-size="13" fill="#333333" text-anchor="middle">Counting vertex by vertex: deg(a) + deg(b) + deg(c) + deg(d) = 2 + 2 + 3 + 1 = 8.</text>
+<text x="330" y="418" font-size="13" fill="#333333" text-anchor="middle">Counting edge by edge: 4 edges, each with two ends, so 4 × 2 = 8.</text>
+<text x="330" y="448" font-size="12" fill="#666666" text-anchor="middle">Same eight marks counted two ways, so the degrees sum to 2m.</text>
+</svg>

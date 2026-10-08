@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" width="660" height="470" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="470" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Putting s₅ on the cycle. Five fan paths land in four arcs, so two land in the same arc.</text>
+<text x="165" y="56" font-size="14" fill="#666666" text-anchor="middle">Before</text>
+<text x="495" y="56" font-size="14" fill="#666666" text-anchor="middle">After</text>
+<line x1="165" y1="138" x2="219" y2="156" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="219" y1="156" x2="252" y2="202" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="252" y1="202" x2="252" y2="258" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="252" y1="258" x2="219" y2="304" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="219" y1="304" x2="165" y2="322" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="165" y1="322" x2="111" y2="304" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="111" y1="304" x2="78" y2="258" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="78" y1="258" x2="78" y2="202" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="78" y1="202" x2="111" y2="156" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="111" y1="156" x2="165" y2="138" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="165" y1="230" x2="219" y2="156" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="165" y1="230" x2="252" y2="258" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="165" y1="230" x2="165" y2="322" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="165" y1="230" x2="78" y2="258" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="165" y1="230" x2="111" y2="156" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="165" cy="138" r="7" fill="#185FA5"/>
+<circle cx="219" cy="156" r="5" fill="#333333"/>
+<circle cx="252" cy="202" r="5" fill="#333333"/>
+<circle cx="252" cy="258" r="7" fill="#185FA5"/>
+<circle cx="219" cy="304" r="5" fill="#333333"/>
+<circle cx="165" cy="322" r="7" fill="#185FA5"/>
+<circle cx="111" cy="304" r="5" fill="#333333"/>
+<circle cx="78" cy="258" r="5" fill="#333333"/>
+<circle cx="78" cy="202" r="7" fill="#185FA5"/>
+<circle cx="111" cy="156" r="5" fill="#333333"/>
+<circle cx="165" cy="230" r="8" fill="#B8860B"/>
+<text x="165" y="118" font-size="14" fill="#185FA5" text-anchor="middle">s₁</text>
+<text x="275" y="270" font-size="14" fill="#185FA5" text-anchor="middle">s₂</text>
+<text x="165" y="350" font-size="14" fill="#185FA5" text-anchor="middle">s₃</text>
+<text x="55" y="198" font-size="14" fill="#185FA5" text-anchor="middle">s₄</text>
+<text x="179" y="216" font-size="15" fill="#B8860B" text-anchor="start">s₅</text>
+<line x1="408" y1="258" x2="408" y2="202" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="408" y1="202" x2="441" y2="156" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="441" y1="156" x2="495" y2="138" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="495" y1="138" x2="549" y2="156" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="549" y1="156" x2="582" y2="202" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="582" y1="202" x2="582" y2="258" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="582" y1="258" x2="549" y2="304" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="549" y1="304" x2="495" y2="322" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="495" y1="322" x2="441" y2="304" stroke="#bbbbbb" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="441" y1="304" x2="408" y2="258" stroke="#bbbbbb" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="495" y1="230" x2="495" y2="322" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="495" y1="230" x2="408" y2="258" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="495" y1="230" x2="549" y2="156" stroke="#bbbbbb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="495" y1="230" x2="582" y2="258" stroke="#bbbbbb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="495" y1="230" x2="441" y2="156" stroke="#bbbbbb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4"/>
+<circle cx="495" cy="138" r="7" fill="#185FA5"/>
+<circle cx="549" cy="156" r="5" fill="#333333"/>
+<circle cx="582" cy="202" r="5" fill="#333333"/>
+<circle cx="582" cy="258" r="7" fill="#185FA5"/>
+<circle cx="549" cy="304" r="5" fill="#333333"/>
+<circle cx="495" cy="322" r="7" fill="#185FA5"/>
+<circle cx="441" cy="304" r="5" fill="#333333"/>
+<circle cx="408" cy="258" r="5" fill="#333333"/>
+<circle cx="408" cy="202" r="7" fill="#185FA5"/>
+<circle cx="441" cy="156" r="5" fill="#333333"/>
+<circle cx="495" cy="230" r="8" fill="#B8860B"/>
+<text x="495" y="118" font-size="14" fill="#185FA5" text-anchor="middle">s₁</text>
+<text x="605" y="270" font-size="14" fill="#185FA5" text-anchor="middle">s₂</text>
+<text x="495" y="350" font-size="14" fill="#185FA5" text-anchor="middle">s₃</text>
+<text x="385" y="198" font-size="14" fill="#185FA5" text-anchor="middle">s₄</text>
+<text x="509" y="216" font-size="15" fill="#B8860B" text-anchor="start">s₅</text>
+<text x="165" y="364" font-size="12" fill="#666666" text-anchor="middle">The blue vertices cut the cycle into four</text>
+<text x="165" y="384" font-size="12" fill="#666666" text-anchor="middle">arcs. The two red paths end in the same arc,</text>
+<text x="165" y="404" font-size="12" fill="#666666" text-anchor="middle">between s₃ and s₄.</text>
+<text x="495" y="364" font-size="12" fill="#666666" text-anchor="middle">Drop the stretch between the red ends, which</text>
+<text x="495" y="384" font-size="12" fill="#666666" text-anchor="middle">holds no blue vertex, and go out and back</text>
+<text x="495" y="404" font-size="12" fill="#666666" text-anchor="middle">through s₅ instead.</text>
+<text x="330" y="430" font-size="12" fill="#666666" text-anchor="middle">Every blue vertex is still on the new cycle, and so is s₅. That is the step from k − 1 chosen</text>
+<text x="330" y="450" font-size="12" fill="#666666" text-anchor="middle">vertices to k.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 334" width="660" height="334" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="334" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 1.2. Split that same sum by parity and see what is forced.</text>
+<line x1="180" y1="110" x2="180" y2="250" stroke="#c4c4c4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="180" y1="250" x2="330" y2="180" stroke="#c4c4c4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="180" x2="180" y2="110" stroke="#c4c4c4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="180" x2="480" y2="180" stroke="#c4c4c4" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="180" cy="110" r="7" fill="#185FA5"/>
+<circle cx="180" cy="250" r="7" fill="#185FA5"/>
+<circle cx="330" cy="180" r="7" fill="#C0392B"/>
+<circle cx="480" cy="180" r="7" fill="#C0392B"/>
+<text x="158" y="110.0" font-size="13" fill="#185FA5" text-anchor="end">a, 2</text>
+<text x="158" y="180.0" font-size="13" fill="#185FA5" text-anchor="end">b, 2</text>
+<text x="330" y="278.0" font-size="13" fill="#C0392B" text-anchor="middle">c, 3</text>
+<text x="502" y="255.0" font-size="13" fill="#C0392B" text-anchor="start">d, 1</text>
+<text x="200" y="225.0" font-size="13" fill="#185FA5" text-anchor="middle">even degrees: 2 + 2 = 4</text>
+<text x="470" y="225.0" font-size="13" fill="#C0392B" text-anchor="middle">odd degrees: 3 + 1 = 4</text>
+<text x="330" y="255.0" font-size="13" fill="#333333" text-anchor="middle">total 8, which is even</text>
+<text x="330" y="283.0" font-size="12" fill="#666666" text-anchor="middle">The whole sum is even and the even part is even, so the odd part is even too. But that is a</text>
+<text x="330" y="303.0" font-size="12" fill="#666666" text-anchor="middle">sum of odd numbers, and such a sum is even exactly when there is an even count of them. Here</text>
+<text x="330" y="323.0" font-size="12" fill="#666666" text-anchor="middle">two, namely c and d.</text>
+</svg>

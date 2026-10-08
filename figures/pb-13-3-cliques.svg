@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 473" width="660" height="473" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="473" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 13.3. If H − U is a union of cliques, build the perfect matching directly.</text>
+<ellipse cx="320" cy="92" rx="176" ry="42" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<text x="320" y="98" font-size="12" fill="#185FA5" text-anchor="middle">U, the universal vertices</text>
+<line x1="105.0" y1="223.2" x2="132.71281292110203" y2="266.4" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="105.0" y1="223.2" x2="77.28718707889797" y2="266.40000000000003" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="132.71281292110203" y1="266.4" x2="77.28718707889797" y2="266.40000000000003" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="105.0" cy="223.2" r="5" fill="#C0392B"/>
+<circle cx="132.71281292110203" cy="266.4" r="5" fill="#C0392B"/>
+<circle cx="77.28718707889797" cy="266.40000000000003" r="5" fill="#C0392B"/>
+<text x="105" y="310" font-size="12" fill="#C0392B" text-anchor="middle">odd, 3</text>
+<line x1="105.0" y1="223.2" x2="105" y2="134" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="255.0" y1="223.2" x2="282.71281292110206" y2="266.4" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="255.0" y1="223.2" x2="227.28718707889797" y2="266.40000000000003" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="282.71281292110206" y1="266.4" x2="227.28718707889797" y2="266.40000000000003" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="255.0" cy="223.2" r="5" fill="#C0392B"/>
+<circle cx="282.71281292110206" cy="266.4" r="5" fill="#C0392B"/>
+<circle cx="227.28718707889797" cy="266.40000000000003" r="5" fill="#C0392B"/>
+<text x="255" y="310" font-size="12" fill="#C0392B" text-anchor="middle">odd, 3</text>
+<line x1="255.0" y1="223.2" x2="255" y2="134" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="410.0" y1="223.2" x2="440.4338085214449" y2="243.1003105620015" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="410.0" y1="223.2" x2="428.80912807335915" y2="275.2996894379985" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="410.0" y1="223.2" x2="391.19087192664085" y2="275.2996894379985" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="410.0" y1="223.2" x2="379.5661914785551" y2="243.1003105620015" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440.4338085214449" y1="243.1003105620015" x2="428.80912807335915" y2="275.2996894379985" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440.4338085214449" y1="243.1003105620015" x2="391.19087192664085" y2="275.2996894379985" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440.4338085214449" y1="243.1003105620015" x2="379.5661914785551" y2="243.1003105620015" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="428.80912807335915" y1="275.2996894379985" x2="391.19087192664085" y2="275.2996894379985" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="428.80912807335915" y1="275.2996894379985" x2="379.5661914785551" y2="243.1003105620015" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="391.19087192664085" y1="275.2996894379985" x2="379.5661914785551" y2="243.1003105620015" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="410.0" cy="223.2" r="5" fill="#C0392B"/>
+<circle cx="440.4338085214449" cy="243.1003105620015" r="5" fill="#C0392B"/>
+<circle cx="428.80912807335915" cy="275.2996894379985" r="5" fill="#C0392B"/>
+<circle cx="391.19087192664085" cy="275.2996894379985" r="5" fill="#C0392B"/>
+<circle cx="379.5661914785551" cy="243.1003105620015" r="5" fill="#C0392B"/>
+<text x="410" y="310" font-size="12" fill="#C0392B" text-anchor="middle">odd, 5</text>
+<line x1="410.0" y1="223.2" x2="410" y2="134" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="560.0" y1="223.2" x2="592.0" y2="252.0" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="560.0" y1="223.2" x2="560.0" y2="280.8" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="560.0" y1="223.2" x2="528.0" y2="252.0" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="592.0" y1="252.0" x2="560.0" y2="280.8" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="592.0" y1="252.0" x2="528.0" y2="252.0" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="560.0" y1="280.8" x2="528.0" y2="252.0" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="560.0" cy="223.2" r="5" fill="#3B6D11"/>
+<circle cx="592.0" cy="252.0" r="5" fill="#3B6D11"/>
+<circle cx="560.0" cy="280.8" r="5" fill="#3B6D11"/>
+<circle cx="528.0" cy="252.0" r="5" fill="#3B6D11"/>
+<text x="560" y="310" font-size="12" fill="#3B6D11" text-anchor="middle">even, 4</text>
+<text x="256" y="338" font-size="12" fill="#C0392B" text-anchor="middle">each odd clique sends one vertex up into U</text>
+<text x="560" y="338.0" font-size="11" fill="#3B6D11" text-anchor="middle">even ones pair</text>
+<text x="560" y="357.0" font-size="11" fill="#3B6D11" text-anchor="middle">among themselves</text>
+<text x="330" y="389.0" font-size="12" fill="#666666" text-anchor="middle">The condition gives ∣U∣ ≥ odd(H − U), so U has room to receive them. What is left of each odd</text>
+<text x="330" y="409.0" font-size="12" fill="#666666" text-anchor="middle">clique is even and still a clique, so it pairs internally. The unused part of U is even in</text>
+<text x="330" y="429.0" font-size="12" fill="#666666" text-anchor="middle">size, because n is even, and U is a clique too, so it pairs up as well.</text>
+</svg>

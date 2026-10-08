@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 454" width="660" height="454" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="454" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 22.3. Finding the next ear: leave Gᵢ, delete the exit vertex, come back elsewhere.</text>
+<ellipse cx="240" cy="180" rx="132" ry="92" fill="none" stroke="#333333" stroke-width="2.4"/>
+<text x="240" y="180" font-size="14" fill="#666666" text-anchor="middle">Gᵢ</text>
+<circle cx="358" cy="140" r="7" fill="#333333"/>
+<circle cx="336" cy="246" r="7" fill="#333333"/>
+<circle cx="470" cy="120" r="6" fill="#3B6D11"/>
+<circle cx="500" cy="214" r="5" fill="#3B6D11"/>
+<text x="362" y="122" font-size="14" fill="#333333" text-anchor="middle">a</text>
+<text x="358" y="256" font-size="14" fill="#333333" text-anchor="middle">b</text>
+<text x="476" y="104" font-size="13" fill="#3B6D11" text-anchor="middle">v</text>
+<line x1="358" y1="140" x2="470" y2="120" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="470" y1="120" x2="500" y2="214" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="500" y1="214" x2="336" y2="246" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<circle cx="358" cy="140" r="14" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-dasharray="4 3"/>
+<text x="372" y="104.0" font-size="11" fill="#C0392B" text-anchor="start">delete a to look</text>
+<text x="372" y="124.0" font-size="11" fill="#C0392B" text-anchor="start">for the way back</text>
+<text x="520" y="268.0" font-size="11" fill="#3B6D11" text-anchor="middle">stop at the first</text>
+<text x="520" y="284.0" font-size="11" fill="#3B6D11" text-anchor="middle">vertex of Gᵢ you hit</text>
+<text x="330" y="330.0" font-size="12" fill="#666666" text-anchor="middle">Since G is connected some a in Gᵢ has a neighbour v outside it. Delete a. G is 2-connected, so G − a is</text>
+<text x="330" y="350.0" font-size="12" fill="#666666" text-anchor="middle">still connected and there is a path from v back to Gᵢ. Follow it and stop at the first vertex b it reaches.</text>
+<text x="330" y="370.0" font-size="12" fill="#666666" text-anchor="middle">That path avoided a, so b ≠ a, which is exactly what makes the ear open. Each step eats at least one new</text>
+<text x="330" y="390.0" font-size="12" fill="#666666" text-anchor="middle">edge and G is finite, so the process halts, and it can only halt when Gᵢ is all of G.</text>
+</svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="300" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">A shortest path can have no chord, because a chord would be a shortcut.</text>
 <line x1="90" y1="140" x2="210" y2="140" stroke="#333333" stroke-width="2"/>
 <line x1="210" y1="140" x2="330" y2="140" stroke="#333333" stroke-width="2"/>
@@ -19,5 +19,6 @@
 <text x="270" y="66" text-anchor="middle" font-size="12" fill="#C0392B">a chord, if it existed</text>
 <text x="20" y="214" text-anchor="start" font-size="13" fill="#666666">Walking a, b, c, d takes three edges. The dashed chord would get from a to d in one.</text>
 <text x="20" y="238" text-anchor="start" font-size="13" fill="#C0392B">So a path carrying a chord was never shortest. Shortest paths are automatically induced.</text>
-<text x="20" y="268" text-anchor="start" font-size="13" fill="#3B6D11">Taking just the first three vertices of any shortest path between two non adjacent vertices gives an induced path of length two.</text>
+<text x="20" y="268.0" font-size="13" fill="#3B6D11" text-anchor="start">Taking just the first three vertices of any shortest path between two non adjacent vertices</text>
+<text x="20" y="288.0" font-size="13" fill="#3B6D11" text-anchor="start">gives an induced path of length two.</text>
 </svg>

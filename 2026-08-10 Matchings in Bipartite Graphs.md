@@ -82,6 +82,8 @@ Where bipartiteness was used: only in the very last step. Everything before it h
 
 Exercise from class. If G is bipartite and k is its vertex cover number, then at least k vertices lie in every maximum matching.
 
+This came up on the 12 September exam, stated without the word bipartite. It is false without it: the five cycle has cover number 3 and not one vertex lies in every maximum matching. If it is set that way again, write the hypothesis in yourself and say where you use it.
+
 By König from [[2026-07-29 Matchings 2 — Berge and König]], the matching number equals k too, so every maximum matching has k edges.
 
 Induct on k. When k is zero there are no edges and nothing to prove.

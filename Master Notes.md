@@ -48,7 +48,7 @@ Read the arrows as "you need this first". The two spines of the subject are Leve
 | 5 | Bipartite graphs | solid |
 | 6 | Traversal, Euler circuits | solid |
 | 7 | Covering and packing, matchings | solid through Tutte |
-| 8 | Connectivity | scattered results only |
+| 8 | Connectivity | solid, through Menger, fans and cycles through k vertices |
 | 9 | Planarity | touched once |
 | 10 | The road ahead | not started |
 
@@ -409,7 +409,7 @@ A min-max theorem says the largest packing equals the smallest blocker. Five res
 | König | matching α′ | vertex cover β | Level 7, done |
 | Hall | the feasibility form of König | | Level 7, done |
 | Tutte | the feasibility form for general matchings | | Level 7, done |
-| Menger | disjoint u to v paths | u to v separating set | Level 8, ahead |
+| Menger | disjoint u to v paths | u to v separating set | Level 8, done |
 | Max-flow min-cut | flow value | cut capacity | Level 10, ahead |
 | Dilworth | antichain | chain cover | NPTEL Lec 08, ahead |
 
@@ -419,17 +419,71 @@ The difference between the two shapes is worth naming. Hall and Tutte are feasib
 
 # Level 8, connectivity
 
-Prerequisites: Levels 0 to 4, and 7. I have scattered results but the theory, meaning Menger and ear decomposition, is still ahead.
+Prerequisites: Levels 0 to 4, and 7. Taught on 31 August in [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]] and [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]].
+
+## The two numbers
 
 The vertex connectivity κ(G) is the fewest vertices whose removal disconnects the graph, and the edge connectivity λ(G) is the fewest edges. The chain κ(G) ≤ λ(G) ≤ δ(G) always holds, since vertices are at least as powerful as edges, and killing one vertex's edges always disconnects it.
 
-A 2 connected graph has a cycle, since 2 connectedness forces δ ≥ 2 and then Lemma B applies. Standard values are 1 and 1 for a path, 2 and 2 for a cycle, n−1 for Kₙ, min(m,n) for K(m,n), and n for Qₙ. Minimum degree cannot force k connectivity, as two huge cliques glued at one cut vertex shows. But density does force edge connected subgraphs, since m > k(n−1) gives a (k+1) edge connected subgraph. The formalism worth keeping is that "bounded by a function of" and "can be forced up by" are the same statement read in two directions.
+A graph is k-connected when no set of fewer than k vertices separates it, and, a clause easy to forget, when it has more than k vertices. Without that clause Kₙ would count as n-connected rather than (n−1)-connected.
 
-The lesson of those last two results together is that minimum degree is local while connectivity is global, so a local hypothesis can never force global connectivity of the whole graph, but it can force it on a subgraph. Passing to a subgraph is the move that rescues the idea.
+The two numbers genuinely differ. Two cycles sharing a single vertex have κ = 1 and λ = 2, so it is 2-edge-connected without being 2-connected. That small graph is worth carrying, and it turns up again as the counterexample to the union lemma below.
 
-Still ahead: Menger's theorem, Dirac's extensions, ear decomposition, and the structure of minimum cuts.
+Standard values: 1 and 1 for a path, 2 and 2 for a cycle, n−1 for Kₙ, min(m,n) for K(m,n), and n for Qₙ.
 
-Source: [[Assignment 1]] Q12 to Q16.
+## Minimum degree against connectivity
+
+If δ(G) ≥ (n−1)/2 then G is connected. The proof is one count: if x and y were non adjacent with no common neighbour, then {x}, N(x), {y} and N(y) would be four disjoint sets adding to at least n+1. The bound is sharp, since two disjoint copies of the complete graph on n/2 vertices have minimum degree (n−2)/2 and are disconnected.
+
+Raising the hypothesis to δ ≥ n/2 buys much more. Every pair is then adjacent or shares a neighbour, and by Dirac's theorem the graph has a Hamiltonian cycle. Dirac's proof is the long path theorem of Level 2 with one extra step that drags every stray vertex onto the cycle, so learn it as a variation rather than as new material.
+
+Minimum degree cannot force k-connectivity, as two huge cliques glued at one cut vertex shows. But density does force edge connected subgraphs, since m > k(n−1) gives a (k+1) edge connected subgraph. The lesson of those two together is that minimum degree is local while connectivity is global, so a local hypothesis can never force global connectivity of the whole graph, though it can force it on a subgraph. Passing to a subgraph is the move that rescues the idea.
+
+## Whitney's theorem
+
+A graph on at least three vertices is 2-connected exactly when every pair of vertices has two internally vertex disjoint paths between them.
+
+The easy direction is one sentence: a single deleted vertex can lie on at most one of two internally disjoint paths, so the other survives. The hard direction inducts on the distance between the pair, takes the vertex v just before y on a shortest path, gets two paths to v from the induction hypothesis, and in the awkward case walks back from y and stops at the first vertex already used. Stopping at the first one is exactly what makes the assembled paths disjoint.
+
+Everything 2-connectedness buys follows from it. Any two vertices lie on a common cycle, and so do a vertex and an edge, and two edges, and for any three vertices there is a pair of paths from one to the other two meeting only at the start. All four are the same trick: subdivide an edge to turn it into a vertex, or add a vertex joined to two targets to turn a pair into one, then apply Whitney and undo.
+
+## Blocks
+
+A block is a maximal connected subgraph with no cut vertex. That is not the same as a maximal 2-connected subgraph, because a bridge is a block and so is an isolated vertex, and neither is 2-connected.
+
+Two blocks meet in at most one vertex, and any vertex lying in two blocks is a cut vertex. Building a graph with one node per block and one per cut vertex, joined by containment, gives the block graph, and for a connected G it is a tree. A cycle in it would let you route around every cut vertex on the cycle, merging those blocks into one and contradicting maximality.
+
+The corollary that gets used: two vertices of a connected graph lie in a common block exactly when no single cut vertex separates them.
+
+## Ear decomposition
+
+Subdividing an edge never changes whether a graph is 2-connected, in either direction.
+
+An ear of a subgraph H is a path whose two ends lie in H and whose interior does not. It is trivial when it is a single edge, open when its two ends differ, and closed when they coincide. An ear decomposition partitions the edges into E₁, a cycle, followed by ears of everything built so far, and it is open when every ear after the first is open.
+
+Theorem. A graph on at least three vertices is 2-connected exactly when it has an open ear decomposition.
+
+Openness is the whole point. A closed ear hangs on a single vertex, so deleting that one vertex would strand it, and the induction that proves 2-connectedness would fail at precisely that step.
+
+## The k-connected version
+
+The statement that G is k-connected exactly when every pair has k internally disjoint paths is true, and it is the global form of Menger's theorem, proved below. An induction on k does not get there, because knowing that l paths exist gives no grip on where an (l+1)-th would come from.
+
+Three supporting facts are worth keeping anyway. A (l+1)-connected graph has δ ≥ l+1. A k-connected graph minus any edge is (k−1)-connected. And if H₁ and H₂ are l-connected and share at least l vertices, their union is l-connected. That last one fails without the sharing condition: two triangles glued at one vertex are each 2-connected and their union is not.
+
+For k = 2 the local statement can be proved with what we have. If x and y are non adjacent and no single vertex separates them, they lie in a common block, that block is 2-connected, and Whitney inside it gives the two paths.
+
+## Menger's theorem
+
+The statement is that for non-adjacent x and y the least size of a separator equals the greatest number of internally disjoint x to y paths. The easy half is one separator vertex per path. The hard half is an induction on the number of vertices. Take a minimum separator S, let A be the side of x and B the rest, contract each side to a single vertex, apply the induction to both smaller graphs, and glue the paths at S. If every minimum separator is N(x) or N(y), either a vertex outside both neighbourhoods can be deleted, or the graph is x, y and their neighbourhoods and König's theorem finishes it. Every step is in [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma#Menger's theorem, the induction|the Menger note]].
+
+## Fans and what follows from Menger
+
+The global form says G is k-connected exactly when every pair has k disjoint paths, and for an adjacent pair it uses the fact that deleting the edge leaves a (k−1)-connected graph. A fan from x to a set U is k paths from x sharing only x and ending at distinct vertices of U. Dirac's fan lemma says k-connected is the same as having a fan of size k from every x to every U of size at least k, provided there are more than k vertices. A consequence is that in a k-connected graph, any k vertices lie on a common cycle, by induction with a fan and a pigeonhole on arcs, and Kₖ,ₖ₊₁ shows k cannot be replaced by k + 1. See [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma#The global form of Menger's theorem|the global form]], [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma#Fans and Dirac's fan lemma|the fan lemma]] and [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma#A cycle through any k vertices|the cycle theorem]].
+
+Still ahead: edge connectivity and the structure of minimum cuts.
+
+Sources: [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]], [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]], [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma]], and [[Assignment 1]] Q12 to Q16.
 
 # Level 9, planarity
 
@@ -468,10 +522,9 @@ Everything on my syllabus not yet reached, in dependency order.
 |---|---|---|---|
 | Edmonds' blossom algorithm | Tutte | Lec 04 to 06 | the algorithmic counterpart to Tutte's criterion |
 | Tutte and Berge formula | Tutte | Lec 06 | maximum matching size in general graphs |
-| 2 connected graphs, ear decomposition | Level 8 | Lec 09 | |
-| Menger's theorem | Level 8, Bridge 7.1 | Lec 10 | the min-max pattern repeats |
-| Dirac's extensions | Menger | Lec 11 | |
-| Vertex colouring, greedy, degeneracy | Bridge 3.2 | Lec 13 to 14 | the core fact is already proved |
+| Menger's theorem | Level 8, Bridge 7.1 | Lec 10 | done, in [[2026-08-31 Menger's Theorem and Dirac's Fan Lemma]] |
+| Dirac's extensions | Menger | Lec 11 | done, fan lemma in the same note |
+| Vertex colouring, greedy, degeneracy | Bridge 3.2 | Lec 13 to 14 | done, in [[2026-10-05 Coloring 1 — Greedy Colouring, Degeneracy, and Lower Bounds]]. χ ≤ Δ + 1 twice, χ ≤ k + 1 for k-degenerate graphs, χ ≥ ω and χ ≥ n over α |
 | Brooks' theorem | greedy colouring | Lec 13 | |
 | Edge colouring, König, Vizing | Level 7 | Lec 15 to 16 | the bipartite case is already done |
 | Planar colouring | Level 9 | Lec 17 | |
@@ -481,7 +534,7 @@ Everything on my syllabus not yet reached, in dependency order.
 | Network flows and minimum cuts | Bridge 7.1 | Lec 31 to 34 | max-flow min-cut implies König |
 | Discharging method | Level 9 | not in NPTEL | must come from West |
 
-Tutte's theorem was on this list and is now done, in [[2026-08-19 Tutte's 1-Factor Theorem]].
+Tutte's theorem was on this list and is now done, in [[2026-08-19 Tutte's 1-Factor Theorem]]. So are 2-connected graphs and ear decomposition, in [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]].
 
 # Complete index of results
 
@@ -551,6 +604,16 @@ Every named claim, lemma and theorem across all my notes, alphabetically.
 | Vertex in every maximum matching, bipartite | 7 | [[2026-08-10 Matchings in Bipartite Graphs]] |
 | Vertices in every maximum matching number at least β | 7 | [[2026-08-10 Matchings in Bipartite Graphs]] |
 | Walk contains a path | 1 | Bridge 1.1 |
+| Adding a vertex joined to k others keeps k-connectedness | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Block, and why a bridge is one | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Block graph of a connected graph is a tree | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Dirac, δ ≥ n/2 gives a Hamiltonian cycle | 8 | [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]] |
+| Ear decomposition characterises 2-connectedness | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Four consequences of 2-connectedness | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Minimum degree (n−1)/2 forces connectedness | 8 | [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]] |
+| Subdividing an edge preserves 2-connectedness | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Union of two l-connected graphs, and its hypothesis | 8 | [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]] |
+| Whitney, 2-connected means two disjoint paths | 8 | [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]] |
 | α ≤ β and α′ ≤ ⌊n/2⌋ | 7 | [[Lec 01 — Vertex Cover and Independent Set]] |
 | 2k regular gives a 2 factor | 7 | [[2026-08-10 König by Induction, Hall, and Factors]] |
 | δ ≥ 3 gives an even cycle | 2 | [[2026-07-24 Preliminaries]] |

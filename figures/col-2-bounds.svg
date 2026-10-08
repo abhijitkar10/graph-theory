@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" width="660" height="330" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="330" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Minimum degree and chromatic number are unrelated: K₃,₃ has δ = 3 but χ = 2.</text>
+<line x1="80" y1="100" x2="80" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="100" x2="150" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="100" x2="220" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="100" x2="80" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="100" x2="150" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="100" x2="220" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="100" x2="80" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="100" x2="150" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="100" x2="220" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<circle cx="80" cy="100" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="80" y="105" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="150" cy="100" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="150" y="105" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="220" cy="100" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="220" y="105" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="80" cy="230" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="80" y="235" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="150" cy="230" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="150" y="235" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="220" cy="230" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="220" y="235" font-size="13" fill="#333333" text-anchor="middle"></text>
+<text x="150" y="280" font-size="13" fill="#666666" text-anchor="middle">K₃,₃: δ = 3, yet two colours suffice</text>
+<line x1="500" y1="165" x2="500" y2="75" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="500" y1="165" x2="414" y2="137" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="500" y1="165" x2="447" y2="238" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="500" y1="165" x2="553" y2="238" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="500" y1="165" x2="586" y2="137" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<circle cx="500" cy="165" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="500" y="170" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="500" cy="75" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="500" y="80" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="414" cy="137" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="414" y="142" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="447" cy="238" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="447" y="243" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="553" cy="238" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="553" y="243" font-size="13" fill="#333333" text-anchor="middle"></text>
+<circle cx="586" cy="137" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="586" y="142" font-size="13" fill="#333333" text-anchor="middle"></text>
+<text x="500" y="300" font-size="13" fill="#666666" text-anchor="middle">star K₁,₅: Δ = 5, yet two colours suffice</text>
+</svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="340" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 403" width="660" height="403" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="403" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Petersen's theorem. In a cubic graph every odd component costs three edges to attach.</text>
 <ellipse cx="200" cy="150" rx="86" ry="62" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
 <text x="200" y="146" text-anchor="middle" font-size="13" fill="#C0392B">odd component</text>
@@ -10,8 +10,11 @@
 <line x1="286" y1="150.0" x2="458" y2="150.0" stroke="#185FA5" stroke-width="2.5"/>
 <line x1="286" y1="171.0" x2="458" y2="168.0" stroke="#185FA5" stroke-width="2.5"/>
 <text x="372" y="108" text-anchor="middle" font-size="12" fill="#185FA5">at least 3 edges</text>
-<text x="20" y="252" text-anchor="start" font-size="13" fill="#666666">Summing degrees over C gives three times an odd number, which is odd. The edges inside C contribute an even</text>
-<text x="20" y="276" text-anchor="start" font-size="13" fill="#666666">amount, so an odd number of edges must leave C. Not one, because a single edge would be a bridge. Not two, by parity.</text>
-<text x="20" y="304" text-anchor="start" font-size="13" fill="#3B6D11">Each vertex of S has degree 3, so S can host at most three times its size. The threes cancel and Tutte's condition holds.</text>
-<text x="20" y="332" text-anchor="start" font-size="13" fill="#C0392B">Bridgelessness is used in exactly one place, ruling out the single edge. Without it the theorem is false.</text>
+<text x="20" y="252.0" font-size="13" fill="#666666" text-anchor="start">Summing degrees over C gives three times an odd number, which is odd. The edges inside C</text>
+<text x="20" y="272.0" font-size="13" fill="#666666" text-anchor="start">contribute an even amount, so an odd number of edges must leave C. Not one, because a</text>
+<text x="20" y="292.0" font-size="13" fill="#666666" text-anchor="start">single edge would be a bridge. Not two, by parity.</text>
+<text x="20" y="324.0" font-size="13" fill="#3B6D11" text-anchor="start">Each vertex of S has degree 3, so S can host at most three times its size. The threes cancel</text>
+<text x="20" y="344.0" font-size="13" fill="#3B6D11" text-anchor="start">and Tutte's condition holds.</text>
+<text x="20" y="372.0" font-size="13" fill="#C0392B" text-anchor="start">Bridgelessness is used in exactly one place, ruling out the single edge. Without it the theorem</text>
+<text x="20" y="392.0" font-size="13" fill="#C0392B" text-anchor="start">is false.</text>
 </svg>

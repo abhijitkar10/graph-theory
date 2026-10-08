@@ -124,6 +124,12 @@ Largest matching versus smallest cover? König, but only if the graph is biparti
 
 Does an Euler circuit exist? Check every degree is even and the edges lie in one component. To rule one out, find a single odd vertex.
 
+Disjoint paths or a smallest separator? Menger for non-adjacent x and y. For k-connected, use the global form, and for a vertex against a set use the fan lemma.
+
+Bound the chromatic number above? Delete a vertex of small degree, colour the rest, take a free colour. That gives Δ + 1, and k + 1 for a k-degenerate graph. Bound it below? Use a clique, or n over α.
+
+Cycle through k given vertices in a k-connected graph? Induction on the number of vertices, a fan of size m to the old cycle, and pigeonhole on the arcs.
+
 Show a long path or a long cycle exists? Extremal method. Take a maximal path and use the fact that both endpoints have all their neighbours on it.
 
 Show a graph is bipartite? Either exhibit a two colouring, or show it has no odd cycle. For a concrete graph, colour by distance parity from any vertex.
@@ -169,6 +175,12 @@ Moon and Moser counts maximal independent sets, and bounds how many there are.
 König 1936, Petersen 1891, Tutte 1947.
 
 A is a filter, not a stretch. Several separate vertices join v0, at scattered positions.
+
+The fan lemma needs more than k vertices, or Kₖ is a counterexample.
+
+Colour classes partition the vertices, they do not just cover them.
+
+Minimum degree gives no lower bound on χ. Kᵣ,ᵣ has δ = r and χ = 2.
 
 ## If time runs short
 

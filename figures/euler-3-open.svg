@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="340" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="360" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">A maximal trail cannot be open. Suppose a trail runs a b c d and stops.</text>
 <line x1="170" y1="90" x2="170" y2="230" stroke="#bbbbbb" stroke-width="2"/>
 <line x1="170" y1="90" x2="330" y2="160" stroke="#bbbbbb" stroke-width="2"/>
@@ -23,5 +23,6 @@
 <text x="490" y="235" text-anchor="middle" font-size="14" fill="#222222">e</text>
 <text x="530" y="164" font-size="12" fill="#C0392B">unused</text>
 <text x="20" y="290" font-size="13" fill="#666666">At the end vertex d the trail has used just one edge, cd. But d has degree 2, which is even.</text>
-<text x="20" y="314" font-size="13" fill="#C0392B">Even minus odd leaves something over, so an unused edge must sit at d. Take it, and the trail was not maximal.</text>
+<text x="20" y="314.0" font-size="13" fill="#C0392B">Even minus odd leaves something over, so an unused edge must sit at d. Take it, and the trail</text>
+<text x="20" y="334.0" font-size="13" fill="#C0392B">was not maximal.</text>
 </svg>

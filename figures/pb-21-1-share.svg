@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 322" width="660" height="322" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="322" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 21.1. If two blocks shared two vertices, they would not be maximal.</text>
+<ellipse cx="248" cy="176" rx="108" ry="78" fill="none" stroke="#3B6D11" stroke-width="2.4"/>
+<ellipse cx="418" cy="176" rx="108" ry="78" fill="none" stroke="#185FA5" stroke-width="2.4"/>
+<text x="128" y="100" font-size="16" fill="#3B6D11" text-anchor="middle">B</text>
+<text x="540" y="100" font-size="16" fill="#185FA5" text-anchor="middle">B′</text>
+<circle cx="333" cy="132" r="8" fill="#C0392B"/>
+<circle cx="333" cy="220" r="8" fill="#C0392B"/>
+<text x="333" y="118.0" font-size="14" fill="#C0392B" text-anchor="middle">u</text>
+<text x="333" y="206.0" font-size="14" fill="#C0392B" text-anchor="middle">v</text>
+<text x="333" y="260.0" font-size="11" fill="#C0392B" text-anchor="middle">both blocks</text>
+<text x="333" y="276.0" font-size="11" fill="#C0392B" text-anchor="middle">hold u and v</text>
+<text x="330" y="250.0" font-size="12" fill="#666666" text-anchor="middle">Delete any one vertex. B stays connected and so does B′, since neither has a cut vertex, and</text>
+<text x="330" y="270.0" font-size="12" fill="#666666" text-anchor="middle">they still meet at whichever of u, v survived. So B ∪ B′ is connected, has no cut vertex, and</text>
+<text x="330" y="290.0" font-size="12" fill="#666666" text-anchor="middle">is bigger than B.</text>
+</svg>

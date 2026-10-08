@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 338" width="660" height="338" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="338" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 18.2. If xy were a bridge, then one of its ends would be a cut vertex.</text>
+<ellipse cx="172" cy="158" rx="92" ry="70" fill="none" stroke="#333333" stroke-width="2"/>
+<ellipse cx="500" cy="158" rx="92" ry="70" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="172" y="152.0" font-size="12" fill="#666666" text-anchor="middle">at least</text>
+<text x="172" y="172.0" font-size="12" fill="#666666" text-anchor="middle">two vertices</text>
+<text x="500" y="182.0" font-size="12" fill="#666666" text-anchor="middle">the rest</text>
+<line x1="266" y1="158" x2="406" y2="158" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="266" cy="158" r="7" fill="#C0392B"/>
+<circle cx="406" cy="158" r="7" fill="#C0392B"/>
+<text x="238" y="132" font-size="15" fill="#C0392B" text-anchor="middle">x</text>
+<text x="414" y="138" font-size="15" fill="#C0392B" text-anchor="middle">y</text>
+<text x="336" y="196.0" font-size="12" fill="#C0392B" text-anchor="middle">the bridge</text>
+<circle cx="266" cy="158" r="15" fill="none" stroke="#185FA5" stroke-width="2.8" stroke-dasharray="4 3"/>
+<text x="256" y="234.0" font-size="12" fill="#185FA5" text-anchor="middle">delete x</text>
+<text x="330" y="274.0" font-size="12" fill="#666666" text-anchor="middle">Removing the bridge splits G in two, and since n ≥ 3 one side holds at least two vertices.</text>
+<text x="330" y="294.0" font-size="12" fill="#666666" text-anchor="middle">Deleting x cuts the rest of that side off from y, so x is a cut vertex. A 2-connected graph</text>
+<text x="330" y="314.0" font-size="12" fill="#666666" text-anchor="middle">has none, so it has no bridge either.</text>
+</svg>

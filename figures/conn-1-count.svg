@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 237" width="660" height="237" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="237" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Why a big minimum degree forces connectedness: four sets that cannot all fit</text>
+<ellipse cx="88" cy="140" rx="36" ry="36" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="88" y="146" font-size="16" fill="#333333" text-anchor="middle">x</text>
+<ellipse cx="228" cy="140" rx="66" ry="54" fill="none" stroke="#185FA5" stroke-width="2"/>
+<text x="228" y="72" font-size="14" fill="#185FA5" text-anchor="middle">N(x)</text>
+<ellipse cx="432" cy="140" rx="66" ry="54" fill="none" stroke="#3B6D11" stroke-width="2"/>
+<text x="432" y="72" font-size="14" fill="#3B6D11" text-anchor="middle">N(y)</text>
+<ellipse cx="572" cy="140" rx="36" ry="36" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="572" y="146" font-size="16" fill="#333333" text-anchor="middle">y</text>
+<line x1="124" y1="140" x2="170" y2="110" stroke="#185FA5" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="536" y1="140" x2="490" y2="110" stroke="#3B6D11" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="124" y1="140" x2="170" y2="130" stroke="#185FA5" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="536" y1="140" x2="490" y2="130" stroke="#3B6D11" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="124" y1="140" x2="170" y2="151" stroke="#185FA5" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="536" y1="140" x2="490" y2="151" stroke="#3B6D11" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="124" y1="140" x2="170" y2="171" stroke="#185FA5" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="536" y1="140" x2="490" y2="171" stroke="#3B6D11" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="300" y1="140" x2="360" y2="140" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<text x="330" y="120.0" font-size="12" fill="#C0392B" text-anchor="middle">no shared</text>
+<text x="330" y="140.0" font-size="12" fill="#C0392B" text-anchor="middle">neighbour</text>
+<text x="88" y="168.0" font-size="12" fill="#666666" text-anchor="middle">1</text>
+<text x="228" y="176.0" font-size="12" fill="#185FA5" text-anchor="middle">at least (n−1)/2</text>
+<text x="432" y="176.0" font-size="12" fill="#3B6D11" text-anchor="middle">at least (n−1)/2</text>
+<text x="572" y="168.0" font-size="12" fill="#666666" text-anchor="middle">1</text>
+<text x="330" y="208.0" font-size="12" fill="#666666" text-anchor="middle">If x and y are also non-adjacent, these four sets are pairwise disjoint, so</text>
+<text x="330" y="226.0" font-size="12" fill="#666666" text-anchor="middle">1 + (n−1)/2 + (n−1)/2 + 1 = n + 1 ≤ n, which is false</text>
+</svg>

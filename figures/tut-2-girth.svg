@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="360" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" width="660" height="380" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="380" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Girth at least 5 forces room. Count outward from any vertex.</text>
 <line x1="120" y1="180" x2="280" y2="90" stroke="#333333" stroke-width="2"/>
 <line x1="120" y1="180" x2="280" y2="180" stroke="#333333" stroke-width="2"/>
@@ -32,5 +32,6 @@
 <text x="450" y="314" text-anchor="middle" font-size="12" fill="#222222"></text>
 <text x="280" y="310" text-anchor="middle" font-size="12" fill="#185FA5">k neighbours</text>
 <text x="500" y="180" text-anchor="start" font-size="12" fill="#666666">k-1 each</text>
-<text x="20" y="344" text-anchor="start" font-size="13" fill="#666666">No triangle means the neighbours are not joined to each other. No four cycle means they share no outer neighbour.</text>
+<text x="20" y="344.0" font-size="13" fill="#666666" text-anchor="start">No triangle means the neighbours are not joined to each other. No four cycle means they</text>
+<text x="20" y="364.0" font-size="13" fill="#666666" text-anchor="start">share no outer neighbour.</text>
 </svg>

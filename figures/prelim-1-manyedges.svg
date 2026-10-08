@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="320" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="340" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">A graph can have masses of edges and still be disconnected.</text>
 <line x1="229.99999999999997" y1="85.0" x2="310.83980388508803" y2="143.73355547812946" stroke="#bbbbbb" stroke-width="1.5"/>
 <line x1="229.99999999999997" y1="85.0" x2="279.96174644486024" y2="238.76644452187054" stroke="#bbbbbb" stroke-width="1.5"/>
@@ -25,6 +25,7 @@
 <text x="520" y="175" text-anchor="middle" font-size="13" fill="#222222"></text>
 <text x="230" y="290" text-anchor="middle" font-size="13" fill="#666666">K5, ten edges</text>
 <text x="520" y="290" text-anchor="middle" font-size="13" fill="#C0392B">one lonely vertex</text>
-<text x="20" y="250" text-anchor="start" font-size="13" fill="#666666">Ten edges packed into five vertices, and one vertex with none. The graph is disconnected and the minimum degree is 0.</text>
-<text x="20" y="274" text-anchor="start" font-size="13" fill="#666666">Many edges is a statement about the graph as a whole. It says nothing about any single vertex.</text>
+<text x="20" y="250.0" font-size="13" fill="#666666" text-anchor="start">Ten edges packed into five vertices, and one vertex with none. The graph is disconnected and</text>
+<text x="20" y="270.0" font-size="13" fill="#666666" text-anchor="start">the minimum degree is 0.</text>
+<text x="20" y="294.0" font-size="13" fill="#666666" text-anchor="start">Many edges is a statement about the graph as a whole. It says nothing about any single vertex.</text>
 </svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="340" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 365" width="660" height="365" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="365" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">In an odd cycle, no vertex sits in every maximum matching.</text>
 <line x1="130.0" y1="202.0" x2="71.03449598970047" y2="159.15905365124675" stroke="#bbbbbb" stroke-width="1.8"/>
 <line x1="71.03449598970047" y1="159.15905365124675" x2="93.55731435786666" y2="89.84094634875326" stroke="#bbbbbb" stroke-width="1.8"/>
@@ -57,5 +57,6 @@
 <text x="530" y="232" text-anchor="middle" font-size="12" fill="#C0392B">misses one vertex</text>
 <text x="20" y="286" text-anchor="start" font-size="13" fill="#666666">Every maximum matching in C5 has two edges and leaves exactly one vertex out.</text>
 <text x="20" y="310" text-anchor="start" font-size="13" fill="#C0392B">The cycle looks the same from every vertex, so each one is the leftover in some matching.</text>
-<text x="20" y="334" text-anchor="start" font-size="13" fill="#666666">So there is no vertex common to all of them. Odd cycles are the obstruction the theorem has to rule out.</text>
+<text x="20" y="334.0" font-size="13" fill="#666666" text-anchor="start">So there is no vertex common to all of them. Odd cycles are the obstruction the theorem has</text>
+<text x="20" y="354.0" font-size="13" fill="#666666" text-anchor="start">to rule out.</text>
 </svg>

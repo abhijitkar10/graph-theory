@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Adding u joined to at least k vertices keeps the graph k-connected</text>
+<ellipse cx="200" cy="140" rx="120" ry="80" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="200" y="60" font-size="13" fill="#333333" text-anchor="middle">G, k-connected</text>
+<line x1="470" y1="140" x2="292" y2="88" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="140" x2="304" y2="122" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="140" x2="300" y2="162" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="140" x2="286" y2="196" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="292" cy="88" r="4" fill="#185FA5"/>
+<circle cx="304" cy="122" r="4" fill="#185FA5"/>
+<circle cx="300" cy="162" r="4" fill="#185FA5"/>
+<circle cx="286" cy="196" r="4" fill="#185FA5"/>
+<circle cx="470" cy="140" r="6" fill="#185FA5"/>
+<text x="488" y="145" font-size="15" fill="#185FA5" text-anchor="middle">u</text>
+<text x="392" y="238" font-size="12" fill="#185FA5" text-anchor="middle">at least k edges</text>
+<ellipse cx="252" cy="140" rx="32" ry="58" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="252" y="218" font-size="14" fill="#C0392B" text-anchor="middle">S</text>
+<text x="26" y="272" font-size="12" fill="#666666" text-anchor="start">If u lies in S: it goes with S, so only k−2 vertices are removed from G, which survives that.</text>
+<text x="26" y="294" font-size="12" fill="#666666" text-anchor="start">If u does not: G − S is connected, and S can kill at most k−1 of u's k neighbours, so u stays attached.</text>
+</svg>

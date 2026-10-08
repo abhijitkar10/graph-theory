@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="300" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 321" width="660" height="321" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="321" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Swapping along an augmenting path.</text>
 <line x1="90" y1="110" x2="230" y2="110" stroke="#333333" stroke-width="2"/>
 <line x1="230" y1="110" x2="370" y2="110" stroke="#3B6D11" stroke-width="4"/>
@@ -12,7 +12,7 @@
 <text x="370" y="114" text-anchor="middle" font-size="12" fill="#222222"></text>
 <circle cx="510" cy="110" r="11" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
 <text x="510" y="114" text-anchor="middle" font-size="12" fill="#222222"></text>
-<text x="560" y="115" text-anchor="start" font-size="12" fill="#3B6D11">1 matching edge</text>
+<text x="550.2" y="115" font-size="12" fill="#3B6D11" text-anchor="start">1 matching edge</text>
 <line x1="90" y1="210" x2="230" y2="210" stroke="#3B6D11" stroke-width="4"/>
 <line x1="230" y1="210" x2="370" y2="210" stroke="#333333" stroke-width="2"/>
 <line x1="370" y1="210" x2="510" y2="210" stroke="#3B6D11" stroke-width="4"/>
@@ -24,7 +24,8 @@
 <text x="370" y="214" text-anchor="middle" font-size="12" fill="#222222"></text>
 <circle cx="510" cy="210" r="11" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
 <text x="510" y="214" text-anchor="middle" font-size="12" fill="#222222"></text>
-<text x="560" y="215" text-anchor="start" font-size="12" fill="#3B6D11">2 matching edges</text>
+<text x="543.9" y="215" font-size="12" fill="#3B6D11" text-anchor="start">2 matching edges</text>
 <text x="20" y="266" text-anchor="start" font-size="13" fill="#666666">Take the edges that were out and put them in, take the ones that were in and put them out.</text>
-<text x="20" y="290" text-anchor="start" font-size="13" fill="#3B6D11">Interior vertices simply change partner. The two ends were free, so nothing clashes. Net gain, one edge.</text>
+<text x="20" y="290.0" font-size="13" fill="#3B6D11" text-anchor="start">Interior vertices simply change partner. The two ends were free, so nothing clashes. Net gain,</text>
+<text x="20" y="310.0" font-size="13" fill="#3B6D11" text-anchor="start">one edge.</text>
 </svg>

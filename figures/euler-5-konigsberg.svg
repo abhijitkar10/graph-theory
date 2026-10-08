@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="400" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="420" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Konigsberg. Four land masses, seven bridges.</text>
 <path d="M 330 80 Q 218 106 140 190" fill="none" stroke="#333333" stroke-width="2"/>
 <path d="M 330 80 Q 252 164 140 190" fill="none" stroke="#333333" stroke-width="2"/>
@@ -20,6 +20,7 @@
 <circle cx="330" cy="300" r="20" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
 <text x="330" y="305" text-anchor="middle" font-size="14" fill="#222222">D</text>
 <text x="330" y="338" text-anchor="middle" font-size="12" fill="#C0392B">degree 3, odd</text>
-<text x="20" y="360" font-size="13" fill="#666666">All four degrees are odd. One odd vertex already rules out an Euler circuit, and here there are four.</text>
-<text x="20" y="384" font-size="13" fill="#C0392B">So no route crosses every bridge exactly once and returns home.</text>
+<text x="20" y="360.0" font-size="13" fill="#666666">All four degrees are odd. One odd vertex already rules out an Euler circuit, and here there are</text>
+<text x="20" y="380.0" font-size="13" fill="#666666">four.</text>
+<text x="20" y="404.0" font-size="13" fill="#C0392B">So no route crosses every bridge exactly once and returns home.</text>
 </svg>

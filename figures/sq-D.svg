@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 392" width="660" height="392" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="392" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Graph D.</text>
+<line x1="130" y1="250" x2="78" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="78" y1="330" x2="182" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="182" y1="330" x2="130" y2="250" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="330" y1="105" x2="130" y2="250" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="250" x2="278" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="278" y1="330" x2="382" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="382" y1="330" x2="330" y2="250" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="330" y1="105" x2="330" y2="250" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="530" y1="250" x2="478" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="478" y1="330" x2="582" y2="330" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="582" y1="330" x2="530" y2="250" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="330" y1="105" x2="530" y2="250" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="330" cy="105" r="8" fill="#333333"/>
+<circle cx="130" cy="250" r="7" fill="#333333"/>
+<circle cx="78" cy="330" r="7" fill="#333333"/>
+<circle cx="182" cy="330" r="7" fill="#333333"/>
+<circle cx="330" cy="250" r="7" fill="#333333"/>
+<circle cx="278" cy="330" r="7" fill="#333333"/>
+<circle cx="382" cy="330" r="7" fill="#333333"/>
+<circle cx="530" cy="250" r="7" fill="#333333"/>
+<circle cx="478" cy="330" r="7" fill="#333333"/>
+<circle cx="582" cy="330" r="7" fill="#333333"/>
+<text x="330" y="87" font-size="15" fill="#333333" text-anchor="middle">h</text>
+<text x="330" y="362" font-size="12" fill="#666666" text-anchor="middle">Ten vertices. One hub joined to one corner of each triangle. The three red edges are the only</text>
+<text x="330" y="382" font-size="12" fill="#666666" text-anchor="middle">links between the four pieces.</text>
+</svg>

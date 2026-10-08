@@ -7,7 +7,7 @@ class: 6
 
 # 9 · 2026-08-19 — Matchings in non-bipartite graphs, Tutte's theorem
 
-Previous: [[2026-08-10 König by Induction, Hall, and Factors]] · Hub: [[Graph Theory]] · Next: none yet, this is the latest note
+Previous: [[2026-08-10 König by Induction, Hall, and Factors]] · Hub: [[Graph Theory]] · Next: [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]]
 
 ## How much this matters
 

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="360" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 447" width="660" height="447" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="447" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">The proof in outline. Suppose no vertex sits in every maximum matching.</text>
 <circle cx="110" cy="120" r="18" fill="#FCEBEB" stroke="#C0392B" stroke-width="2"/>
 <text x="110" y="124" text-anchor="middle" font-size="12" fill="#222222">u</text>
@@ -21,8 +21,12 @@
 <circle cx="610" cy="240" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
 <text x="610" y="244" text-anchor="middle" font-size="12" fill="#222222"></text>
 <text x="505" y="278" text-anchor="middle" font-size="12" fill="#666666">the component of u in M union N</text>
-<text x="20" y="214" text-anchor="start" font-size="13" fill="#666666">Pick u, and a maximum matching M missing it. Pick a neighbour x, and a maximum matching N missing x.</text>
-<text x="20" y="312" text-anchor="start" font-size="13" fill="#666666">In M union N both u and x have degree 1, so each is the end of a path, and that path has even length.</text>
-<text x="20" y="336" text-anchor="start" font-size="13" fill="#666666">Swapping along it keeps both matchings maximum but frees u. Then either the edge ux augments, or the path</text>
-<text x="20" y="356" text-anchor="start" font-size="13" fill="#C0392B">runs from u to x and adding ux closes an odd cycle. Bipartite graphs have neither, so the assumption fails.</text>
+<text x="20" y="214.0" font-size="13" fill="#666666" text-anchor="start">Pick u, and a maximum matching M missing it. Pick a neighbour x, and a maximum matching</text>
+<text x="20" y="234.0" font-size="13" fill="#666666" text-anchor="start">N missing x.</text>
+<text x="20" y="332.0" font-size="13" fill="#666666" text-anchor="start">In M union N both u and x have degree 1, so each is the end of a path, and that path has even</text>
+<text x="20" y="352.0" font-size="13" fill="#666666" text-anchor="start">length.</text>
+<text x="20" y="376.0" font-size="13" fill="#666666" text-anchor="start">Swapping along it keeps both matchings maximum but frees u. Then either the edge ux</text>
+<text x="20" y="396.0" font-size="13" fill="#666666" text-anchor="start">augments, or the path</text>
+<text x="20" y="416.0" font-size="13" fill="#C0392B" text-anchor="start">runs from u to x and adding ux closes an odd cycle. Bipartite graphs have neither, so the</text>
+<text x="20" y="436.0" font-size="13" fill="#C0392B" text-anchor="start">assumption fails.</text>
 </svg>

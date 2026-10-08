@@ -7,7 +7,7 @@ type: takeaways
 
 Hub: [[Graph Theory]] · Full sheet: [[Revision Sheet]] · Depth: [[Master Notes]] · Shortest version: [[Bare Minimum]]
 
-Statements only, no proofs. Eighty one of them, readable in twenty minutes.
+Statements only, no proofs. Ninety nine of them, readable in half an hour.
 
 ## Language
 
@@ -115,10 +115,55 @@ Statements only, no proofs. Eighty one of them, readable in twenty minutes.
 75. Moon and Moser's bound counts maximal independent sets, and bounds how many there are.
 76. König is 1936, Petersen 1891, and Tutte 1947. 1736 is Euler and Königsberg.
 
+## Connectivity
+
+82. G is k-connected when no set of fewer than k vertices separates it, and when G has more than k vertices. The second clause is what makes Kₙ exactly (n−1)-connected.
+83. Always κ ≤ λ ≤ δ. Vertex connectivity is the smallest of the three.
+84. δ ≥ (n−1)/2 forces connectedness, because {x}, N(x), {y} and N(y) would otherwise be four disjoint sets adding to n+1. Two disjoint cliques on n/2 vertices show the bound is sharp.
+85. δ ≥ n/2 makes every pair adjacent or gives them a common neighbour, and by Dirac it forces a Hamiltonian cycle.
+86. Dirac's proof is the long path theorem plus one step: any vertex off the folded cycle would have too few possible neighbours to avoid it.
+87. Whitney. A graph on at least three vertices is 2-connected exactly when every pair has two internally vertex disjoint paths.
+88. The easy half of Whitney is one sentence: a single deleted vertex lies on at most one of two internally disjoint paths.
+89. The hard half inducts on distance and, in the awkward case, walks back from y and stops at the first vertex already used. Stopping at the first one is what makes the pieces disjoint.
+90. Two cycles sharing a single vertex are 2-edge-connected but not 2-connected. Smallest example of κ < λ.
+91. Adding a vertex joined to at least k old ones preserves k-connectedness.
+92. Everything 2-connectedness buys comes from one trick: subdivide an edge to make it a vertex, or add a vertex joined to two targets, then apply Whitney and undo.
+93. A block is a maximal connected subgraph with no cut vertex, which is not the same as a maximal 2-connected subgraph, because a bridge is a block.
+94. The block graph of a connected graph is a tree, since a cycle in it would let you route around every cut vertex and merge the blocks.
+95. Subdividing an edge never changes whether a graph is 2-connected.
+96. An ear is open when its two ends differ and closed when they coincide. A graph on at least three vertices is 2-connected exactly when it has an open ear decomposition.
+97. Openness carries that theorem: a closed ear hangs on one vertex, so deleting it strands the whole ear.
+98. The k-connected characterisation is true but needs Menger. An induction on k does not close. It is proved in the Menger section below.
+99. Two l-connected graphs union to an l-connected graph only when they share at least l vertices. Two triangles glued at a vertex are the counterexample.
+
 ## The five techniques
 
-77. Extremal choice. Take the longest, maximal or minimal thing.
-78. Count two ways. Handshake and everything descended from it.
-79. Parity. Odd plus odd is even, bipartiteness, odd components, and the difference between even and odd swap paths.
-80. Exchange. Modify any optimum to agree with your greedy choice.
-81. Maximal counterexample. Add edges until one more would fix the problem.
+100. Extremal choice. Take the longest, maximal or minimal thing.
+101. Count two ways. Handshake and everything descended from it.
+102. Parity. Odd plus odd is even, bipartiteness, odd components, and the difference between even and odd swap paths.
+103. Exchange. Modify any optimum to agree with your greedy choice.
+104. Maximal counterexample. Add edges until one more would fix the problem.
+
+## Menger and fans
+
+105. Menger. For non-adjacent x and y, the least size of an x,y-separator equals the greatest number of internally disjoint x to y paths. The easy half is one separator vertex per path.
+106. The hard half takes a minimum separator S, calls the side of x A and the rest B, contracts B and A to single vertices, applies induction to both smaller graphs and glues the paths at S. Every vertex of a minimum separator has neighbours on both sides, by minimality.
+107. If every minimum separator is N(x) or N(y), either a vertex outside both neighbourhoods can be deleted, or the graph is x, y and their neighbourhoods, and König on the bipartite graph between the two neighbourhoods finishes it.
+108. Global Menger. A graph with more than k vertices is k-connected exactly when every pair has k disjoint paths. An adjacent pair needs the step that G − xy is (k − 1)-connected.
+109. A fan from x to U is k paths from x sharing only x and ending at distinct vertices of U. Dirac's fan lemma says k-connected is the same as a fan of size k from every x to every U with at least k vertices, and it needs more than k vertices because Kₖ satisfies the fan condition.
+110. The forward half of the fan lemma adds a vertex joined to U, applies global Menger, and cuts each path at its first vertex in U.
+111. In a k-connected graph any k vertices lie on a common cycle. Induct on the number of vertices, take a fan of size m from the new vertex to the old cycle, and two endpoints land in the same arc by pigeonhole. Kₖ,ₖ₊₁ shows k cannot be k + 1.
+112. It is false that any a to b path can be completed by a second disjoint one. K₂,₃ is a counterexample.
+
+## Colouring
+
+113. A proper colouring has no monochromatic edge. χ ≤ k needs a colouring, and χ ≥ k needs a proof that no smaller colouring exists.
+114. χ(Pₙ) = 2, χ(C₂ₙ) = 2, χ(C₂ₙ₊₁) = 3, χ(Kₙ) = n and every tree with an edge has χ = 2.
+115. The odd cycle needs three colours because alternating colours forced round the cycle give both ends of the closing edge the same colour.
+116. Minimum degree gives no lower bound on χ. Kᵣ,ᵣ has δ = r and χ = 2.
+117. χ ≤ Δ + 1. Delete a vertex, colour the rest, and the vertex sees at most Δ colours.
+118. Second proof by induction on Δ. Remove a maximal independent set of vertices of degree Δ. This lowers the maximum degree by at least one, so the rest takes Δ colours, and the removed set takes one more.
+119. A graph is k-degenerate when every subgraph has a vertex of degree at most k. Then χ ≤ k + 1, by deleting a vertex of degree at most k and extending the colouring.
+120. Degeneracy is found by repeatedly deleting a least degree vertex, and colouring in reverse order is a greedy colouring with at most degeneracy plus one colours.
+121. The degeneracy is at least ω − 1 but cannot be bounded by a function of ω. Kᵣ,ᵣ has ω = 2 and degeneracy r. Graphs without even cycles and minimally 2-connected graphs are 2-degenerate.
+122. χ ≥ ω, since a clique needs distinct colours, and χ ≥ n over α, since colour classes are independent sets that partition the vertices. For C₅ both together give 3.

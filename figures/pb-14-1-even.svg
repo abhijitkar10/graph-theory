@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="400" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 14.1. In a cubic graph every component has an even number of vertices.</text>
+<line x1="230.0" y1="96.0" x2="309.6743371481683" y2="136.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="309.6743371481683" y1="136.0" x2="309.6743371481684" y2="216.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="309.6743371481684" y1="216.0" x2="230.0" y2="256.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="230.0" y1="256.0" x2="150.32566285183168" y2="216.00000000000003" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="150.32566285183168" y1="216.00000000000003" x2="150.32566285183165" y2="136.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="150.32566285183165" y1="136.0" x2="230.0" y2="96.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="230.0" y1="96.0" x2="230.0" y2="256.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="309.6743371481683" y1="136.0" x2="150.32566285183168" y2="216.00000000000003" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="309.6743371481684" y1="216.0" x2="150.32566285183165" y2="136.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="230.0" cy="96.0" r="6" fill="#333333"/>
+<circle cx="309.6743371481683" cy="136.0" r="6" fill="#333333"/>
+<circle cx="309.6743371481684" cy="216.0" r="6" fill="#333333"/>
+<circle cx="230.0" cy="256.0" r="6" fill="#333333"/>
+<circle cx="150.32566285183168" cy="216.00000000000003" r="6" fill="#333333"/>
+<circle cx="150.32566285183165" cy="136.0" r="6" fill="#333333"/>
+<text x="230" y="288" font-size="12" fill="#333333" text-anchor="middle">every degree is 3</text>
+<text x="452" y="140" font-size="14" fill="#333333" text-anchor="middle">3 × 6 = 18</text>
+<text x="452" y="168" font-size="14" fill="#333333" text-anchor="middle">2 × 9 = 18</text>
+<text x="452" y="200" font-size="13" fill="#C0392B" text-anchor="middle">so 3∣V(C)∣ is even</text>
+<text x="452" y="112" font-size="11" fill="#666666" text-anchor="middle">degrees summed:</text>
+<text x="330" y="324" font-size="12" fill="#666666" text-anchor="middle">Summing degrees over a component gives 3∣V(C)∣, and that also equals 2∣E(C)∣, which is even.</text>
+<text x="330" y="344.0" font-size="12" fill="#666666" text-anchor="middle">Since 3 is odd, ∣V(C)∣ must itself be even. So with S empty there are no odd components at all and</text>
+<text x="330" y="364.0" font-size="12" fill="#666666" text-anchor="middle">Tutte's condition holds for free.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 414" width="660" height="414" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="414" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 22.2. A closed ear has both ends at one vertex, so one deletion strands it.</text>
+<line x1="330.0" y1="68.0" x2="407.9866343362026" y2="124.66060646125432" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="407.9866343362026" y1="124.66060646125432" x2="378.1983906879828" y2="216.3393935387457" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="378.1983906879828" y1="216.3393935387457" x2="281.8016093120172" y2="216.3393935387457" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="281.8016093120172" y1="216.3393935387457" x2="252.0133656637974" y2="124.66060646125432" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="252.0133656637974" y1="124.66060646125432" x2="330.0" y2="68.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="281.8016093120172" y1="216.3393935387457" x2="235.8016093120172" y2="312.3393935387457" stroke="#C0392B" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="235.8016093120172" y1="312.3393935387457" x2="343.8016093120172" y2="316.3393935387457" stroke="#C0392B" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="343.8016093120172" y1="316.3393935387457" x2="281.8016093120172" y2="216.3393935387457" stroke="#C0392B" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="330.0" cy="68.0" r="6" fill="#333333"/>
+<circle cx="407.9866343362026" cy="124.66060646125432" r="6" fill="#333333"/>
+<circle cx="378.1983906879828" cy="216.3393935387457" r="6" fill="#333333"/>
+<circle cx="281.8016093120172" cy="216.3393935387457" r="6" fill="#333333"/>
+<circle cx="252.0133656637974" cy="124.66060646125432" r="6" fill="#333333"/>
+<circle cx="235.8016093120172" cy="312.3393935387457" r="5" fill="#C0392B"/>
+<circle cx="343.8016093120172" cy="316.3393935387457" r="5" fill="#C0392B"/>
+<circle cx="281.8016093120172" cy="216.3393935387457" r="8" fill="#C0392B"/>
+<text x="251.8016093120172" y="202.3393935387457" font-size="14" fill="#C0392B" text-anchor="middle">a = b</text>
+<circle cx="281.8016093120172" cy="216.3393935387457" r="16" fill="none" stroke="#185FA5" stroke-width="2.8" stroke-dasharray="4 3"/>
+<text x="229.8016093120172" y="246.3393935387457" font-size="12" fill="#185FA5" text-anchor="middle">delete it</text>
+<text x="330" y="88" font-size="12" fill="#666666" text-anchor="middle">Gᵢ₋₁</text>
+<text x="402" y="326" font-size="12" fill="#C0392B" text-anchor="middle">the whole ear falls off</text>
+<text x="330" y="360.0" font-size="12" fill="#666666" text-anchor="middle">That is the only reason the theorem says open. With a ≠ b the ear is pinned at two different vertices, so</text>
+<text x="330" y="380.0" font-size="12" fill="#666666" text-anchor="middle">no single deletion can detach it, and the induction goes through. With a = b it</text>
+<text x="330" y="400" font-size="12" fill="#666666" text-anchor="middle">cannot.</text>
+</svg>

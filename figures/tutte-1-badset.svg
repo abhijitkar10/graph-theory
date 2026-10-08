@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="360" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 429" width="660" height="429" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="429" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">The obstruction for general graphs is parity, not neighbourhood size.</text>
 <line x1="120" y1="110" x2="86" y2="166" stroke="#333333" stroke-width="2"/>
 <line x1="86" y1="166" x2="154" y2="166" stroke="#333333" stroke-width="2"/>
@@ -43,7 +43,10 @@
 <text x="574" y="170" text-anchor="middle" font-size="12" fill="#222222"></text>
 <ellipse cx="330" cy="250" rx="52" ry="26" fill="#EAF3DE" stroke="#3B6D11" stroke-width="2"/>
 <text x="330" y="255" text-anchor="middle" font-size="14" fill="#3B6D11">S</text>
-<text x="20" y="314" text-anchor="start" font-size="13" fill="#666666">Each triangle has three vertices, an odd number, so a matching inside it always leaves one vertex over.</text>
-<text x="20" y="338" text-anchor="start" font-size="13" fill="#C0392B">That leftover must pair with something in S. With four triangles and a smaller S, somebody is stranded.</text>
-<text x="20" y="358" text-anchor="start" font-size="13" fill="#3B6D11">Hall counts neighbours and sees nothing wrong here. What matters is the parity of the leftover pieces.</text>
+<text x="20" y="314.0" font-size="13" fill="#666666" text-anchor="start">Each triangle has three vertices, an odd number, so a matching inside it always leaves one</text>
+<text x="20" y="334.0" font-size="13" fill="#666666" text-anchor="start">vertex over.</text>
+<text x="20" y="358.0" font-size="13" fill="#C0392B" text-anchor="start">That leftover must pair with something in S. With four triangles and a smaller S, somebody is</text>
+<text x="20" y="378.0" font-size="13" fill="#C0392B" text-anchor="start">stranded.</text>
+<text x="20" y="398.0" font-size="13" fill="#3B6D11" text-anchor="start">Hall counts neighbours and sees nothing wrong here. What matters is the parity of the leftover</text>
+<text x="20" y="418.0" font-size="13" fill="#3B6D11" text-anchor="start">pieces.</text>
 </svg>

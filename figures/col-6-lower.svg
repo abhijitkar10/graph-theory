@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">For C₅: ω = 2 and α = 2, so χ ≥ max(2, ⌈5/2⌉) = 3. Colour classes are independent.</text>
+<line x1="330" y1="52" x2="404" y2="106" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="404" y1="106" x2="376" y2="193" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="376" y1="193" x2="284" y2="193" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="284" y1="193" x2="256" y2="106" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="256" y1="106" x2="330" y2="52" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="330" cy="52" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="330" y="57" font-size="13" fill="#333333" text-anchor="middle">v₁</text>
+<circle cx="404" cy="106" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="404" y="111" font-size="13" fill="#333333" text-anchor="middle">v₂</text>
+<circle cx="376" cy="193" r="13" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="376" y="198" font-size="13" fill="#333333" text-anchor="middle">v₃</text>
+<circle cx="284" cy="193" r="13" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="284" y="198" font-size="13" fill="#333333" text-anchor="middle">v₄</text>
+<circle cx="256" cy="106" r="13" fill="#5B8DEF" stroke="#333333" stroke-width="2"/>
+<text x="256" y="111" font-size="13" fill="#333333" text-anchor="middle">v₅</text>
+<text x="330" y="240" font-size="12" fill="#666666" text-anchor="middle">Three classes {v₁, v₃}, {v₂, v₄}, {v₅}, each independent and of size at most α = 2. They</text>
+<text x="330" y="260" font-size="12" fill="#666666" text-anchor="middle">hold 5 vertices, so at least 5/2 classes are needed.</text>
+</svg>

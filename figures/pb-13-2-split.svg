@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 604" width="660" height="604" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="604" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 13.2. Deleting edges only splits components, and an odd one always leaves an odd piece.</text>
+<ellipse cx="180" cy="160" rx="96" ry="66" fill="none" stroke="#333333" stroke-width="2.6"/>
+<text x="180" y="166" font-size="11" fill="#666666" text-anchor="middle">one component of H − S</text>
+<text x="180" y="74" font-size="12" fill="#C0392B" text-anchor="middle">9 vertices, odd</text>
+<text x="330" y="160" font-size="24" fill="#666666" text-anchor="middle">→</text>
+<text x="330" y="132" font-size="11" fill="#666666" text-anchor="middle">remove edges</text>
+<ellipse cx="452" cy="160" rx="52" ry="50" fill="none" stroke="#333333" stroke-width="2.6"/>
+<text x="452" y="166" font-size="14" fill="#333333" text-anchor="middle">4</text>
+<ellipse cx="560" cy="160" rx="52" ry="50" fill="none" stroke="#C0392B" stroke-width="2.8"/>
+<text x="560" y="166" font-size="14" fill="#C0392B" text-anchor="middle">5</text>
+<text x="506" y="228.0" font-size="12" fill="#666666" text-anchor="middle">4 + 5 = 9</text>
+<text x="506" y="248.0" font-size="12" fill="#666666" text-anchor="middle">the pieces still add to 9</text>
+<text x="330" y="454.0" font-size="12" fill="#666666" text-anchor="middle">A sum of even numbers is even. So if the whole thing was odd, the pieces cannot all be even,</text>
+<text x="330" y="474.0" font-size="12" fill="#666666" text-anchor="middle">and at least one of them is odd. Every odd component of H − S therefore yields at least one</text>
+<text x="330" y="494.0" font-size="12" fill="#666666" text-anchor="middle">odd component of G − S, which means odd(G − S) ≥ odd(H − S).</text>
+<text x="330" y="542.0" font-size="12" fill="#333333" text-anchor="middle">That is why the condition survives the move from G up to the maximal counterexample H. If some</text>
+<text x="330" y="562.0" font-size="12" fill="#333333" text-anchor="middle">S broke the condition in H, the same S would break it in G.</text>
+</svg>

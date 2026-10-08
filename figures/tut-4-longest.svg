@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="340" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 367" width="660" height="367" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="367" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Why two longest paths cannot be disjoint.</text>
 <line x1="80" y1="90" x2="180" y2="90" stroke="#185FA5" stroke-width="3"/>
 <line x1="80" y1="270" x2="180" y2="270" stroke="#3B6D11" stroke-width="3"/>
@@ -32,5 +32,6 @@
 <text x="480" y="274" text-anchor="middle" font-size="12" fill="#222222"></text>
 <text x="300" y="185" text-anchor="start" font-size="12" fill="#C0392B">connecting path, length at least 1</text>
 <text x="20" y="312" text-anchor="start" font-size="13" fill="#666666">Each path splits at the meeting point, and the longer half of each is at least half its length.</text>
-<text x="20" y="336" text-anchor="start" font-size="13" fill="#C0392B">Glue the two longer halves onto the connector and you beat the maximum. So they cannot be disjoint.</text>
+<text x="20" y="336.0" font-size="13" fill="#C0392B" text-anchor="start">Glue the two longer halves onto the connector and you beat the maximum. So they cannot be</text>
+<text x="20" y="356.0" font-size="13" fill="#C0392B" text-anchor="start">disjoint.</text>
 </svg>

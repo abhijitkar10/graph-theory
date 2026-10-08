@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 700" width="660" height="700" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="700" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 18.5. The two assembled paths, and the three things that make them disjoint.</text>
+<text x="20" y="58" font-size="13" fill="#333333" text-anchor="start">What the construction hands you.</text>
+<line x1="90" y1="125" x2="240" y2="90" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="240" y1="90" x2="390" y2="162" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="390" y1="162" x2="555" y2="125" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="90" y1="125" x2="240" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="240" y1="230" x2="390" y2="162" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="555" y1="125" x2="555" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="555" y1="230" x2="240" y2="230" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="90" y1="125" x2="240" y2="90" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="240" y1="90" x2="390" y2="162" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="90" y1="125" x2="240" y2="230" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="240" y1="230" x2="390" y2="162" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="555" y1="125" x2="555" y2="230" stroke="#185FA5" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="555" y1="230" x2="240" y2="230" stroke="#185FA5" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="240" cy="230" r="13" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<circle cx="90" cy="125" r="6" fill="#333333"/>
+<circle cx="240" cy="90" r="6" fill="#333333"/>
+<circle cx="390" cy="162" r="6" fill="#333333"/>
+<circle cx="555" cy="125" r="6" fill="#333333"/>
+<circle cx="240" cy="230" r="6" fill="#333333"/>
+<circle cx="555" cy="230" r="6" fill="#333333"/>
+<text x="75" y="130" font-size="14" fill="#333333" text-anchor="end">x</text>
+<text x="240" y="75" font-size="14" fill="#333333" text-anchor="middle">v₁</text>
+<text x="406" y="167" font-size="14" fill="#333333" text-anchor="start">v₂ = v</text>
+<text x="571" y="130" font-size="14" fill="#333333" text-anchor="start">y</text>
+<text x="240" y="259" font-size="14" fill="#333333" text-anchor="middle">a = z</text>
+<text x="571" y="235" font-size="14" fill="#333333" text-anchor="start">c</text>
+<text x="158" y="105" font-size="14" fill="#C0392B" text-anchor="middle">P</text>
+<text x="146" y="187" font-size="14" fill="#3B6D11" text-anchor="middle">Q</text>
+<text x="400" y="252" font-size="14" fill="#185FA5" text-anchor="middle">R</text>
+<text x="20" y="278.0" font-size="12" fill="#666666" text-anchor="start">P and Q come from the induction hypothesis. R is the walk back from y, stopped at the first vertex</text>
+<text x="20" y="295.0" font-size="12" fill="#666666" text-anchor="start">already used, which is a. So z = a, and z happens to lie on Q.</text>
+<text x="20" y="322" font-size="13" fill="#333333" text-anchor="start">What you actually walk.</text>
+<line x1="90" y1="391" x2="240" y2="356" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="240" y1="356" x2="390" y2="428" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="390" y1="428" x2="555" y2="391" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="90" y1="391" x2="240" y2="496" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="240" y1="496" x2="390" y2="428" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="555" y1="391" x2="555" y2="496" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="555" y1="496" x2="240" y2="496" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="240" y1="496" x2="390" y2="428" stroke="#bbbbbb" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="5 5"/>
+<line x1="90" y1="391" x2="240" y2="356" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="240" y1="356" x2="390" y2="428" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="390" y1="428" x2="555" y2="391" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="90" y1="391" x2="240" y2="496" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="240" y1="496" x2="555" y2="496" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="555" y1="496" x2="555" y2="391" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="240" cy="496" r="13" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<circle cx="90" cy="391" r="6" fill="#333333"/>
+<circle cx="240" cy="356" r="6" fill="#333333"/>
+<circle cx="390" cy="428" r="6" fill="#333333"/>
+<circle cx="555" cy="391" r="6" fill="#333333"/>
+<circle cx="240" cy="496" r="6" fill="#333333"/>
+<circle cx="555" cy="496" r="6" fill="#333333"/>
+<text x="75" y="396" font-size="14" fill="#333333" text-anchor="end">x</text>
+<text x="240" y="341" font-size="14" fill="#333333" text-anchor="middle">v₁</text>
+<text x="406" y="433" font-size="14" fill="#333333" text-anchor="start">v₂ = v</text>
+<text x="571" y="396" font-size="14" fill="#333333" text-anchor="start">y</text>
+<text x="240" y="525" font-size="14" fill="#333333" text-anchor="middle">a = z</text>
+<text x="571" y="501" font-size="14" fill="#333333" text-anchor="start">c</text>
+<text x="150" y="371" font-size="14" fill="#C0392B" text-anchor="middle">P₁</text>
+<text x="140" y="453" font-size="14" fill="#3B6D11" text-anchor="middle">P₂</text>
+<text x="462" y="466" font-size="12" fill="#666666" text-anchor="middle">the rest of Q is dropped</text>
+<text x="20" y="544" font-size="12" fill="#C0392B" text-anchor="start">P₁ = x along P to v₂, then the edge v₂y.    Interior: v₁ and v₂.</text>
+<text x="20" y="561" font-size="12" fill="#3B6D11" text-anchor="start">P₂ = x along Q to z, then z along R to y.    Interior: a and c.</text>
+<text x="330" y="596" font-size="12" fill="#666666" text-anchor="middle">One, P and Q share no interior vertex, so v₁ is neither a nor c. Two, R's interior meets</text>
+<text x="330" y="616" font-size="12" fill="#666666" text-anchor="middle">neither P nor Q, so c is on neither. Three, v₂ is not on P₂, because R stopped at a before</text>
+<text x="330" y="636" font-size="12" fill="#666666" text-anchor="middle">reaching v₂ and the stretch of Q used stops at a as well, which is why the edge a to v₂ is</text>
+<text x="330" y="656" font-size="12" fill="#666666" text-anchor="middle">dropped.</text>
+</svg>

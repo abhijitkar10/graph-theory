@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 416" width="660" height="416" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="416" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">C₅ has no chords at all, so every path in it is induced. They are not all shortest.</text>
+<line x1="330" y1="65" x2="430" y2="138" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="430" y1="138" x2="392" y2="255" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="392" y1="255" x2="268" y2="255" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="268" y1="255" x2="230" y2="138" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="230" y1="138" x2="330" y2="65" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="330" y1="65" x2="230" y2="138" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="230" y1="138" x2="268" y2="255" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="268" y1="255" x2="392" y2="255" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="330" y1="65" x2="430" y2="138" stroke="#185FA5" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="430" y1="138" x2="392" y2="255" stroke="#185FA5" stroke-width="3.6" stroke-linecap="round"/>
+<circle cx="330" cy="65" r="7" fill="#333333"/>
+<circle cx="430" cy="138" r="7" fill="#333333"/>
+<circle cx="392" cy="255" r="7" fill="#333333"/>
+<circle cx="268" cy="255" r="7" fill="#333333"/>
+<circle cx="230" cy="138" r="7" fill="#333333"/>
+<circle cx="330" cy="65" r="14" fill="none" stroke="#666666" stroke-width="2"/>
+<circle cx="392" cy="255" r="14" fill="none" stroke="#666666" stroke-width="2"/>
+<text x="330" y="45" font-size="15" fill="#333333" text-anchor="middle">a</text>
+<text x="452" y="143" font-size="15" fill="#333333" text-anchor="start">b</text>
+<text x="408" y="279" font-size="15" fill="#333333" text-anchor="start">c</text>
+<text x="252" y="279" font-size="15" fill="#333333" text-anchor="end">d</text>
+<text x="208" y="143" font-size="15" fill="#333333" text-anchor="end">e</text>
+<text x="150" y="110" font-size="13" fill="#3B6D11" text-anchor="middle">a, e, d, c</text>
+<text x="150" y="128" font-size="12" fill="#3B6D11" text-anchor="middle">length 3</text>
+<text x="512" y="110" font-size="13" fill="#185FA5" text-anchor="middle">a, b, c</text>
+<text x="512" y="128" font-size="12" fill="#185FA5" text-anchor="middle">length 2</text>
+<text x="330" y="330" font-size="12" fill="#666666" text-anchor="middle">Both routes join the same two vertices, marked with grey rings, and both are induced, since a</text>
+<text x="330" y="350" font-size="12" fill="#666666" text-anchor="middle">five cycle has no chords for either of them to carry. Only the blue one is shortest.</text>
+<text x="330" y="386" font-size="12" fill="#666666" text-anchor="middle">C₅ is the smallest graph where this happens. In C₄ the two routes have equal length.</text>
+</svg>

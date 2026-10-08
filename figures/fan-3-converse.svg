@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="400" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Fan lemma, converse. Extend a fan to N(y) by one edge each to get k paths from x to y.</text>
+<ellipse cx="380" cy="185" rx="34" ry="128" fill="#e4eef9" stroke="#185FA5" stroke-width="2.2" fill-opacity="0.6"/>
+<text x="380" y="38" font-size="16" fill="#185FA5" text-anchor="middle">N(y)</text>
+<line x1="60" y1="170" x2="220" y2="80" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="220" y1="80" x2="380" y2="80" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="380" y1="80" x2="560" y2="185" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="60" y1="170" x2="220" y2="150" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="220" y1="150" x2="380" y2="150" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="380" y1="150" x2="560" y2="185" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="60" y1="170" x2="220" y2="220" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="220" y1="220" x2="380" y2="220" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="380" y1="220" x2="560" y2="185" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="60" y1="170" x2="220" y2="290" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="220" y1="290" x2="380" y2="290" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="380" y1="290" x2="560" y2="185" stroke="#bbbbbb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="60" y1="170" x2="220" y2="80" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="80" x2="380" y2="80" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="380" y1="80" x2="560" y2="185" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="6 4"/>
+<line x1="60" y1="170" x2="220" y2="150" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="150" x2="380" y2="150" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="380" y1="150" x2="560" y2="185" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="6 4"/>
+<line x1="60" y1="170" x2="220" y2="290" stroke="#B8860B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="290" x2="380" y2="290" stroke="#B8860B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="380" y1="290" x2="560" y2="185" stroke="#B8860B" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="6 4"/>
+<circle cx="60" cy="170" r="6" fill="#333333"/>
+<circle cx="560" cy="185" r="6" fill="#333333"/>
+<circle cx="220" cy="80" r="6" fill="#333333"/>
+<circle cx="220" cy="150" r="6" fill="#333333"/>
+<circle cx="220" cy="220" r="6" fill="#333333"/>
+<circle cx="220" cy="290" r="6" fill="#333333"/>
+<circle cx="380" cy="80" r="6" fill="#333333"/>
+<circle cx="380" cy="150" r="6" fill="#333333"/>
+<circle cx="380" cy="220" r="6" fill="#333333"/>
+<circle cx="380" cy="290" r="6" fill="#333333"/>
+<text x="60" y="154" font-size="15" fill="#333333" text-anchor="middle">x</text>
+<text x="564" y="169" font-size="15" fill="#333333" text-anchor="middle">y</text>
+<text x="330" y="338" font-size="12" fill="#666666" text-anchor="middle">The hypothesis applied to y says every vertex has degree at least k, so |N(y)| ≥ k and a fan</text>
+<text x="330" y="358" font-size="12" fill="#666666" text-anchor="middle">of size k from x to N(y) exists. Add the edge from each fan endpoint to y. The result is k</text>
+<text x="330" y="378" font-size="12" fill="#666666" text-anchor="middle">internally disjoint x to y paths, for every pair x, y, which is k-connectedness.</text>
+</svg>

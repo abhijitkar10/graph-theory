@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 536" width="660" height="536" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="536" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666" text-anchor="start">Claim 17.1. Every neighbour of v₀ and of v₆ already lies on the path.</text>
+<line x1="90" y1="118" x2="168" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="168" y1="118" x2="246" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="246" y1="118" x2="324" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="324" y1="118" x2="402" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="402" y1="118" x2="480" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="480" y1="118" x2="558" y2="118" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<circle cx="90" cy="118" r="6" fill="#333333"/>
+<text x="90" y="100" font-size="13" fill="#333333" text-anchor="middle">v₀</text>
+<circle cx="168" cy="118" r="6" fill="#333333"/>
+<text x="168" y="100" font-size="13" fill="#333333" text-anchor="middle">v₁</text>
+<circle cx="246" cy="118" r="6" fill="#333333"/>
+<text x="246" y="100" font-size="13" fill="#333333" text-anchor="middle">v₂</text>
+<circle cx="324" cy="118" r="6" fill="#333333"/>
+<text x="324" y="100" font-size="13" fill="#333333" text-anchor="middle">v₃</text>
+<circle cx="402" cy="118" r="6" fill="#333333"/>
+<text x="402" y="100" font-size="13" fill="#333333" text-anchor="middle">v₄</text>
+<circle cx="480" cy="118" r="6" fill="#333333"/>
+<text x="480" y="100" font-size="13" fill="#333333" text-anchor="middle">v₅</text>
+<circle cx="558" cy="118" r="6" fill="#333333"/>
+<text x="558" y="100" font-size="13" fill="#333333" text-anchor="middle">v₆</text>
+<path d="M 90 118 Q 207.0 166.0 324 118" fill="none" stroke="#3B6D11" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 90 118 Q 246.0 190.0 402 118" fill="none" stroke="#3B6D11" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 90 118 Q 285.0 214.0 480 118" fill="none" stroke="#3B6D11" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 90 118 Q 62.0 118.0 34 118" fill="none" stroke="#C0392B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="26" y1="109" x2="42" y2="127" stroke="#C0392B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="26" y1="127" x2="42" y2="109" stroke="#C0392B" stroke-width="2.4" stroke-linecap="round"/>
+<text x="56" y="82" font-size="11" fill="#C0392B" text-anchor="start">nothing out here</text>
+<text x="330" y="254" font-size="12" fill="#666666" text-anchor="middle">v₀ reaches v₁ along the path, and v₃, v₄, v₅ by these arcs. Four neighbours, every one on P.</text>
+<line x1="90" y1="330" x2="168" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="168" y1="330" x2="246" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="246" y1="330" x2="324" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="324" y1="330" x2="402" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="402" y1="330" x2="480" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="480" y1="330" x2="558" y2="330" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<circle cx="90" cy="330" r="6" fill="#333333"/>
+<text x="90" y="312" font-size="13" fill="#333333" text-anchor="middle">v₀</text>
+<circle cx="168" cy="330" r="6" fill="#333333"/>
+<text x="168" y="312" font-size="13" fill="#333333" text-anchor="middle">v₁</text>
+<circle cx="246" cy="330" r="6" fill="#333333"/>
+<text x="246" y="312" font-size="13" fill="#333333" text-anchor="middle">v₂</text>
+<circle cx="324" cy="330" r="6" fill="#333333"/>
+<text x="324" y="312" font-size="13" fill="#333333" text-anchor="middle">v₃</text>
+<circle cx="402" cy="330" r="6" fill="#333333"/>
+<text x="402" y="312" font-size="13" fill="#333333" text-anchor="middle">v₄</text>
+<circle cx="480" cy="330" r="6" fill="#333333"/>
+<text x="480" y="312" font-size="13" fill="#333333" text-anchor="middle">v₅</text>
+<circle cx="558" cy="330" r="6" fill="#333333"/>
+<text x="558" y="312" font-size="13" fill="#333333" text-anchor="middle">v₆</text>
+<path d="M 558 330 Q 480.0 378.0 402 330" fill="none" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 558 330 Q 402.0 402.0 246 330" fill="none" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 558 330 Q 363.0 426.0 168 330" fill="none" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<text x="330" y="466" font-size="12" fill="#666666" text-anchor="middle">v₆ reaches v₅ along the path, and v₄, v₂, v₁ by these arcs. Four neighbours, every one on P.</text>
+<text x="330" y="502" font-size="12" fill="#666666" text-anchor="middle">A neighbour sitting off the path could be tacked onto that end, giving a longer path.</text>
+<text x="330" y="522" font-size="12" fill="#666666" text-anchor="middle">P was chosen longest, so both endpoints are trapped on it.</text>
+</svg>

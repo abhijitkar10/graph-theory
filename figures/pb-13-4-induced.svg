@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 450" width="660" height="450" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="450" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 13.4. If H − U is not a union of cliques, find an induced path and swap along cycles.</text>
+<line x1="150" y1="150" x2="300" y2="150" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="300" y1="150" x2="450" y2="150" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<path d="M 150 150 Q 300.0 94.0 450 150" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+<text x="300" y="72" font-size="12" fill="#C0392B" text-anchor="middle">ac is missing, so a, b, c is an induced path</text>
+<circle cx="150" cy="150" r="6" fill="#333333"/>
+<circle cx="300" cy="150" r="6" fill="#333333"/>
+<circle cx="450" cy="150" r="6" fill="#333333"/>
+<text x="150" y="176" font-size="14" fill="#333333" text-anchor="middle">a</text>
+<text x="300" y="176" font-size="14" fill="#333333" text-anchor="middle">b</text>
+<text x="450" y="176" font-size="14" fill="#333333" text-anchor="middle">c</text>
+<circle cx="556" cy="262" r="7" fill="#185FA5"/>
+<text x="574" y="267" font-size="14" fill="#185FA5" text-anchor="middle">x</text>
+<path d="M 300 150 Q 410.36397130313287 246.31092273569632 556 262" fill="none" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5"/>
+<text x="250" y="248" font-size="11" fill="#185FA5" text-anchor="start">bx is missing too, because b is not universal</text>
+<text x="330" y="330" font-size="12" fill="#C0392B" text-anchor="middle">H + ac has a perfect matching M that must use ac</text>
+<text x="330" y="352" font-size="12" fill="#185FA5" text-anchor="middle">H + bx has a perfect matching N that must use bx</text>
+<text x="330" y="386.0" font-size="12" fill="#666666" text-anchor="middle">Superimpose M and N. Every degree is at most two, so what is left is a set of alternating even cycles.</text>
+<text x="330" y="406.0" font-size="12" fill="#666666" text-anchor="middle">Re-pair along the cycle carrying ac so the stretch through a, b, c uses ab or bc</text>
+<text x="330" y="426" font-size="12" fill="#666666" text-anchor="middle">instead. Every edge you finish with belongs to H, so H had a perfect matching after all.</text>
+</svg>

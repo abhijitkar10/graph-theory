@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="300" fill="#ffffff"/>
-<text x="20" y="24" font-size="13" fill="#666666">Stripping low degree vertices. Each removal costs one vertex but few edges, so the density climbs.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Stripping low degree vertices. Each removal costs one vertex but few edges, so density rises.</text>
 <line x1="70" y1="90" x2="140" y2="70" stroke="#333333" stroke-width="2"/>
 <line x1="140" y1="70" x2="180" y2="130" stroke="#333333" stroke-width="2"/>
 <line x1="180" y1="130" x2="120" y2="160" stroke="#333333" stroke-width="2"/>
@@ -50,6 +50,7 @@
 <text x="620" y="135" text-anchor="middle" font-size="13" fill="#222222"></text>
 <circle cx="560" cy="160" r="9" fill="#ffffff" stroke="#333333" stroke-width="2"/>
 <text x="560" y="165" text-anchor="middle" font-size="13" fill="#222222"></text>
-<text x="560" y="240" text-anchor="middle" font-size="12" fill="#666666">nothing left of low degree: stop</text>
-<text x="20" y="272" text-anchor="start" font-size="13" fill="#666666">Removing a vertex of degree below k costs at most k-1 edges but a whole vertex, so m/n cannot fall. Finiteness stops the process.</text>
+<text x="557.8" y="240" font-size="12" fill="#666666" text-anchor="middle">nothing left of low degree: stop</text>
+<text x="20" y="272.0" font-size="13" fill="#666666" text-anchor="start">Removing a vertex of degree below k costs at most k-1 edges but a whole vertex, so m/n</text>
+<text x="20" y="292.0" font-size="13" fill="#666666" text-anchor="start">cannot fall. Finiteness stops the process.</text>
 </svg>

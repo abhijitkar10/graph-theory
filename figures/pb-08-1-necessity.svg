@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 391" width="660" height="391" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="391" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 8.1. If a matching saturates A, then every S inside A has enough neighbours.</text>
+<line x1="190" y1="110" x2="470" y2="90" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="110" x2="470" y2="170" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="190" x2="470" y2="90" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="190" x2="470" y2="170" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="190" x2="470" y2="250" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="270" x2="470" y2="170" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="270" x2="470" y2="250" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="270" x2="470" y2="330" stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190" y1="110" x2="470" y2="90" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="190" y1="190" x2="470" y2="170" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="190" y1="270" x2="470" y2="250" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="190" cy="110" r="6" fill="#333333"/>
+<circle cx="190" cy="190" r="6" fill="#333333"/>
+<circle cx="190" cy="270" r="6" fill="#333333"/>
+<circle cx="470" cy="90" r="6" fill="#333333"/>
+<circle cx="470" cy="170" r="6" fill="#333333"/>
+<circle cx="470" cy="250" r="6" fill="#333333"/>
+<circle cx="470" cy="330" r="6" fill="#333333"/>
+<ellipse cx="190" cy="190" rx="40" ry="108" fill="none" stroke="#185FA5" stroke-width="2.4" stroke-dasharray="5 4"/>
+<text x="190" y="320" font-size="14" fill="#185FA5" text-anchor="middle">S</text>
+<ellipse cx="470" cy="170" rx="40" ry="118" fill="none" stroke="#3B6D11" stroke-width="2.4" stroke-dasharray="5 4"/>
+<text x="470" y="40" font-size="14" fill="#3B6D11" text-anchor="middle">N(S)</text>
+<text x="330" y="352" font-size="12" fill="#666666" text-anchor="middle">each vertex of S has its own partner, and the partners are distinct because M is a matching</text>
+<text x="330" y="380.0" font-size="12" fill="#666666" text-anchor="middle">Those ∣S∣ distinct partners all lie in N(S), so ∣N(S)∣ ≥ ∣S∣. That is the whole forward direction.</text>
+</svg>

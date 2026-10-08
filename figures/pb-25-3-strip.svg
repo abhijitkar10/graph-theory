@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 423" width="660" height="423" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="423" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 25.3. Strip a vertex of degree at most 2 at a time, and each step costs at most 2 edges.</text>
+<ellipse cx="100" cy="160" rx="58" ry="56" fill="none" stroke="#333333" stroke-width="2.4"/>
+<text x="100" y="164" font-size="11" fill="#666666" text-anchor="middle">n vertices</text>
+<text x="175" y="160" font-size="20" fill="#666666" text-anchor="middle">→</text>
+<text x="175" y="196.0" font-size="11" fill="#C0392B" text-anchor="middle">≤ 2 edges</text>
+<text x="175" y="215.0" font-size="11" fill="#C0392B" text-anchor="middle">removed</text>
+<ellipse cx="250" cy="160" rx="58" ry="56" fill="none" stroke="#333333" stroke-width="2.4"/>
+<text x="250" y="164" font-size="11" fill="#666666" text-anchor="middle">n−1</text>
+<text x="325" y="160" font-size="20" fill="#666666" text-anchor="middle">→</text>
+<text x="325" y="196" font-size="11" fill="#C0392B" text-anchor="middle">≤ 2 edges</text>
+<text x="325" y="231.0" font-size="11" fill="#C0392B" text-anchor="middle">removed</text>
+<ellipse cx="400" cy="160" rx="58" ry="56" fill="none" stroke="#333333" stroke-width="2.4"/>
+<text x="400" y="164" font-size="11" fill="#666666" text-anchor="middle">n−2</text>
+<text x="475" y="160" font-size="20" fill="#666666" text-anchor="middle">→</text>
+<text x="475" y="196" font-size="11" fill="#C0392B" text-anchor="middle">≤ 2 edges</text>
+<text x="475" y="231.0" font-size="11" fill="#C0392B" text-anchor="middle">removed</text>
+<ellipse cx="540" cy="160" rx="58" ry="56" fill="none" stroke="#333333" stroke-width="2.4"/>
+<text x="540" y="164" font-size="11" fill="#666666" text-anchor="middle">… down to 1</text>
+<text x="330" y="271.0" font-size="12" fill="#C0392B" text-anchor="middle">one vertex leaves, at most two edges leave with it</text>
+<text x="330" y="303.0" font-size="12" fill="#333333" text-anchor="middle">after n−1 steps the graph is a single vertex with no edges</text>
+<text x="330" y="337.0" font-size="12" fill="#666666" text-anchor="middle">So the total number of edges is at most 2 per step over n−1 steps, giving m ≤ 2(n−1),</text>
+<text x="330" y="357.0" font-size="12" fill="#666666" text-anchor="middle">comfortably inside the 2n the question asks for. The sharp bound for connected graphs is</text>
+<text x="330" y="377.0" font-size="12" fill="#666666" text-anchor="middle">⌊3(n−1)/2⌋, but 2n is what was set and it is easier.</text>
+</svg>

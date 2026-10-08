@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 498" width="660" height="498" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="498" fill="#ffffff"/>
+<text x="20" y="24.0" font-size="13" fill="#666666" text-anchor="start">What Gᵢ means. It is a running total: Gᵢ is everything built after i ears, not a new graph each</text>
+<text x="20" y="44.0" font-size="13" fill="#666666" text-anchor="start">time.</text>
+<line x1="104.0" y1="102.0" x2="157.2591649125286" y2="140.69504831500294" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="157.2591649125286" y1="140.69504831500294" x2="136.91597412837848" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="136.91597412837848" y1="203.30495168499706" x2="71.08402587162152" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="71.08402587162152" y1="203.30495168499706" x2="50.740835087471396" y2="140.69504831500296" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="50.740835087471396" y1="140.69504831500296" x2="104.0" y2="102.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="104.0" cy="102.0" r="5.5" fill="#333333"/>
+<text x="104.0" y="107.0" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<circle cx="157.2591649125286" cy="140.69504831500294" r="5.5" fill="#333333"/>
+<text x="174.2591649125286" y="156.7" font-size="13" fill="#333333" text-anchor="middle">b</text>
+<circle cx="136.91597412837848" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="150.91597412837848" y="240.3" font-size="13" fill="#333333" text-anchor="middle">c</text>
+<circle cx="71.08402587162152" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="57.08402587162152" y="240.3" font-size="13" fill="#333333" text-anchor="middle">d</text>
+<circle cx="50.740835087471396" cy="140.69504831500296" r="5.5" fill="#333333"/>
+<text x="32.740835087471396" y="158.7" font-size="13" fill="#333333" text-anchor="middle">e</text>
+<text x="104" y="82.0" font-size="17" fill="#333333" text-anchor="middle">G₁</text>
+<text x="104" y="338.0" font-size="12" fill="#666666" text-anchor="middle">the cycle E₁</text>
+<line x1="322.0" y1="102.0" x2="375.2591649125286" y2="140.69504831500294" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="375.2591649125286" y1="140.69504831500294" x2="354.9159741283785" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="354.9159741283785" y1="203.30495168499706" x2="289.0840258716215" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="289.0840258716215" y1="203.30495168499706" x2="268.7408350874714" y2="140.69504831500296" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="268.7408350874714" y1="140.69504831500296" x2="322.0" y2="102.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="289.0840258716215" y1="203.30495168499706" x2="280" y2="262" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="280" y1="262" x2="364" y2="262" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="364" y1="262" x2="354.9159741283785" y2="203.30495168499706" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<circle cx="322.0" cy="102.0" r="5.5" fill="#333333"/>
+<text x="322.0" y="107.0" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<circle cx="375.2591649125286" cy="140.69504831500294" r="5.5" fill="#333333"/>
+<text x="392.2591649125286" y="156.7" font-size="13" fill="#333333" text-anchor="middle">b</text>
+<circle cx="354.9159741283785" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="368.9159741283785" y="240.3" font-size="13" fill="#333333" text-anchor="middle">c</text>
+<circle cx="289.0840258716215" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="275.0840258716215" y="240.3" font-size="13" fill="#333333" text-anchor="middle">d</text>
+<circle cx="268.7408350874714" cy="140.69504831500296" r="5.5" fill="#333333"/>
+<text x="250.7408350874714" y="158.7" font-size="13" fill="#333333" text-anchor="middle">e</text>
+<circle cx="280" cy="262" r="5.5" fill="#3B6D11"/>
+<text x="265" y="288.0" font-size="13" fill="#3B6D11" text-anchor="middle">f</text>
+<circle cx="364" cy="262" r="5.5" fill="#3B6D11"/>
+<text x="379" y="288.0" font-size="13" fill="#3B6D11" text-anchor="middle">g</text>
+<text x="322" y="82.0" font-size="17" fill="#333333" text-anchor="middle">G₂</text>
+<text x="322" y="338.0" font-size="12" fill="#666666" text-anchor="middle">G₁ with the ear E₂ added</text>
+<line x1="540.0" y1="102.0" x2="593.2591649125286" y2="140.69504831500294" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="593.2591649125286" y1="140.69504831500294" x2="572.9159741283785" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="572.9159741283785" y1="203.30495168499706" x2="507.0840258716215" y2="203.30495168499706" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="507.0840258716215" y1="203.30495168499706" x2="486.7408350874714" y2="140.69504831500296" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="486.7408350874714" y1="140.69504831500296" x2="540.0" y2="102.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="507.0840258716215" y1="203.30495168499706" x2="498" y2="262" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="498" y1="262" x2="582" y2="262" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="582" y1="262" x2="572.9159741283785" y2="203.30495168499706" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="540.0" y1="102.0" x2="610" y2="76" stroke="#185FA5" stroke-width="3" stroke-linecap="round"/>
+<line x1="610" y1="76" x2="593.2591649125286" y2="140.69504831500294" stroke="#185FA5" stroke-width="3" stroke-linecap="round"/>
+<circle cx="540.0" cy="102.0" r="5.5" fill="#333333"/>
+<text x="540.0" y="107.0" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<circle cx="593.2591649125286" cy="140.69504831500294" r="5.5" fill="#333333"/>
+<text x="610.2591649125286" y="156.7" font-size="13" fill="#333333" text-anchor="middle">b</text>
+<circle cx="572.9159741283785" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="586.9159741283785" y="240.3" font-size="13" fill="#333333" text-anchor="middle">c</text>
+<circle cx="507.0840258716215" cy="203.30495168499706" r="5.5" fill="#333333"/>
+<text x="493.0840258716215" y="240.3" font-size="13" fill="#333333" text-anchor="middle">d</text>
+<circle cx="486.7408350874714" cy="140.69504831500296" r="5.5" fill="#333333"/>
+<text x="468.7408350874714" y="158.7" font-size="13" fill="#333333" text-anchor="middle">e</text>
+<circle cx="498" cy="262" r="5.5" fill="#3B6D11"/>
+<text x="483" y="288.0" font-size="13" fill="#3B6D11" text-anchor="middle">f</text>
+<circle cx="582" cy="262" r="5.5" fill="#3B6D11"/>
+<text x="597" y="288.0" font-size="13" fill="#3B6D11" text-anchor="middle">g</text>
+<circle cx="610" cy="76" r="5.5" fill="#185FA5"/>
+<text x="625" y="90.0" font-size="13" fill="#185FA5" text-anchor="middle">h</text>
+<text x="540" y="82.0" font-size="17" fill="#333333" text-anchor="middle">G₃</text>
+<text x="540" y="338.0" font-size="12" fill="#666666" text-anchor="middle">G₂ with the ear E₃ added</text>
+<text x="214" y="186.0" font-size="22" fill="#666666" text-anchor="middle">→</text>
+<text x="432" y="186.0" font-size="22" fill="#666666" text-anchor="middle">→</text>
+<text x="330" y="382.0" font-size="13" fill="#333333" text-anchor="middle">G₁ = E₁.    G₂ = E₁ ∪ E₂.    G₃ = E₁ ∪ E₂ ∪ E₃, which here is the whole graph G.</text>
+<text x="330" y="412.0" font-size="12" fill="#666666" text-anchor="middle">So Gᵢ₋₁ is whatever you had before adding the i-th ear, and Gᵢ is what you have straight after.</text>
+<text x="330" y="433.0" font-size="12" fill="#666666" text-anchor="middle">Read the induction step off the middle panel: Gᵢ₋₁ is the pentagon, Eᵢ is the green path, Gᵢ is both together.</text>
+<text x="330" y="454.0" font-size="12" fill="#666666" text-anchor="middle">The ears partition the edges, 5 + 3 + 2 = 10, so no edge is ever added twice.</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 444" width="660" height="444" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="444" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 12.1. Choose the connector shortest and its interior avoids both paths for free.</text>
+<line x1="110" y1="110" x2="230" y2="92" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="110" y1="300" x2="230" y2="318" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="230" y1="92" x2="350" y2="110" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="230" y1="318" x2="350" y2="300" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="350" y1="110" x2="470" y2="92" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="350" y1="300" x2="470" y2="318" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="470" y1="92" x2="560" y2="110" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="470" y1="318" x2="560" y2="300" stroke="#333333" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="110" cy="110" r="6" fill="#333333"/>
+<circle cx="230" cy="92" r="6" fill="#333333"/>
+<circle cx="350" cy="110" r="6" fill="#333333"/>
+<circle cx="470" cy="92" r="6" fill="#333333"/>
+<circle cx="560" cy="110" r="6" fill="#333333"/>
+<circle cx="110" cy="300" r="6" fill="#333333"/>
+<circle cx="230" cy="318" r="6" fill="#333333"/>
+<circle cx="350" cy="300" r="6" fill="#333333"/>
+<circle cx="470" cy="318" r="6" fill="#333333"/>
+<circle cx="560" cy="300" r="6" fill="#333333"/>
+<text x="78" y="110" font-size="15" fill="#333333" text-anchor="middle">P</text>
+<text x="78" y="300" font-size="15" fill="#333333" text-anchor="middle">Q</text>
+<line x1="350" y1="110" x2="350" y2="175" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="350" y1="175" x2="350" y2="235" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<line x1="350" y1="235" x2="350" y2="300" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<circle cx="350" cy="175" r="5" fill="#3B6D11"/>
+<circle cx="350" cy="235" r="5" fill="#3B6D11"/>
+<text x="300" y="208" font-size="14" fill="#3B6D11" text-anchor="end">R</text>
+<line x1="470" y1="92" x2="470" y2="205" stroke="#C0392B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="470" y1="205" x2="470" y2="318" stroke="#C0392B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="470" cy="205" r="5" fill="#C0392B"/>
+<text x="508" y="196.0" font-size="11" fill="#C0392B" text-anchor="start">this one could</text>
+<text x="508" y="226.0" font-size="11" fill="#C0392B" text-anchor="start">be cut short</text>
+<text x="330" y="374.0" font-size="12" fill="#666666" text-anchor="middle">If an interior vertex of R lay on P or on Q, the piece of R from that vertex onwards would</text>
+<text x="330" y="394.0" font-size="12" fill="#666666" text-anchor="middle">already be a connector, and a shorter one. So a shortest connector touches neither, which is</text>
+<text x="330" y="414.0" font-size="12" fill="#666666" text-anchor="middle">exactly what Claim 12.2 needs in order to glue the three pieces into a single path.</text>
+</svg>

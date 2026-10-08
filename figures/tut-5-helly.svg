@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="300" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Pairwise overlapping intervals share a point: the rightmost left endpoint.</text>
 <line x1="120" y1="90" x2="520" y2="90" stroke="#333333" stroke-width="4"/>
 <line x1="120" y1="81" x2="120" y2="99" stroke="#333333" stroke-width="3"/>
@@ -13,5 +13,6 @@
 <line x1="240" y1="60" x2="240" y2="200" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="6 4"/>
 <text x="240" y="220" text-anchor="middle" font-size="12" fill="#C0392B">the rightmost left endpoint</text>
 <text x="20" y="258" text-anchor="start" font-size="13" fill="#666666">Call it a. Every interval starts at or before a, since a is the largest of all the left endpoints.</text>
-<text x="20" y="282" text-anchor="start" font-size="13" fill="#C0392B">And a is at or before every right endpoint, because the interval owning a overlaps the one ending soonest.</text>
+<text x="20" y="282.0" font-size="13" fill="#C0392B" text-anchor="start">And a is at or before every right endpoint, because the interval owning a overlaps the one</text>
+<text x="20" y="302.0" font-size="13" fill="#C0392B" text-anchor="start">ending soonest.</text>
 </svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 350" width="660" height="350" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="350" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 18.3. The base case: x and a are adjacent, so dist(x,a) = 1.</text>
+<line x1="85" y1="110" x2="235" y2="78" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="235" y1="78" x2="385" y2="168" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="385" y1="168" x2="235" y2="260" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="235" y1="260" x2="85" y2="110" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="385" y1="168" x2="545" y2="110" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="545" y1="110" x2="545" y2="260" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="545" y1="260" x2="235" y2="260" stroke="#c4c4c4" stroke-width="2" stroke-linecap="round"/>
+<line x1="85" y1="110" x2="235" y2="260" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="85" y1="110" x2="235" y2="78" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="235" y1="78" x2="385" y2="168" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="385" y1="168" x2="235" y2="260" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="85" cy="110" r="6" fill="#333333"/>
+<circle cx="235" cy="78" r="6" fill="#333333"/>
+<circle cx="385" cy="168" r="6" fill="#333333"/>
+<circle cx="235" cy="260" r="6" fill="#333333"/>
+<circle cx="545" cy="110" r="6" fill="#333333"/>
+<circle cx="545" cy="260" r="6" fill="#333333"/>
+<text x="65" y="115" font-size="14" fill="#333333" text-anchor="middle">x</text>
+<text x="235" y="62" font-size="13" fill="#333333" text-anchor="middle">v₁</text>
+<text x="407" y="173" font-size="13" fill="#333333" text-anchor="middle">v₂</text>
+<text x="229" y="284" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<text x="565" y="115" font-size="14" fill="#333333" text-anchor="middle">y</text>
+<text x="565" y="265" font-size="13" fill="#333333" text-anchor="middle">c</text>
+<text x="132" y="205" font-size="12" fill="#C0392B" text-anchor="middle">the edge xa</text>
+<text x="300" y="52" font-size="12" fill="#3B6D11" text-anchor="middle">the second path, x v₁ v₂ a</text>
+<text x="330" y="300" font-size="12" fill="#666666" text-anchor="middle">One path is the edge itself, which has no internal vertices at all, so nothing can clash.</text>
+<text x="330" y="320" font-size="12" fill="#666666" text-anchor="middle">The other comes from G minus that edge, still connected because a 2-connected graph has no bridge.</text>
+</svg>

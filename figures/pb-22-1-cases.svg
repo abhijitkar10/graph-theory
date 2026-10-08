@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 476" width="660" height="476" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="476" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 22.1. An open ear keeps 2-connectedness. Two cases on where the deletion falls.</text>
+<text x="158.0" y="70" font-size="12" fill="#666666" text-anchor="middle">delete a vertex inside the ear</text>
+<line x1="158.0" y1="96.0" x2="230.28029523843168" y2="148.514708427504" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="230.28029523843168" y1="148.514708427504" x2="202.67167917422796" y2="233.485291572496" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="202.67167917422796" y1="233.485291572496" x2="113.32832082577205" y2="233.485291572496" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="113.32832082577205" y1="233.485291572496" x2="85.71970476156832" y2="148.51470842750402" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="85.71970476156832" y1="148.51470842750402" x2="158.0" y2="96.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="113.32832082577205" y1="233.485291572496" x2="123.32832082577205" y2="313.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="123.32832082577205" y1="313.485291572496" x2="196.67167917422796" y2="319.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="196.67167917422796" y1="319.485291572496" x2="202.67167917422796" y2="233.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="158.0" cy="96.0" r="6" fill="#333333"/>
+<circle cx="230.28029523843168" cy="148.514708427504" r="6" fill="#333333"/>
+<circle cx="202.67167917422796" cy="233.485291572496" r="6" fill="#333333"/>
+<circle cx="113.32832082577205" cy="233.485291572496" r="6" fill="#333333"/>
+<circle cx="85.71970476156832" cy="148.51470842750402" r="6" fill="#333333"/>
+<circle cx="123.32832082577205" cy="313.485291572496" r="5" fill="#3B6D11"/>
+<circle cx="196.67167917422796" cy="319.485291572496" r="5" fill="#3B6D11"/>
+<text x="97.32832082577205" y="239.485291572496" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<text x="218.67167917422796" y="239.485291572496" font-size="13" fill="#333333" text-anchor="middle">b</text>
+<text x="158.0" y="78.0" font-size="12" fill="#666666" text-anchor="middle"> </text>
+<circle cx="123.32832082577205" cy="313.485291572496" r="12" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-dasharray="4 3"/>
+<text x="83.32832082577205" y="355.485291572496" font-size="11" fill="#C0392B" text-anchor="middle">deleted</text>
+<text x="158.0" y="366" font-size="11" fill="#C0392B" text-anchor="middle">two stubs, still held at a and at b</text>
+<text x="488.0" y="70" font-size="12" fill="#666666" text-anchor="middle">delete a vertex of Gᵢ₋₁</text>
+<line x1="488.0" y1="96.0" x2="560.2802952384317" y2="148.514708427504" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="560.2802952384317" y1="148.514708427504" x2="532.671679174228" y2="233.485291572496" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="532.671679174228" y1="233.485291572496" x2="443.32832082577204" y2="233.485291572496" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="443.32832082577204" y1="233.485291572496" x2="415.7197047615683" y2="148.51470842750402" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="415.7197047615683" y1="148.51470842750402" x2="488.0" y2="96.0" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="443.32832082577204" y1="233.485291572496" x2="453.32832082577204" y2="313.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="453.32832082577204" y1="313.485291572496" x2="526.671679174228" y2="319.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="526.671679174228" y1="319.485291572496" x2="532.671679174228" y2="233.485291572496" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="488.0" cy="96.0" r="6" fill="#333333"/>
+<circle cx="560.2802952384317" cy="148.514708427504" r="6" fill="#333333"/>
+<circle cx="532.671679174228" cy="233.485291572496" r="6" fill="#333333"/>
+<circle cx="443.32832082577204" cy="233.485291572496" r="6" fill="#333333"/>
+<circle cx="415.7197047615683" cy="148.51470842750402" r="6" fill="#333333"/>
+<circle cx="453.32832082577204" cy="313.485291572496" r="5" fill="#3B6D11"/>
+<circle cx="526.671679174228" cy="319.485291572496" r="5" fill="#3B6D11"/>
+<text x="427.32832082577204" y="239.485291572496" font-size="13" fill="#333333" text-anchor="middle">a</text>
+<text x="548.671679174228" y="239.485291572496" font-size="13" fill="#333333" text-anchor="middle">b</text>
+<text x="488.0" y="78.0" font-size="12" fill="#666666" text-anchor="middle"> </text>
+<circle cx="443.32832082577204" cy="233.485291572496" r="12" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-dasharray="4 3"/>
+<text x="395.32832082577204" y="233.485291572496" font-size="11" fill="#C0392B" text-anchor="middle">deleted</text>
+<text x="488.0" y="366" font-size="11" fill="#C0392B" text-anchor="middle">the ear still hangs on at b</text>
+<text x="330" y="398.0" font-size="12" fill="#666666" text-anchor="middle">If the deletion is inside the ear, Gᵢ₋₁ is untouched and the two stubs stay attached. If it is in Gᵢ₋₁, that</text>
+<text x="330" y="418.0" font-size="12" fill="#666666" text-anchor="middle">part is still connected and the ear is still pinned by whichever of a, b</text>
+<text x="330" y="438" font-size="12" fill="#666666" text-anchor="middle">survived.</text>
+</svg>

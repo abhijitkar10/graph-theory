@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="400" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="420" fill="#ffffff"/>
 <text x="20" y="24" font-size="13" fill="#666666">Splitting a tree by level does not give the largest independent set.</text>
 <line x1="330" y1="80" x2="150" y2="175" stroke="#333333" stroke-width="2"/>
 <line x1="330" y1="80" x2="280" y2="175" stroke="#333333" stroke-width="2"/>
@@ -23,5 +23,6 @@
 <text x="200" y="280" text-anchor="middle" font-size="13" fill="#222222">f</text>
 <text x="20" y="330" text-anchor="start" font-size="13" fill="#185FA5">Odd levels are a, b, c, d, which is 4 vertices. Even levels are r, e, f, which is 3.</text>
 <text x="20" y="354" text-anchor="start" font-size="13" fill="#666666">The method picks the bigger of the two and answers 4.</text>
-<text x="20" y="382" text-anchor="start" font-size="13" fill="#C0392B">But b, c, d, e, f is independent and has 5 vertices. The best answer mixes levels, so the method is wrong.</text>
+<text x="20" y="382.0" font-size="13" fill="#C0392B" text-anchor="start">But b, c, d, e, f is independent and has 5 vertices. The best answer mixes levels, so the</text>
+<text x="20" y="402.0" font-size="13" fill="#C0392B" text-anchor="start">method is wrong.</text>
 </svg>

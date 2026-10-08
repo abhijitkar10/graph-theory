@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 460" width="660" height="460" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="460" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 20.3. To put a vertex and an edge on one cycle, turn the edge into a vertex.</text>
+<line x1="330" y1="86" x2="474" y2="182" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="474" y1="182" x2="418" y2="332" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="242" y1="332" x2="186" y2="182" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="186" y1="182" x2="330" y2="86" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="474" y1="182" x2="186" y2="182" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="418" y1="332" x2="330" y2="332" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="332" x2="242" y2="332" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="86" x2="474" y2="182" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="474" y1="182" x2="418" y2="332" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="330" y1="86" x2="186" y2="182" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="186" y1="182" x2="242" y2="332" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="418" y1="332" x2="330" y2="332" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="330" y1="332" x2="242" y2="332" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="330" cy="86" r="6" fill="#333333"/>
+<circle cx="474" cy="182" r="6" fill="#333333"/>
+<circle cx="418" cy="332" r="6" fill="#333333"/>
+<circle cx="242" cy="332" r="6" fill="#333333"/>
+<circle cx="186" cy="182" r="6" fill="#333333"/>
+<circle cx="330" cy="332" r="7" fill="#185FA5"/>
+<text x="330" y="68" font-size="14" fill="#333333" text-anchor="middle">a</text>
+<text x="494" y="187" font-size="14" fill="#333333" text-anchor="middle">b</text>
+<text x="436" y="348" font-size="14" fill="#333333" text-anchor="middle">c</text>
+<text x="224" y="348" font-size="14" fill="#333333" text-anchor="middle">d</text>
+<text x="166" y="187" font-size="14" fill="#333333" text-anchor="middle">e</text>
+<text x="330" y="356" font-size="14" fill="#185FA5" text-anchor="middle">w</text>
+<circle cx="330" cy="86" r="14" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<circle cx="330" cy="332" r="15" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<text x="330" y="390.0" font-size="12" fill="#666666" text-anchor="middle">Subdivide the edge cd with w. The result is still 2-connected by Claim 20.1, so Claim 20.2 gives a cycle</text>
+<text x="330" y="410.0" font-size="12" fill="#666666" text-anchor="middle">through a and w. Now w has degree exactly two, so that cycle is forced to use both cw and wd.</text>
+<text x="330" y="430" font-size="12" fill="#666666" text-anchor="middle">Suppress w and those two edges become cd again, leaving a cycle of G through a and through the edge.</text>
+</svg>

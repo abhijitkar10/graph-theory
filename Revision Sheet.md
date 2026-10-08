@@ -3,7 +3,7 @@ tags: [academics, graph-theory, revision]
 type: revision
 ---
 
-# One day revision sheet, everything taught 24 July to 19 August
+# One day revision sheet, everything taught 24 July to 31 August
 
 Hub: [[Graph Theory]] · Depth: [[Master Notes]] · Shortest version: [[Bare Minimum]]
 
@@ -258,6 +258,38 @@ The one dimensional Helly property: finitely many pairwise intersecting closed i
 Q₄ is not planar. It has 16 vertices and 32 edges, and the bipartite bound gives at most 2n − 4 = 28. The general bound 3n − 6 = 42 says nothing, so check bipartiteness first. Q₃ sits exactly at its own limit with 12 edges against a bound of 12, and it is planar.
 
 Euler's formula is n − m + f = 2, giving m ≤ 3n − 6 for simple planar graphs and m ≤ 2n − 4 when there are no triangles.
+
+## 12. Connectivity
+
+Taught after the exam, so this section is newer than the rest of the sheet. Full versions in [[2026-08-31 Connectivity 1 — Minimum Degree and Whitney's Theorem]] and [[2026-08-31 Blocks, Ear Decomposition, and k-Connectivity]].
+
+G is k-connected when no set of fewer than k vertices separates it and G has more than k vertices. That second clause is easy to drop and matters: it is what makes Kₙ exactly (n−1)-connected. Always κ ≤ λ ≤ δ.
+
+If δ ≥ (n−1)/2 then G is connected, because otherwise {x}, N(x), {y} and N(y) would be four disjoint sets adding to n+1. Sharp: two disjoint copies of K on n/2 vertices have δ = (n−2)/2 and fall apart.
+
+If δ ≥ n/2 then every pair is adjacent or shares a neighbour, and by Dirac there is a Hamiltonian cycle. Dirac's proof is the long path theorem with one extra step forcing every stray vertex onto the folded cycle.
+
+Whitney. A graph on at least three vertices is 2-connected exactly when every pair has two internally vertex disjoint paths. Easy direction: one deleted vertex sits on at most one of two disjoint paths. Hard direction: induct on dist(x,y), take the vertex v just before y, get two paths to v, and if y misses them both, walk back from y and stop at the first vertex already used.
+
+Two cycles sharing one vertex are 2-edge-connected but not 2-connected. Smallest example worth memorising, and it doubles as the counterexample to the union lemma.
+
+2-connectedness gives four things, all by the same trick of subdividing an edge into a vertex or adding a vertex joined to two targets, then applying Whitney: any two vertices on a common cycle, a vertex and an edge, two edges, and two paths from w reaching x and y separately.
+
+A block is a maximal connected subgraph with no cut vertex, not a maximal 2-connected subgraph, because bridges are blocks too. The block graph of a connected graph is a tree.
+
+Subdividing an edge never changes 2-connectedness. An ear of H is a path with both ends in H and its interior outside; trivial means a single edge, open means the two ends differ. A graph on at least three vertices is 2-connected exactly when it has an open ear decomposition, and openness is what stops one deleted vertex from stranding an ear.
+
+The k-connected version, that k-connected means k disjoint paths between every pair, is Menger's theorem in its global form. Menger. For non-adjacent x and y the least separator size equals the greatest number of internally disjoint paths. Easy half, one separator vertex per path. Hard half, induction on n. Take a minimum separator S, A the side of x and B the rest, contract B to β and A to α, apply induction to both smaller graphs to get k paths from x to S and from S to y, and glue. If every minimum separator is N(x) or N(y), either some vertex outside both neighbourhoods can be deleted, or the graph is x, y and their neighbourhoods and König on the bipartite graph between them finishes it. For adjacent pairs delete the edge and use (k − 1)-connectivity. Two l-connected graphs union to an l-connected graph only when they share at least l vertices.
+
+Fans. An (x,U)-fan of size k is k paths from x sharing only x and ending at distinct vertices of U. Dirac's fan lemma. With more than k vertices, G is k-connected exactly when every x and every U with at least k vertices have a fan of size k. Forward, add a vertex joined to U and apply global Menger. Backward, a fan to N(y) extended by edges gives k disjoint x to y paths. Kₖ shows the vertex count is needed. Cycle through any k vertices of a k-connected graph, by induction with a fan of size m and pigeonhole on arcs, sharp at Kₖ,ₖ₊₁.
+
+## 13. Colouring
+
+A proper colouring has no monochromatic edge, and χ is the least number of colours. χ(Pₙ) = 2, χ(C₂ₙ) = 2, χ(C₂ₙ₊₁) = 3, χ(Kₙ) = n, trees have χ = 2. Odd cycle, alternation is forced round the cycle and the closing edge clashes.
+
+χ ≤ Δ + 1. Delete a vertex, colour the rest, the vertex sees at most Δ colours. Second proof, induct on Δ, remove a maximal independent set of degree Δ vertices, spend one new colour on it. Degenerate means every subgraph has a vertex of degree at most k, and then χ ≤ k + 1 by the same deletion. Degeneracy is found by repeated least degree deletion, and the reverse order is a greedy colouring. Degeneracy is at least ω − 1 but not bounded by any function of ω, since Kᵣ,ᵣ has ω = 2 and degeneracy r.
+
+Lower bounds. χ ≥ ω. χ ≥ n over α, because colour classes are independent sets that partition V. Minimum degree gives nothing, since Kᵣ,ᵣ has δ = r and χ = 2. Traps. The classes partition, they do not merely cover. W₂ₙ means 2n vertices counting the hub.
 
 ## 10. Technique checklist
 

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 500" width="660" height="500" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="500" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">How the proof of Menger's theorem splits. Every branch ends in a smaller graph or a matching.</text>
+<rect x="30.0" y="38.0" width="600" height="40" rx="6" fill="#f4f4f4" stroke="#333333" stroke-width="1.6"/>
+<text x="330" y="62" font-size="12" fill="#333333" text-anchor="middle">G has a minimum x,y separator S of size k. Look at every minimum separator.</text>
+<line x1="330" y1="78" x2="330" y2="96" stroke="#666666" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="170" y1="96" x2="490" y2="96" stroke="#666666" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="170" y1="96" x2="170" y2="118" stroke="#666666" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="490" y1="96" x2="490" y2="118" stroke="#666666" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="20.0" y="118.0" width="300" height="60" rx="6" fill="#eef6e6" stroke="#3B6D11" stroke-width="1.6"/>
+<text x="170" y="144" font-size="12" fill="#3B6D11" text-anchor="middle">Case 1. Some minimum separator has</text>
+<text x="170" y="160" font-size="12" fill="#3B6D11" text-anchor="middle">at least two vertices on each side.</text>
+<rect x="340.0" y="118.0" width="300" height="60" rx="6" fill="#fbeceb" stroke="#C0392B" stroke-width="1.6"/>
+<text x="490" y="144" font-size="12" fill="#C0392B" text-anchor="middle">Case 2. Every minimum separator is</text>
+<text x="490" y="160" font-size="12" fill="#C0392B" text-anchor="middle">N(x) or N(y), so one side is one vertex.</text>
+<line x1="170" y1="178" x2="170" y2="200" stroke="#3B6D11" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="20.0" y="200.0" width="300" height="100" rx="6" fill="#ffffff" stroke="#3B6D11" stroke-width="1.6"/>
+<text x="170" y="230" font-size="12" fill="#3B6D11" text-anchor="middle">Contract each side to one vertex.</text>
+<text x="170" y="246" font-size="12" fill="#3B6D11" text-anchor="middle">Both graphs are smaller, with the</text>
+<text x="170" y="262" font-size="12" fill="#3B6D11" text-anchor="middle">same connectivity k.</text>
+<text x="170" y="278" font-size="12" fill="#3B6D11" text-anchor="middle">Induction on each, then glue Pᵢ to Qᵢ.</text>
+<line x1="490" y1="178" x2="490" y2="204" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="340.0" y="204.0" width="300" height="64" rx="6" fill="#ffffff" stroke="#C0392B" stroke-width="1.6"/>
+<text x="490" y="224" font-size="12" fill="#C0392B" text-anchor="middle">2.1  Some vertex w lies outside</text>
+<text x="490" y="240" font-size="12" fill="#C0392B" text-anchor="middle">N[x] ∪ N[y]. It is in no minimum</text>
+<text x="490" y="256" font-size="12" fill="#C0392B" text-anchor="middle">separator, so delete it. Induction.</text>
+<line x1="490" y1="268" x2="490" y2="290" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="340.0" y="290.0" width="300" height="56" rx="6" fill="#ffffff" stroke="#C0392B" stroke-width="1.6"/>
+<text x="490" y="314" font-size="12" fill="#C0392B" text-anchor="middle">2.2  No such w, so every vertex is</text>
+<text x="490" y="330" font-size="12" fill="#C0392B" text-anchor="middle">x, y, or in N(x) ∪ N(y).</text>
+<line x1="490" y1="346" x2="490" y2="364" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="400" y1="364" x2="570" y2="364" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="400" y1="364" x2="400" y2="376" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="570" y1="364" x2="570" y2="376" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="320.0" y="378.0" width="160" height="96" rx="6" fill="#ffffff" stroke="#185FA5" stroke-width="1.6"/>
+<text x="400" y="406" font-size="12" fill="#185FA5" text-anchor="middle">2.2.1  A common</text>
+<text x="400" y="422" font-size="12" fill="#185FA5" text-anchor="middle">neighbour z exists.</text>
+<text x="400" y="438" font-size="12" fill="#185FA5" text-anchor="middle">Delete all of them,</text>
+<text x="400" y="454" font-size="12" fill="#185FA5" text-anchor="middle">induct, add x z y.</text>
+<rect x="490.0" y="378.0" width="160" height="96" rx="6" fill="#ffffff" stroke="#185FA5" stroke-width="1.6"/>
+<text x="570" y="406" font-size="12" fill="#185FA5" text-anchor="middle">2.2.2  No common</text>
+<text x="570" y="422" font-size="12" fill="#185FA5" text-anchor="middle">neighbour. König on the</text>
+<text x="570" y="438" font-size="12" fill="#185FA5" text-anchor="middle">bipartite graph between</text>
+<text x="570" y="454" font-size="12" fill="#185FA5" text-anchor="middle">N(x) and N(y).</text>
+</svg>

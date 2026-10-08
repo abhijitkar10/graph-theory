@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="420" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Case 2.2.2. No common neighbour, so König on the edges between N(x) and N(y) gives the paths.</text>
+<line x1="60" y1="180" x2="220" y2="90" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="440" y1="90" x2="600" y2="180" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="180" x2="220" y2="180" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="440" y1="180" x2="600" y2="180" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="180" x2="220" y2="270" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="440" y1="270" x2="600" y2="180" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="90" x2="220" y2="270" stroke="#bbbbbb" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="220" y1="90" x2="440" y2="180" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="180" x2="440" y2="90" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="180" x2="440" y2="270" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="220" y1="270" x2="440" y2="270" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="180" x2="220" y2="90" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="90" x2="440" y2="180" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="440" y1="180" x2="600" y2="180" stroke="#3B6D11" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="60" y1="180" x2="220" y2="180" stroke="#185FA5" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="180" x2="440" y2="90" stroke="#185FA5" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="440" y1="90" x2="600" y2="180" stroke="#185FA5" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="60" y1="180" x2="220" y2="270" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="220" y1="270" x2="440" y2="270" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="440" y1="270" x2="600" y2="180" stroke="#C0392B" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="60" cy="180" r="6" fill="#333333"/>
+<circle cx="600" cy="180" r="6" fill="#333333"/>
+<circle cx="220" cy="90" r="6" fill="#333333"/>
+<circle cx="220" cy="180" r="6" fill="#333333"/>
+<circle cx="220" cy="270" r="6" fill="#333333"/>
+<circle cx="440" cy="90" r="6" fill="#333333"/>
+<circle cx="440" cy="180" r="6" fill="#333333"/>
+<circle cx="440" cy="270" r="6" fill="#333333"/>
+<text x="60" y="164" font-size="15" fill="#333333" text-anchor="middle">x</text>
+<text x="600" y="164" font-size="15" fill="#333333" text-anchor="middle">y</text>
+<text x="206" y="94" font-size="13" fill="#666666" text-anchor="end">a₁</text>
+<text x="454" y="94" font-size="13" fill="#666666" text-anchor="start">b₁</text>
+<text x="206" y="184" font-size="13" fill="#666666" text-anchor="end">a₂</text>
+<text x="454" y="184" font-size="13" fill="#666666" text-anchor="start">b₂</text>
+<text x="206" y="274" font-size="13" fill="#666666" text-anchor="end">a₃</text>
+<text x="454" y="274" font-size="13" fill="#666666" text-anchor="start">b₃</text>
+<ellipse cx="220" cy="180" rx="34" ry="118" fill="none" stroke="#666666" stroke-width="1.6" stroke-dasharray="5 4"/>
+<ellipse cx="440" cy="180" rx="34" ry="118" fill="none" stroke="#666666" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="220" y="48" font-size="14" fill="#666666" text-anchor="middle">N(x)</text>
+<text x="440" y="48" font-size="14" fill="#666666" text-anchor="middle">N(y)</text>
+<text x="330" y="326" font-size="12" fill="#666666" text-anchor="middle">Grey edges between the two dashed sets form a bipartite graph. Any vertex cover of it separates</text>
+<text x="330" y="346" font-size="12" fill="#666666" text-anchor="middle">x from y, so every cover has at least k vertices, and N(y) is a cover with exactly k. König then</text>
+<text x="330" y="366" font-size="12" fill="#666666" text-anchor="middle">gives a matching of size k: here a₁b₂, a₂b₁, a₃b₃. Each matching edge supplies one path x aᵢ bⱼ</text>
+<text x="330" y="386" font-size="12" fill="#666666" text-anchor="middle">y. The dashed edge inside N(x) is never used.</text>
+</svg>

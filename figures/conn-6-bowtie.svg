@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" width="660" height="260" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="260" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Two cycles sharing a vertex: 2-edge-connected, but z is a cut vertex, so not 2-connected</text>
+<line x1="110" y1="130" x2="210" y2="55" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="210" y1="55" x2="330" y2="130" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="110" y1="130" x2="210" y2="205" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="210" y1="205" x2="330" y2="130" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="130" x2="450" y2="55" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="450" y1="55" x2="550" y2="130" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="130" x2="450" y2="205" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="450" y1="205" x2="550" y2="130" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="110" cy="130" r="5" fill="#333333"/>
+<circle cx="210" cy="55" r="5" fill="#333333"/>
+<circle cx="210" cy="205" r="5" fill="#333333"/>
+<circle cx="450" cy="55" r="5" fill="#333333"/>
+<circle cx="450" cy="205" r="5" fill="#333333"/>
+<circle cx="550" cy="130" r="5" fill="#333333"/>
+<circle cx="330" cy="130" r="7" fill="#C0392B"/>
+<text x="330" y="112" font-size="16" fill="#C0392B" text-anchor="middle" >z</text>
+<text x="90" y="135" font-size="15" fill="#333333" text-anchor="middle" >x</text>
+<text x="570" y="135" font-size="15" fill="#333333" text-anchor="middle" >y</text>
+<text x="330" y="240" font-size="12" fill="#666666" text-anchor="middle" >delete z and it falls apart; delete any single edge and each cycle survives as a path</text>
+</svg>

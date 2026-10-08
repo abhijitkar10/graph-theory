@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" width="660" height="230" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="230" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">The block graph: block nodes and cut vertex nodes alternating. It is always a tree.</text>
+<line x1="90" y1="120" x2="215" y2="120" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="215" y1="120" x2="345" y2="120" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="345" y1="120" x2="470" y2="120" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="470" y1="120" x2="590" y2="65" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="470" y1="120" x2="590" y2="178" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="66" y="104" width="48" height="32" rx="6" fill="#ffffff" stroke="#3B6D11" stroke-width="2"/>
+<text x="90" y="126" font-size="14" fill="#3B6D11" text-anchor="middle" >B₁</text>
+<rect x="321" y="104" width="48" height="32" rx="6" fill="#ffffff" stroke="#3B6D11" stroke-width="2"/>
+<text x="345" y="126" font-size="14" fill="#3B6D11" text-anchor="middle" >B₂</text>
+<rect x="566" y="49" width="48" height="32" rx="6" fill="#ffffff" stroke="#3B6D11" stroke-width="2"/>
+<text x="590" y="71" font-size="14" fill="#3B6D11" text-anchor="middle" >B₃</text>
+<rect x="566" y="162" width="48" height="32" rx="6" fill="#ffffff" stroke="#3B6D11" stroke-width="2"/>
+<text x="590" y="184" font-size="14" fill="#3B6D11" text-anchor="middle" >B₄</text>
+<circle cx="215" cy="120" r="8" fill="#C0392B"/>
+<text x="215" y="102" font-size="14" fill="#C0392B" text-anchor="middle" >c</text>
+<circle cx="470" cy="120" r="8" fill="#C0392B"/>
+<text x="470" y="102" font-size="14" fill="#C0392B" text-anchor="middle" >d</text>
+<text x="330" y="215" font-size="12" fill="#666666" text-anchor="middle" >a cycle here would let you route around every cut vertex, merging the blocks into one</text>
+</svg>

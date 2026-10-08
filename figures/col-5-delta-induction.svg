@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 350" width="660" height="350" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="350" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Induction on Δ: S = {a₁, b₂} is independent and G − S has maximum degree 2.</text>
+<text x="170" y="52" font-size="13" fill="#666666" text-anchor="middle">G: every vertex has degree 3</text>
+<line x1="170" y1="65" x2="100" y2="170" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="170" y1="125" x2="40" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="100" y1="170" x2="240" y2="170" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="40" y1="225" x2="300" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="240" y1="170" x2="170" y2="65" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="300" y1="225" x2="170" y2="125" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="170" y1="65" x2="170" y2="125" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="100" y1="170" x2="40" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="240" y1="170" x2="300" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="170" cy="65" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="170" y="70" font-size="13" fill="#333333" text-anchor="middle">a₁</text>
+<circle cx="170" cy="125" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="170" y="130" font-size="13" fill="#333333" text-anchor="middle">b₁</text>
+<circle cx="100" cy="170" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="100" y="175" font-size="13" fill="#333333" text-anchor="middle">a₂</text>
+<circle cx="40" cy="225" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="40" y="230" font-size="13" fill="#333333" text-anchor="middle">b₂</text>
+<circle cx="240" cy="170" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="240" y="175" font-size="13" fill="#333333" text-anchor="middle">a₃</text>
+<circle cx="300" cy="225" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="300" y="230" font-size="13" fill="#333333" text-anchor="middle">b₃</text>
+<text x="490" y="52" font-size="13" fill="#666666" text-anchor="middle">Colour G − S with 3 colours, give S colour 4</text>
+<line x1="490" y1="65" x2="420" y2="170" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="490" y1="125" x2="360" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="420" y1="170" x2="560" y2="170" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="360" y1="225" x2="620" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560" y1="170" x2="490" y2="65" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="620" y1="225" x2="490" y2="125" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="490" y1="65" x2="490" y2="125" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="420" y1="170" x2="360" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560" y1="170" x2="620" y2="225" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="490" cy="65" r="14" fill="#E07B7B" stroke="#333333" stroke-width="2"/>
+<text x="490" y="70" font-size="13" fill="#333333" text-anchor="middle">a₁</text>
+<circle cx="490" cy="125" r="14" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="490" y="130" font-size="13" fill="#333333" text-anchor="middle">b₁</text>
+<circle cx="420" cy="170" r="14" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="420" y="175" font-size="13" fill="#333333" text-anchor="middle">a₂</text>
+<circle cx="360" cy="225" r="14" fill="#E07B7B" stroke="#333333" stroke-width="2"/>
+<text x="360" y="230" font-size="13" fill="#333333" text-anchor="middle">b₂</text>
+<circle cx="560" cy="170" r="14" fill="#4C9F70" stroke="#333333" stroke-width="2"/>
+<text x="560" y="175" font-size="13" fill="#333333" text-anchor="middle">a₃</text>
+<circle cx="620" cy="225" r="14" fill="#E8A33D" stroke="#333333" stroke-width="2"/>
+<text x="620" y="230" font-size="13" fill="#333333" text-anchor="middle">b₃</text>
+<text x="330" y="290" font-size="12" fill="#666666" text-anchor="middle">S is a maximal independent set of vertices of degree 3. Every other vertex has a neighbour</text>
+<text x="330" y="310" font-size="12" fill="#666666" text-anchor="middle">in S, so its degree drops by at least one.</text>
+</svg>

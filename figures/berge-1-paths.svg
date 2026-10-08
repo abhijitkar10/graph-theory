@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" width="660" height="360" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="360" fill="#ffffff"/>
-<text x="20" y="24" font-size="13" fill="#666666">Alternating means the edges take turns. Augmenting adds the condition that both ends are unmatched.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" width="660" height="380" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="380" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Alternating means the edges take turns. Augmenting also needs both ends unmatched.</text>
 <line x1="80" y1="110" x2="200" y2="110" stroke="#333333" stroke-width="2"/>
 <line x1="200" y1="110" x2="320" y2="110" stroke="#3B6D11" stroke-width="4"/>
 <line x1="320" y1="110" x2="440" y2="110" stroke="#333333" stroke-width="2"/>
@@ -37,6 +37,7 @@
 <text x="640" y="254" text-anchor="middle" font-size="12" fill="#222222"></text>
 <text x="80" y="282" text-anchor="middle" font-size="12" fill="#C0392B">free</text>
 <text x="640" y="282" text-anchor="middle" font-size="12" fill="#C0392B">free</text>
-<text x="20" y="322" text-anchor="start" font-size="13" fill="#C0392B">Augmenting. Both ends are free, so it has an odd number of edges and one more outside the matching than inside.</text>
-<text x="20" y="346" text-anchor="start" font-size="13" fill="#3B6D11">Swap them and the matching gains exactly one edge.</text>
+<text x="20" y="322.0" font-size="13" fill="#C0392B" text-anchor="start">Augmenting. Both ends are free, so it has an odd number of edges and one more outside the</text>
+<text x="20" y="342.0" font-size="13" fill="#C0392B" text-anchor="start">matching than inside.</text>
+<text x="20" y="366.0" font-size="13" fill="#3B6D11" text-anchor="start">Swap them and the matching gains exactly one edge.</text>
 </svg>

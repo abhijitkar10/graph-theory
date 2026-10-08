@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 440" width="660" height="440" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="440" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 20.4. Two edges: the same move twice.</text>
+<line x1="474" y1="182" x2="418" y2="332" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="242" y1="332" x2="186" y2="182" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="186" y1="182" x2="330" y2="86" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="474" y1="182" x2="186" y2="182" stroke="#333333" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="330" y1="86" x2="402" y2="134" stroke="#B8860B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="402" y1="134" x2="474" y2="182" stroke="#B8860B" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="418" y1="332" x2="330" y2="332" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="330" y1="332" x2="242" y2="332" stroke="#185FA5" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="330" cy="86" r="6" fill="#333333"/>
+<circle cx="474" cy="182" r="6" fill="#333333"/>
+<circle cx="418" cy="332" r="6" fill="#333333"/>
+<circle cx="242" cy="332" r="6" fill="#333333"/>
+<circle cx="186" cy="182" r="6" fill="#333333"/>
+<circle cx="402" cy="134" r="7" fill="#B8860B"/>
+<circle cx="330" cy="332" r="7" fill="#185FA5"/>
+<text x="330" y="68" font-size="14" fill="#333333" text-anchor="middle">a</text>
+<text x="494" y="187" font-size="14" fill="#333333" text-anchor="middle">b</text>
+<text x="436" y="348" font-size="14" fill="#333333" text-anchor="middle">c</text>
+<text x="224" y="348" font-size="14" fill="#333333" text-anchor="middle">d</text>
+<text x="166" y="187" font-size="14" fill="#333333" text-anchor="middle">e</text>
+<text x="424" y="126" font-size="14" fill="#B8860B" text-anchor="middle">w₁</text>
+<text x="330" y="356" font-size="14" fill="#185FA5" text-anchor="middle">w₂</text>
+<circle cx="402" cy="134" r="15" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<circle cx="330" cy="332" r="15" fill="none" stroke="#185FA5" stroke-width="2.6"/>
+<text x="330" y="376" font-size="12" fill="#666666" text-anchor="middle">Subdivide ab with w₁ and cd with w₂, apply Claim 20.2 to the pair w₁, w₂, then suppress both.</text>
+<text x="330" y="396.0" font-size="12" fill="#666666" text-anchor="middle">Every one of Claims 20.2, 20.3 and 20.4 is the two vertex case once you have done the subdividing,</text>
+<text x="330" y="416.0" font-size="12" fill="#666666" text-anchor="middle">which is why they are one trick rather than three proofs.</text>
+</svg>

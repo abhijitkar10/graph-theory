@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 596" width="660" height="596" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="596" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Two paths that start the same way. Only a chord tells them apart.</text>
+<text x="20" y="56" font-size="13" fill="#3B6D11" text-anchor="start">The path f, e, c, a is induced.</text>
+<line x1="110" y1="210" x2="110" y2="95" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="110" y1="95" x2="275" y2="153" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="110" y1="210" x2="275" y2="153" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="275" y1="153" x2="440" y2="95" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="275" y1="153" x2="440" y2="210" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440" y1="95" x2="440" y2="210" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440" y1="210" x2="575" y2="210" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="575" y1="210" x2="440" y2="210" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="440" y1="210" x2="275" y2="153" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="275" y1="153" x2="110" y2="210" stroke="#3B6D11" stroke-width="3.6" stroke-linecap="round"/>
+<circle cx="110" cy="95" r="7" fill="#9a9a9a"/>
+<circle cx="110" cy="210" r="7" fill="#3B6D11"/>
+<circle cx="275" cy="153" r="7" fill="#3B6D11"/>
+<circle cx="440" cy="95" r="7" fill="#9a9a9a"/>
+<circle cx="440" cy="210" r="7" fill="#3B6D11"/>
+<circle cx="575" cy="210" r="7" fill="#3B6D11"/>
+<text x="90" y="100" font-size="15" fill="#666666" text-anchor="end">b</text>
+<text x="90" y="215" font-size="15" fill="#3B6D11" text-anchor="end">a</text>
+<text x="275" y="183" font-size="15" fill="#3B6D11" text-anchor="middle">c</text>
+<text x="460" y="100" font-size="15" fill="#666666" text-anchor="start">d</text>
+<text x="440" y="242" font-size="15" fill="#3B6D11" text-anchor="middle">e</text>
+<text x="595" y="215" font-size="15" fill="#3B6D11" text-anchor="start">f</text>
+<text x="330" y="278" font-size="12" fill="#666666" text-anchor="middle">Walk f to e to c to a. The pairs that are not consecutive are f and c, f and a, and e and a.</text>
+<text x="330" y="298" font-size="12" fill="#666666" text-anchor="middle">None of them is an edge, so there is no chord and the path is induced.</text>
+<text x="20" y="350" font-size="13" fill="#185FA5" text-anchor="start">The path f, e, d, c is not induced.</text>
+<line x1="110" y1="504" x2="110" y2="389" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="110" y1="389" x2="275" y2="447" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="110" y1="504" x2="275" y2="447" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="275" y1="447" x2="440" y2="389" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="275" y1="447" x2="440" y2="504" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440" y1="389" x2="440" y2="504" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="440" y1="504" x2="575" y2="504" stroke="#c4c4c4" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="575" y1="504" x2="440" y2="504" stroke="#185FA5" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="440" y1="504" x2="440" y2="389" stroke="#185FA5" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="440" y1="389" x2="275" y2="447" stroke="#185FA5" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="275" y1="447" x2="440" y2="504" stroke="#C0392B" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="110" cy="389" r="7" fill="#9a9a9a"/>
+<circle cx="110" cy="504" r="7" fill="#9a9a9a"/>
+<circle cx="275" cy="447" r="7" fill="#185FA5"/>
+<circle cx="440" cy="389" r="7" fill="#185FA5"/>
+<circle cx="440" cy="504" r="7" fill="#185FA5"/>
+<circle cx="575" cy="504" r="7" fill="#185FA5"/>
+<text x="90" y="394" font-size="15" fill="#666666" text-anchor="end">b</text>
+<text x="90" y="509" font-size="15" fill="#666666" text-anchor="end">a</text>
+<text x="275" y="477" font-size="15" fill="#185FA5" text-anchor="middle">c</text>
+<text x="460" y="394" font-size="15" fill="#185FA5" text-anchor="start">d</text>
+<text x="440" y="536" font-size="15" fill="#185FA5" text-anchor="middle">e</text>
+<text x="595" y="509" font-size="15" fill="#185FA5" text-anchor="start">f</text>
+<text x="330" y="566" font-size="12" fill="#666666" text-anchor="middle">Walk f to e to d to c. Now e and c sit at positions two and four, so they are not consecutive.</text>
+<text x="330" y="586" font-size="12" fill="#666666" text-anchor="middle">The dashed red edge ec is there, so it is a chord and this path is not induced.</text>
+</svg>

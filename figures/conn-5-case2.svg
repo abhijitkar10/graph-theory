@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 370" width="660" height="370" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="370" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Case two: y is on neither path. Walk back from y, stop at the first vertex you meet.</text>
+<line x1="90" y1="115" x2="250" y2="78" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="250" y1="78" x2="400" y2="170" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="400" y1="170" x2="250" y2="265" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="250" y1="265" x2="90" y2="115" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="400" y1="170" x2="560" y2="115" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="560" y1="115" x2="560" y2="265" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="560" y1="265" x2="250" y2="265" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="90" y1="115" x2="250" y2="78" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="250" y1="78" x2="400" y2="170" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="90" y1="115" x2="250" y2="265" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="250" y1="265" x2="400" y2="170" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="400" y1="170" x2="560" y2="115" stroke="#333333" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="560" y1="115" x2="560" y2="265" stroke="#185FA5" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="560" y1="265" x2="250" y2="265" stroke="#185FA5" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="90" cy="115" r="5" fill="#333333"/>
+<circle cx="250" cy="78" r="5" fill="#333333"/>
+<circle cx="400" cy="170" r="5" fill="#333333"/>
+<circle cx="250" cy="265" r="5" fill="#333333"/>
+<circle cx="560" cy="115" r="5" fill="#333333"/>
+<circle cx="560" cy="265" r="5" fill="#333333"/>
+<text x="68" y="120" font-size="15" fill="#333333" text-anchor="middle">x</text>
+<text x="252" y="62" font-size="14" fill="#333333" text-anchor="middle">v₁</text>
+<text x="426" y="175" font-size="14" fill="#333333" text-anchor="middle">v₂</text>
+<text x="246" y="291" font-size="14" fill="#333333" text-anchor="middle">a</text>
+<text x="582" y="120" font-size="15" fill="#333333" text-anchor="middle">y</text>
+<text x="582" y="270" font-size="14" fill="#333333" text-anchor="middle">c</text>
+<text x="158" y="68" font-size="15" fill="#C0392B" text-anchor="middle">P</text>
+<text x="318" y="228" font-size="15" fill="#3B6D11" text-anchor="middle">Q</text>
+<text x="405" y="288" font-size="15" fill="#185FA5" text-anchor="middle">R</text>
+<circle cx="250" cy="265" r="11" fill="none" stroke="#185FA5" stroke-width="2.4"/>
+<text x="218" y="271" font-size="15" fill="#185FA5" text-anchor="middle">z</text>
+<text x="330" y="336" font-size="12" fill="#666666" text-anchor="middle">P₁ = x along P to v₂, then the edge v₂y.    P₂ = x along Q to z, then z along R to y.</text>
+<text x="330" y="356" font-size="12" fill="#666666" text-anchor="middle">They meet only at x and y: R's interior touches neither P nor Q, and R avoids v₂.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 320" width="660" height="320" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="320" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 19.2. Case one: the separator S contains u.</text>
+<ellipse cx="210" cy="155" rx="120" ry="82" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="210" y="58" font-size="13" fill="#333333" text-anchor="middle">G, k-connected</text>
+<line x1="470" y1="155" x2="300" y2="102" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="155" x2="314" y2="136" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="155" x2="310" y2="176" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<line x1="470" y1="155" x2="294" y2="210" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="300" cy="102" r="4" fill="#185FA5"/>
+<circle cx="314" cy="136" r="4" fill="#185FA5"/>
+<circle cx="310" cy="176" r="4" fill="#185FA5"/>
+<circle cx="294" cy="210" r="4" fill="#185FA5"/>
+<circle cx="470" cy="155" r="7" fill="#185FA5"/>
+<text x="488" y="160" font-size="15" fill="#185FA5" text-anchor="middle">u</text>
+<text x="392" y="246" font-size="12" fill="#185FA5" text-anchor="middle">at least k edges</text>
+<ellipse cx="262" cy="155" rx="36" ry="62" fill="none" stroke="#C0392B" stroke-width="2.4" stroke-dasharray="5 4"/>
+<circle cx="470" cy="155" r="16" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-dasharray="4 3"/>
+<text x="262" y="238" font-size="14" fill="#C0392B" text-anchor="middle">S</text>
+<text x="470" y="110" font-size="12" fill="#C0392B" text-anchor="middle">u is inside S</text>
+<text x="330" y="268" font-size="12" fill="#666666" text-anchor="middle">If u is in S, deleting S deletes u too, and what is left is just G with the rest of S removed.</text>
+<text x="330" y="288" font-size="12" fill="#666666" text-anchor="middle">That rest has at most k−2 vertices, and G survives the loss of that many.</text>
+</svg>

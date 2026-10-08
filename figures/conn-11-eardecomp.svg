@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 288" width="660" height="288" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="288" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">An open ear decomposition: start with a cycle, then bolt on open ears one at a time</text>
+<text x="108" y="276" font-size="12" fill="#666666" text-anchor="middle">a cycle to begin</text>
+<line x1="70" y1="105" x2="136" y2="72" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="136" y1="72" x2="184" y2="122" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="184" y1="122" x2="154" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="154" y1="188" x2="86" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="86" y1="188" x2="70" y2="105" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="70" cy="105" r="5" fill="#333333"/>
+<circle cx="136" cy="72" r="5" fill="#333333"/>
+<circle cx="184" cy="122" r="5" fill="#333333"/>
+<circle cx="154" cy="188" r="5" fill="#333333"/>
+<circle cx="86" cy="188" r="5" fill="#333333"/>
+<text x="126" y="140" font-size="13" fill="#333333" text-anchor="middle">E₁</text>
+<text x="322" y="276" font-size="12" fill="#666666" text-anchor="middle">one open ear added</text>
+<line x1="284" y1="105" x2="350" y2="72" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="350" y1="72" x2="398" y2="122" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="398" y1="122" x2="368" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="368" y1="188" x2="300" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="300" y1="188" x2="284" y2="105" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="284" cy="105" r="5" fill="#333333"/>
+<circle cx="350" cy="72" r="5" fill="#333333"/>
+<circle cx="398" cy="122" r="5" fill="#333333"/>
+<circle cx="368" cy="188" r="5" fill="#333333"/>
+<circle cx="300" cy="188" r="5" fill="#333333"/>
+<text x="340" y="140" font-size="13" fill="#333333" text-anchor="middle">E₁</text>
+<line x1="300" y1="188" x2="282" y2="246" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="282" y1="246" x2="350" y2="232" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="350" y1="232" x2="368" y2="188" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="350" cy="232" r="4" fill="#3B6D11"/>
+<circle cx="282" cy="246" r="4" fill="#3B6D11"/>
+<text x="322" y="262" font-size="13" fill="#3B6D11" text-anchor="middle">E₂</text>
+<text x="536" y="276" font-size="12" fill="#666666" text-anchor="middle">another, and so on</text>
+<line x1="498" y1="105" x2="564" y2="72" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="564" y1="72" x2="612" y2="122" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="612" y1="122" x2="582" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="582" y1="188" x2="514" y2="188" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="514" y1="188" x2="498" y2="105" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="498" cy="105" r="5" fill="#333333"/>
+<circle cx="564" cy="72" r="5" fill="#333333"/>
+<circle cx="612" cy="122" r="5" fill="#333333"/>
+<circle cx="582" cy="188" r="5" fill="#333333"/>
+<circle cx="514" cy="188" r="5" fill="#333333"/>
+<text x="554" y="140" font-size="13" fill="#333333" text-anchor="middle">E₁</text>
+<line x1="514" y1="188" x2="496" y2="246" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="496" y1="246" x2="564" y2="232" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="564" y1="232" x2="582" y2="188" stroke="#3B6D11" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="564" cy="232" r="4" fill="#3B6D11"/>
+<circle cx="496" cy="246" r="4" fill="#3B6D11"/>
+<text x="536" y="262" font-size="13" fill="#3B6D11" text-anchor="middle">E₂</text>
+<line x1="564" y1="72" x2="606" y2="48" stroke="#185FA5" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="606" y1="48" x2="612" y2="122" stroke="#185FA5" stroke-width="2.8" stroke-linecap="round"/>
+<circle cx="606" cy="48" r="4" fill="#185FA5"/>
+<text x="622" y="42" font-size="13" fill="#185FA5" text-anchor="middle">E₃</text>
+</svg>

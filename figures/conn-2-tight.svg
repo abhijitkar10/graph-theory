@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" width="660" height="230" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="230" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">One notch lower the claim fails: two copies of K4, minimum degree 3 = (n−2)/2, n = 8</text>
+<line x1="180.0" y1="62.0" x2="238.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="180.0" y1="62.0" x2="180.0" y2="178.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="180.0" y1="62.0" x2="122.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="238.0" y1="120.0" x2="180.0" y2="178.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="238.0" y1="120.0" x2="122.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="180.0" y1="178.0" x2="122.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="180.0" cy="62.0" r="5" fill="#333333"/>
+<circle cx="238.0" cy="120.0" r="5" fill="#333333"/>
+<circle cx="180.0" cy="178.0" r="5" fill="#333333"/>
+<circle cx="122.0" cy="120.0" r="5" fill="#333333"/>
+<line x1="470.0" y1="62.0" x2="528.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="470.0" y1="62.0" x2="470.0" y2="178.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="470.0" y1="62.0" x2="412.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="528.0" y1="120.0" x2="470.0" y2="178.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="528.0" y1="120.0" x2="412.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="470.0" y1="178.0" x2="412.0" y2="120.0" stroke="#333333" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="470.0" cy="62.0" r="5" fill="#333333"/>
+<circle cx="528.0" cy="120.0" r="5" fill="#333333"/>
+<circle cx="470.0" cy="178.0" r="5" fill="#333333"/>
+<circle cx="412.0" cy="120.0" r="5" fill="#333333"/>
+<text x="180" y="215" font-size="15" fill="#333333" text-anchor="middle" >K₄</text>
+<text x="470" y="215" font-size="15" fill="#333333" text-anchor="middle" >K₄</text>
+<text x="325" y="118" font-size="13" fill="#C0392B" text-anchor="middle" >no edge at all</text>
+<line x1="250" y1="138" x2="400" y2="138" stroke="#C0392B" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+</svg>

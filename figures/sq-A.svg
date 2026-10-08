@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 352" width="660" height="352" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="352" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Graph A.</text>
+<line x1="330" y1="60" x2="235" y2="115" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="235" y1="115" x2="235" y2="225" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="235" y1="225" x2="330" y2="280" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="330" y1="280" x2="425" y2="225" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="425" y1="225" x2="425" y2="115" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="425" y1="115" x2="330" y2="60" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="330" y1="60" x2="330" y2="280" stroke="#333333" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="330" cy="60" r="7" fill="#333333"/>
+<circle cx="235" cy="115" r="7" fill="#333333"/>
+<circle cx="235" cy="225" r="7" fill="#333333"/>
+<circle cx="330" cy="280" r="7" fill="#333333"/>
+<circle cx="425" cy="225" r="7" fill="#333333"/>
+<circle cx="425" cy="115" r="7" fill="#333333"/>
+<text x="330" y="40" font-size="15" fill="#333333" text-anchor="middle">1</text>
+<text x="213" y="120" font-size="15" fill="#333333" text-anchor="end">2</text>
+<text x="213" y="230" font-size="15" fill="#333333" text-anchor="end">3</text>
+<text x="330" y="308" font-size="15" fill="#333333" text-anchor="middle">4</text>
+<text x="447" y="230" font-size="15" fill="#333333" text-anchor="start">5</text>
+<text x="447" y="120" font-size="15" fill="#333333" text-anchor="start">6</text>
+<text x="330" y="324" font-size="12" fill="#666666" text-anchor="middle">Six vertices, seven edges. The straight line across the middle is an edge.</text>
+</svg>

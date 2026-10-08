@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 440" width="660" height="440" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="440" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Contract one side to a single vertex. The result is a smaller graph with the same connectivity.</text>
+<text x="20" y="58" font-size="13" fill="#3B6D11" text-anchor="start">Contract B to a single vertex β. The paths P₁, P₂, P₃ live here.</text>
+<line x1="60" y1="130" x2="150" y2="92" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="92" x2="275" y2="92" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="275" y1="92" x2="430" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="130" x2="150" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="130" x2="275" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="275" y1="130" x2="430" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="130" x2="150" y2="168" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="168" x2="275" y2="168" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="275" y1="168" x2="430" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="92" x2="150" y2="130" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<line x1="60" y1="130" x2="150" y2="92" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="150" y1="92" x2="275" y2="92" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="275" y1="92" x2="430" y2="130" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="60" y1="130" x2="150" y2="130" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="150" y1="130" x2="275" y2="130" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="275" y1="130" x2="430" y2="130" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="60" y1="130" x2="150" y2="168" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="150" y1="168" x2="275" y2="168" stroke="#3B6D11" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="275" y1="168" x2="430" y2="130" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="60" cy="130" r="6" fill="#333333"/>
+<circle cx="430" cy="130" r="6" fill="#333333"/>
+<circle cx="150" cy="92" r="6" fill="#333333"/>
+<circle cx="150" cy="130" r="6" fill="#333333"/>
+<circle cx="150" cy="168" r="6" fill="#333333"/>
+<circle cx="275" cy="92" r="6" fill="#333333"/>
+<circle cx="275" cy="130" r="6" fill="#333333"/>
+<circle cx="275" cy="168" r="6" fill="#333333"/>
+<text x="56" y="116" font-size="15" fill="#333333" text-anchor="middle">x</text>
+<text x="446" y="135" font-size="16" fill="#C0392B" text-anchor="start">β</text>
+<circle cx="430" cy="130" r="12" fill="none" stroke="#C0392B" stroke-width="2.4"/>
+<text x="275" y="81" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">1</tspan></text>
+<text x="275" y="119" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">2</tspan></text>
+<text x="275" y="157" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">3</tspan></text>
+<text x="520" y="126" font-size="18" fill="#333333" text-anchor="start">G<tspan dy="-6" font-size="13">B</tspan></text>
+<text x="20" y="238" font-size="13" fill="#C0392B" text-anchor="start">Contract A to a single vertex α. The paths Q₁, Q₂, Q₃ live here.</text>
+<line x1="60" y1="310" x2="190" y2="272" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="190" y1="272" x2="320" y2="272" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="320" y1="272" x2="450" y2="310" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="60" y1="310" x2="190" y2="310" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="190" y1="310" x2="320" y2="310" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="320" y1="310" x2="450" y2="310" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="60" y1="310" x2="190" y2="348" stroke="#185FA5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="190" y1="348" x2="320" y2="348" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="320" y1="348" x2="450" y2="310" stroke="#C0392B" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="320" y1="310" x2="320" y2="348" stroke="#bbbbbb" stroke-width="2" stroke-linecap="round"/>
+<circle cx="60" cy="310" r="6" fill="#333333"/>
+<circle cx="450" cy="310" r="6" fill="#333333"/>
+<circle cx="190" cy="272" r="6" fill="#333333"/>
+<circle cx="190" cy="310" r="6" fill="#333333"/>
+<circle cx="190" cy="348" r="6" fill="#333333"/>
+<circle cx="320" cy="272" r="6" fill="#333333"/>
+<circle cx="320" cy="310" r="6" fill="#333333"/>
+<circle cx="320" cy="348" r="6" fill="#333333"/>
+<circle cx="60" cy="310" r="12" fill="none" stroke="#3B6D11" stroke-width="2.4"/>
+<text x="42" y="315" font-size="16" fill="#3B6D11" text-anchor="end">α</text>
+<text x="466" y="315" font-size="15" fill="#333333" text-anchor="start">y</text>
+<text x="190" y="261" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">1</tspan></text>
+<text x="190" y="299" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">2</tspan></text>
+<text x="190" y="337" font-size="13" fill="#185FA5" text-anchor="middle">s<tspan dy="4" font-size="9">3</tspan></text>
+<text x="520" y="306" font-size="18" fill="#333333" text-anchor="start">G<tspan dy="-6" font-size="13">A</tspan></text>
+<text x="330" y="398" font-size="12" fill="#666666" text-anchor="middle">Each contracted graph has fewer vertices than G exactly when the contracted side has at least</text>
+<text x="330" y="418" font-size="12" fill="#666666" text-anchor="middle">two vertices, which is what lets the induction hypothesis apply.</text>
+</svg>

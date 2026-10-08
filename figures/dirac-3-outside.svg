@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 487" width="660" height="487" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="487" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Claim 17.4. Suppose a vertex w sat outside the cycle. It cannot.</text>
+<line x1="215.0" y1="148.0" x2="280.6738445273145" y2="179.6268566438664" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="280.6738445273145" y1="179.6268566438664" x2="296.89394462327317" y2="250.69175845233042" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="296.89394462327317" y1="250.69175845233042" x2="251.4462340858749" y2="307.6813849038032" stroke="#185FA5" stroke-width="3" stroke-linecap="round"/>
+<line x1="251.4462340858749" y1="307.6813849038032" x2="178.5537659141251" y2="307.6813849038032" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="178.5537659141251" y1="307.6813849038032" x2="133.10605537672683" y2="250.69175845233042" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="133.10605537672683" y1="250.69175845233042" x2="149.32615547268549" y2="179.6268566438664" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+<line x1="149.32615547268549" y1="179.6268566438664" x2="215.0" y2="148.0" stroke="#3B6D11" stroke-width="3" stroke-linecap="round"/>
+<circle cx="215.0" cy="148.0" r="6" fill="#333333"/>
+<text x="215.0" y="128.0" font-size="13" fill="#333333" text-anchor="middle">v₀</text>
+<circle cx="280.6738445273145" cy="179.6268566438664" r="6" fill="#333333"/>
+<text x="300.21963158901525" y="169.03961159739805" font-size="13" fill="#333333" text-anchor="middle">v₁</text>
+<circle cx="296.89394462327317" cy="250.69175845233042" r="6" fill="#333333"/>
+<text x="321.2671424278188" y="261.25478180123827" font-size="13" fill="#333333" text-anchor="middle">v₂</text>
+<circle cx="251.4462340858749" cy="307.6813849038032" r="6" fill="#333333"/>
+<text x="262.2933275638138" y="335.2056066013637" font-size="13" fill="#333333" text-anchor="middle">v₆</text>
+<circle cx="178.5537659141251" cy="307.6813849038032" r="6" fill="#333333"/>
+<text x="167.70667243618618" y="335.2056066013637" font-size="13" fill="#333333" text-anchor="middle">v₅</text>
+<circle cx="133.10605537672683" cy="250.69175845233042" r="6" fill="#333333"/>
+<text x="108.73285757218123" y="261.25478180123827" font-size="13" fill="#333333" text-anchor="middle">v₄</text>
+<circle cx="149.32615547268549" cy="179.6268566438664" r="6" fill="#333333"/>
+<text x="129.78036841098475" y="169.03961159739805" font-size="13" fill="#333333" text-anchor="middle">v₃</text>
+<text x="215" y="236" font-size="12" fill="#666666" text-anchor="middle">the cycle</text>
+<line x1="452" y1="232" x2="296.89394462327317" y2="250.69175845233042" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+<circle cx="452" cy="232" r="7" fill="#C0392B"/>
+<text x="456" y="212" font-size="15" fill="#C0392B" text-anchor="middle">w</text>
+<text x="378" y="258" font-size="11" fill="#C0392B" text-anchor="middle">forced</text>
+<text x="330" y="392.0" font-size="12" fill="#666666" text-anchor="middle">The cycle already carries at least n/2 + 1 vertices, so off it there are fewer than n/2 − 1 other places for</text>
+<text x="330" y="412.0" font-size="12" fill="#666666" text-anchor="middle">w's neighbours to sit. But w has at least n/2 of them,</text>
+<text x="330" y="432" font-size="12" fill="#666666" text-anchor="middle">so at least one neighbour must land on the cycle.</text>
+<text x="330" y="458" font-size="12" fill="#C0392B" text-anchor="middle">Snip one cycle edge there, and w hangs off the open end: a path of length k+1,</text>
+<text x="330" y="476" font-size="12" fill="#C0392B" text-anchor="middle">longer than P. Contradiction, so nothing sits outside.</text>
+</svg>

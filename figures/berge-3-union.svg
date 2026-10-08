@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
-<rect width="660" height="340" fill="#ffffff"/>
-<text x="20" y="24" font-size="13" fill="#666666">Superimposing two matchings. Every vertex meets at most one edge of each, so degrees are at most 2.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="660" height="420" fill="#ffffff"/>
+<text x="20" y="24" font-size="13" fill="#666666">Superimposing two matchings. Each vertex meets one edge of each, so degrees are ≤ 2.</text>
 <line x1="80" y1="120" x2="200" y2="120" stroke="#3B6D11" stroke-width="4"/>
 <line x1="200" y1="120" x2="320" y2="120" stroke="#185FA5" stroke-width="2.5"/>
 <line x1="320" y1="120" x2="440" y2="120" stroke="#3B6D11" stroke-width="4"/>
@@ -26,8 +26,12 @@
 <circle cx="540" cy="170" r="10" fill="#ffffff" stroke="#333333" stroke-width="2"/>
 <text x="540" y="174" text-anchor="middle" font-size="12" fill="#222222"></text>
 <text x="580" y="196" text-anchor="middle" font-size="12" fill="#666666">an even cycle</text>
-<text x="20" y="240" text-anchor="start" font-size="13" fill="#666666">Green is one matching, blue is the other. Two edges of the same colour cannot meet, so colours alternate.</text>
-<text x="20" y="264" text-anchor="start" font-size="13" fill="#666666">A graph with all degrees at most 2 breaks into paths and cycles, and here they alternate, so every cycle is even.</text>
-<text x="20" y="294" text-anchor="start" font-size="13" fill="#C0392B">Cycles and even length paths carry equal numbers of each colour. Only an odd length path can hold a surplus.</text>
-<text x="20" y="318" text-anchor="start" font-size="13" fill="#C0392B">So if the blue matching is bigger, some component must be an odd path with blue at both ends. That is an augmenting path.</text>
+<text x="20" y="240.0" font-size="13" fill="#666666" text-anchor="start">Green is one matching, blue is the other. Two edges of the same colour cannot meet, so</text>
+<text x="20" y="260.0" font-size="13" fill="#666666" text-anchor="start">colours alternate.</text>
+<text x="20" y="284.0" font-size="13" fill="#666666" text-anchor="start">A graph with all degrees at most 2 breaks into paths and cycles, and here they alternate, so</text>
+<text x="20" y="304.0" font-size="13" fill="#666666" text-anchor="start">every cycle is even.</text>
+<text x="20" y="334.0" font-size="13" fill="#C0392B" text-anchor="start">Cycles and even length paths carry equal numbers of each colour. Only an odd length path</text>
+<text x="20" y="354.0" font-size="13" fill="#C0392B" text-anchor="start">can hold a surplus.</text>
+<text x="20" y="378.0" font-size="13" fill="#C0392B" text-anchor="start">So if the blue matching is bigger, some component must be an odd path with blue at both</text>
+<text x="20" y="398.0" font-size="13" fill="#C0392B" text-anchor="start">ends. That is an augmenting path.</text>
 </svg>
